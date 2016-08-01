@@ -1,13 +1,11 @@
-name : Foundation5/github pages/Jykill starter
-brand : My Site
-description : This is the description of my site
-keyword : 
-url : http://daigofuji.github.io/jekyll-foundation-6-starter/
-email : daigo@daigofujiwara.com
-twitter : DaigoFuji
-github : DaigoFuji
-author : Daigo Fujiwara
-analytics : UA-8418273-8
+name : damgargroup.com.au
+brand : Damgar Group
+description : Damgar Property Group is at the forefront of small to medium residential and commercial property development in inner Melbourne.
+keyword : property developer, builder, construction
+url : http://damgargroup.com.au
+email : admin@damgargroup.com.au
+author : Nathan Birrell
+analytics : UA-81747047-1
 year : 2016
 markdown : kramdown
 exclude :
