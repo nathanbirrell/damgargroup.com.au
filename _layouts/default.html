@@ -5,11 +5,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} - {{ site.name }}</title>
-    <meta name="description" content="{{ page.title }} - {{ site.name }}" />
+    <meta name="description" content="{{ page.description }}" />
     <meta name="keywords" content="{{ page.keywords }}, {{ site.keywords }}" />
     <!-- Google fonts https://www.google.com/fonts
     ================================================== -->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800|Raleway:400,200,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,800" rel="stylesheet" type="text/css">
     <!-- Fount Awesome -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -28,12 +28,12 @@
     <meta property="og:description" content="{{ page.description }}"/>
     <meta property="og:image" content="{{ page.imageurl }}"/>
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@{{ site.twitter }}">
+    <!-- <meta name="twitter:site" content="@{{ site.twitter }}"> -->
     <meta name="twitter:title" content="{{ page.title }}">
     <meta name="twitter:description" content="{{ page.description }}">
     <meta name="twitter:image" content="{{ page.imageurl }}">
-  
-  </head>        
+
+  </head>
   <body>
 
     <div class="off-canvas-wrapper">
@@ -74,7 +74,7 @@
         <div class="off-canvas-content" data-off-canvas-content>
           <div class="row column">
 
-            {{ content }} 
+            {{ content }}
           </div>
 
           <footer class="site-footer row column mtl" role="contentinfo">
