@@ -47,14 +47,14 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
-$primary-color: #8bad93;
-$secondary-color: #777;
+$primary-color: #C92C39;
+$secondary-color: #4A4A4A;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
-$light-gray: #e6e6e6;
+$light-gray: #F7F3F3;
 $medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
+$dark-gray: #4A4A4A;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
@@ -63,8 +63,9 @@ $body-font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Roboto,Arial,san
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
-$global-weight-normal: normal;
-$global-weight-bold: bold;
+$global-weight-normal: 400;
+$global-weight-semibold: 600;
+$global-weight-bold: 700;
 $global-radius: 0;
 $global-text-direction: ltr;
 

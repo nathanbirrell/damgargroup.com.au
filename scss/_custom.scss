@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 //helper for font weight
-//400,700,800
+//400,600,700
 .font-light {
 	font-weight: 200;
 }
@@ -23,4 +23,40 @@ h1, h2, h3, h4, h5, h6 {
 
 .quiet {
 	font-size: 80%;
+}
+
+// HEADER
+.top-bar-center {
+	display: none; // this is a tablet and wider menu
+}
+@media #{$medium-up} {
+	.top-bar-center {
+		width: 100%;
+		display: block;
+		clear: both;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: $global-weight-semibold;
+
+		ul {
+			display: inline-block;
+			margin: 0 auto;
+		}
+
+		.menu > li > a {
+		    padding: 0.7rem 1.8rem;
+				color: $dark-gray;
+		}
+
+		.logo {
+			display: inline-block;
+			width: 177px;
+			padding-top: 22px;
+		}
+	}
+}
+
+// BODY
+.off-canvas-content, .off-canvas-content {
+    box-shadow: none;
 }

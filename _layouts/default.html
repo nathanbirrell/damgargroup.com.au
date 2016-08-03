@@ -9,7 +9,7 @@
     <meta name="keywords" content="{{ page.keywords }}, {{ site.keywords }}" />
     <!-- Google fonts https://www.google.com/fonts
     ================================================== -->
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,800" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet" type="text/css">
     <!-- Fount Awesome -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -39,6 +39,18 @@
     <div class="off-canvas-wrapper">
       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
+        <!-- "wider" top-bar menu for 'medium' and up -->
+        <div id="widemenu" class="top-bar">
+          <div class="top-bar-center">
+            <ul class="menu">
+              {% include nav.html %}
+            </ul>
+          </div>
+          <div class="top-bar-center">
+            <a class="logo" href="{{ site.url }}"><img src="img/logo.png" alt="Damgar Group Logo"></a>
+          </div>
+        </div>
+
         <!-- off-canvas title bar for 'small' screen -->
         <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
           <div class="title-bar-left">
@@ -54,20 +66,6 @@
           <ul class="vertical dropdown menu" data-dropdown-menu>
             {% include nav.html %}
           </ul>
-        </div>
-
-        <!-- "wider" top-bar menu for 'medium' and up -->
-        <div id="widemenu" class="top-bar">
-          <div class="top-bar-left">
-            <ul class="dropdown menu" data-dropdown-menu>
-              <li class="menu-text"><a href="{{ site.url }}">{{ site.brand }}</a></li>
-            </ul>
-          </div>
-          <div class="top-bar-right">
-            <ul class="menu">
-              {% include nav.html %}
-            </ul>
-          </div>
         </div>
 
         <!-- original content goes in this container -->
