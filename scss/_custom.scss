@@ -188,3 +188,33 @@ p {
 		letter-spacing: 3px;
 	}
 }
+
+// FOOTER
+
+.cta {
+	margin: 32px auto;
+	display: block;
+	width: 276px;
+	border-radius: 6px;
+}
+
+footer {
+	background-color: $light-gray;
+
+	.logo-spacer {
+		width: 45px;
+		height: 45px;
+	}
+
+	.menu {
+		margin-bottom: 32px;
+		font-size: 120%;
+	}
+	a {
+		color: $secondary-color;
+	}
+
+	.menu > li {
+    display: block;
+	}
+}

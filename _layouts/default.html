@@ -74,16 +74,16 @@
             {{ content }}
           </main>
 
-          <footer class="site-footer row column mtl" role="contentinfo">
-            <button class="cta">LATEST DEVELOPMENT SELLING NOW</button>
-            <ul class="menu quiet copyright align-right">
-              <li><a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i>@{{ site.twitter }}</a></li>
-              <li><a href="https://github.com/{{ site.github }}/"><i class="fa fa-github"></i>@{{ site.github }}</a></li>
-              <li>{{ site.year }}</li>
+          <a class="large button cta" href="#">LATEST DEVELOPMENT SELLING NOW</a>
+
+          <footer class="site-footer row column" role="contentinfo">
+            <i class="logo-spacer large"></i>
+            <ul class="menu text-center">
+              <li><a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
+              <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             </ul>
-            <ul class="menu quiet">
-              {% include nav.html %}
-            </ul>
+            <p class="text-center"><small><i class="fa fa-copyright"></i> {{ site.year }} {{ site.brand }}</small></p>
+            <p class="text-center"><small><i class="fa fa-code"></i> Built by <a href="http://nathanbirrell.me" target="_blank">Nathan Birrell</a></small></p>
           </footer>
         </div><!-- end .off-canvas-content -->
 

@@ -4171,3 +4171,22 @@ p {
   margin: 7px 0 2px 0;
   font-size: 1rem;
   letter-spacing: 3px; }
+
+.cta {
+  margin: 32px auto;
+  display: block;
+  width: 276px;
+  border-radius: 6px; }
+
+footer {
+  background-color: #F7F3F3; }
+  footer .logo-spacer {
+    width: 45px;
+    height: 45px; }
+  footer .menu {
+    margin-bottom: 32px;
+    font-size: 120%; }
+  footer a {
+    color: #4A4A4A; }
+  footer .menu > li {
+    display: block; }
