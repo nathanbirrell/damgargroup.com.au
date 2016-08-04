@@ -4133,5 +4133,9 @@ h1 {
   font-weight: 200; }
 
 .latest-project .project-label {
+  display: inline-block;
   text-transform: uppercase;
-  color: #9B9B9B; }
+  color: #9B9B9B;
+  margin: 7px 0 2px 0;
+  font-size: 1rem;
+  letter-spacing: 3px; }

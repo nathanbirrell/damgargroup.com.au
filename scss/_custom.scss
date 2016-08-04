@@ -140,7 +140,11 @@ h1 {
 		font-weight: $global-weight-light;
 	}
 	.project-label {
+		display: inline-block;
 		text-transform: uppercase;
 		color: $medium-gray;
+		margin: 7px 0 2px 0;
+		font-size: rem-calc(16);
+		letter-spacing: 3px;
 	}
 }
