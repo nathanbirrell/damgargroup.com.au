@@ -53,7 +53,7 @@ $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
 $light-gray: #F7F3F3;
-$medium-gray: #cacaca;
+$medium-gray: #9B9B9B;
 $dark-gray: #4A4A4A;
 $black: #0a0a0a;
 $white: #fefefe;
@@ -63,6 +63,7 @@ $body-font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Roboto,Arial,san
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
+$global-weight-light: 200;
 $global-weight-normal: 400;
 $global-weight-semibold: 600;
 $global-weight-bold: 700;
@@ -111,11 +112,11 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
   small: (
-    'h1': 36,
-    'h2': 24,
-    'h3': 19,
-    'h4': 18,
-    'h5': 17,
+    'h1': 42,
+    'h2': 36,
+    'h3': 31,
+    'h4': 25,
+    'h5': 20,
     'h6': 16,
   ),
   medium: (

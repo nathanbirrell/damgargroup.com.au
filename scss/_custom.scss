@@ -18,26 +18,12 @@
 // Typography
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 200;
+	font-weight: $global-weight-normal;
 	@media #{$medium-up} {
 	}
-	@media #{$large-up} {
-	}
 }
-
-//helper for font weight
-//400,600,700
-.font-light {
-	font-weight: 200;
-}
-.font-weight-normal {
-	font-weight: 400;
-}
-.font-bold {
-	font-weight: 700;
-}
-.font-heavy {
-	font-weight: 800;
+h1 {
+	font-weight: $global-weight-semibold;
 }
 
 .quiet {
@@ -141,5 +127,19 @@ h1, h2, h3, h4, h5, h6 {
 .latest-project {
 	.project-thumb {
 		@include project-thumb();
+	}
+	.project-name {
+		font-weight: $global-weight-bold;
+		margin-bottom: 0;
+	}
+	.project-location {
+		display: inline-block;
+		margin-top: -12px;
+		font-size: rem-calc(28);
+		font-weight: $global-weight-light;
+	}
+	.project-label {
+		text-transform: uppercase;
+		color: $medium-gray;
 	}
 }
