@@ -46,17 +46,18 @@ h1 {
 }
 .title-bar {
 	text-align: center;
+	padding: 0;
 
 	.title-bar-center img {
 		display: inline-block;
-		width: 66px;
+		width: 58px;
 		margin: 0 auto;
 	}
 
 	.menu-icon {
 		position: absolute;
-		right: 14px;
-		top: 32px;
+		right: 18px;
+		top: 22px;
 	}
 }
 
@@ -114,7 +115,7 @@ h1 {
 // BODY
 @media #{$small-only} {
 	main {
-		padding-top: 120px;
+		padding-top: 92px;
 	}
 }
 

@@ -4054,15 +4054,16 @@ h1 {
   z-index: 999; }
 
 .title-bar {
-  text-align: center; }
+  text-align: center;
+  padding: 0; }
   .title-bar .title-bar-center img {
     display: inline-block;
-    width: 66px;
+    width: 58px;
     margin: 0 auto; }
   .title-bar .menu-icon {
     position: absolute;
-    right: 14px;
-    top: 32px; }
+    right: 18px;
+    top: 22px; }
 
 .dropdown.menu {
   background-color: #C92C39;
@@ -4103,7 +4104,7 @@ h1 {
 
 @media screen and (max-width: 39.9375em) {
   main {
-    padding-top: 120px; } }
+    padding-top: 92px; } }
 
 .off-canvas-content, .off-canvas-content {
   box-shadow: none; }
