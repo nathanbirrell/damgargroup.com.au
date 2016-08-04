@@ -4033,12 +4033,24 @@ table.hover tr:nth-of-type(even):hover {
 
 /***************** end padding and margin settings *************/
 /* custom */
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("fonts/AvenirNext-Bold.eot");
+  src: url("fonts/AvenirNext-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext-Bold.woff") format("woff"), url("fonts/AvenirNext-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
 h1 {
-  font-weight: 600;
-  text-align: center; }
+  font-family: 'Avenir Next';
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 32px; }
+  @media screen and (max-width: 39.9375em) {
+    h1 {
+      font-size: 2.25rem; } }
 
 p {
   font-size: 105%; }
