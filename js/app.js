@@ -5,4 +5,6 @@
 //   $(element).height(width);
 // });
 
+// Foundation.OffCanvas.defaults.forceTop = false;
+
 $(document).foundation();

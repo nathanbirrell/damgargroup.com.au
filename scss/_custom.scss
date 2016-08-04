@@ -79,10 +79,19 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: $primary-color;
 	font-size: 28px;
 	font-weight: $global-weight-bold;
+	text-transform: uppercase;
+	text-align: right;
 
 	&,
 	a {
 		color: $white;
+	}
+
+	& > li > a {
+    display: block;
+    padding: 1.1rem 1rem;
+    line-height: 1;
+    font-size: 34px;
 	}
 }
 .off-canvas,

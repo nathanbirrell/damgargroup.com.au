@@ -4076,10 +4076,17 @@ h1, h2, h3, h4, h5, h6 {
 .dropdown.menu {
   background-color: #C92C39;
   font-size: 28px;
-  font-weight: 700; }
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: right; }
   .dropdown.menu,
   .dropdown.menu a {
     color: #fefefe; }
+  .dropdown.menu > li > a {
+    display: block;
+    padding: 1.1rem 1rem;
+    line-height: 1;
+    font-size: 34px; }
 
 .off-canvas,
 .dropdown.menu {
