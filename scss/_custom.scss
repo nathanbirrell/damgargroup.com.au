@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // HEADER
 
-// mobile menu
+// mobile header
 .mobile-logo {
 	width: 120px;
 	display: block;
@@ -66,6 +66,28 @@ h1, h2, h3, h4, h5, h6 {
 		width: 66px;
 		margin: 0 auto;
 	}
+
+	.menu-icon {
+		position: absolute;
+		right: 14px;
+		top: 32px;
+	}
+}
+
+// mobile menu
+.dropdown.menu {
+	background-color: $primary-color;
+	font-size: 28px;
+	font-weight: $global-weight-bold;
+
+	&,
+	a {
+		color: $white;
+	}
+}
+.off-canvas,
+.dropdown.menu {
+	height: 100%;
 }
 
 // desktop up

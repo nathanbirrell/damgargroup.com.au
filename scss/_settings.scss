@@ -69,6 +69,15 @@ $global-weight-bold: 700;
 $global-radius: 0;
 $global-text-direction: ltr;
 
+// override foundation defaults
+$foundation-palette: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+  success: $success-color,
+  warning: $warning-color,
+  alert: $alert-color,
+);
+
 // 2. Breakpoints
 // --------------
 
