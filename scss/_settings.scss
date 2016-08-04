@@ -58,8 +58,8 @@ $dark-gray: #4A4A4A;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
-$body-font-color: $black;
-$body-font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+$body-font-color: $dark-gray;
+$body-font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -174,8 +174,8 @@ $abbr-underline: 1px dotted $black;
 // 5. Typography Helpers
 // ---------------------
 
-$lead-font-size: $global-font-size * 1.25;
-$lead-lineheight: 1.6;
+$lead-font-size: $global-font-size * 1.5;
+$lead-lineheight: 1.8;
 $subheader-lineheight: 1.4;
 $subheader-color: $dark-gray;
 $subheader-font-weight: $global-weight-normal;

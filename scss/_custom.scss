@@ -24,10 +24,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
 	font-weight: $global-weight-semibold;
+	text-align: center;
+}
+
+p {
+	font-size: 105%;
+}
+
+.lead {
+    font-weight: 200;
+		margin-bottom: 32px;
+
+		@media #{$medium-up} {
+			font-size: 160%;
+		}
 }
 
 .quiet {
 	font-size: 80%;
+}
+
+// Custom icons
+
+.logo-spacer {
+	display: block;
+	clear: both;
+	background-image: url('/img/logo_d.png');
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+	margin: 32px auto;
 }
 
 // HEADER
