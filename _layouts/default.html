@@ -45,35 +45,35 @@
             <ul class="menu">
               {% include nav.html %}
             </ul>
-          </div>
-          <div class="top-bar-center">
-            <a class="logo" href="{{ site.url }}"><img src="img/logo.png" alt="Damgar Group Logo"></a>
+            <p><a class="logo" href="{{ site.url }}"><img src="img/logo.png" alt="Damgar Group Logo"></a></p>
           </div>
         </div>
 
         <!-- off-canvas title bar for 'small' screen -->
-        <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
-          <div class="title-bar-left">
-            <span class="title-bar-title"><a href="{{ site.url }}">{{ site.brand }}</a></span>
+        <div class="contain-to-grid sticky">
+          <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
+            <div class="title-bar-center">
+              <span class="title-bar-title"><img src="img/logo_d.png" alt="Damgar Group Symbol"></a></span>
+            </div>
+            <div class="title-bar-right">
+              <button class="menu-icon" type="button" data-open="offCanvasRight">menu</button>
+            </div>
           </div>
-          <div class="title-bar-right">
-            <button class="menu-icon" type="button" data-open="offCanvasRight"></button>
-          </div>
-        </div>
 
-        <!-- off-canvas right menu -->
-        <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
-          <ul class="vertical dropdown menu" data-dropdown-menu>
-            {% include nav.html %}
-          </ul>
+          <!-- off-canvas right menu -->
+          <nav class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right" role="navigation">
+            <ul class="vertical dropdown menu" data-dropdown-menu>
+              {% include nav.html %}
+            </ul>
+          </nav>
         </div>
 
         <!-- original content goes in this container -->
         <div class="off-canvas-content" data-off-canvas-content>
-          <div class="row column">
-
+          <main class="row column">
+            <img class="mobile-logo show-for-small" src="img/logo.png" alt="Damgar Group Logo">
             {{ content }}
-          </div>
+          </main>
 
           <footer class="site-footer row column mtl" role="contentinfo">
           <hr/>

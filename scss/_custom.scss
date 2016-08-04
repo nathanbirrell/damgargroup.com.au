@@ -46,37 +46,60 @@ h1, h2, h3, h4, h5, h6 {
 
 // HEADER
 
-.top-bar-center {
-	display: none; // this is a tablet and wider menu
+// mobile menu
+.mobile-logo {
+	width: 120px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 40px;
 }
-@media #{$medium-up} {
-	.top-bar-center {
-		width: 100%;
-		display: block;
-		clear: both;
-		text-align: center;
-		text-transform: uppercase;
-		font-weight: $global-weight-semibold;
+.sticky {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
+.title-bar {
+	text-align: center;
 
-		ul {
-			display: inline-block;
-			margin: 0 auto;
-		}
+	.title-bar-center img {
+		display: inline-block;
+		width: 66px;
+		margin: 0 auto;
+	}
+}
 
-		.menu > li > a {
-		    padding: 0.7rem 1.8rem;
-				color: $dark-gray;
-		}
+// desktop up
+.top-bar-center {
+	width: 100%;
+	display: block;
+	clear: both;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: $global-weight-semibold;
 
-		.logo {
-			display: inline-block;
-			width: 177px;
-			padding-top: 22px;
-		}
+	ul {
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	.menu > li > a {
+	    padding: 0.7rem 1.8rem;
+			color: $dark-gray;
+	}
+
+	.logo {
+		display: inline-block;
+		width: 177px;
+		padding-top: 22px;
 	}
 }
 
 // BODY
+@media #{$small-only} {
+	main {
+		padding-top: 120px;
+	}
+}
 
 .off-canvas-content, .off-canvas-content {
     box-shadow: none;

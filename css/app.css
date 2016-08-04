@@ -4051,27 +4051,45 @@ h1, h2, h3, h4, h5, h6 {
 .quiet {
   font-size: 80%; }
 
-.top-bar-center {
-  display: none; }
+.mobile-logo {
+  width: 120px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px; }
 
-@media screen and (min-width: 40em) {
-  .top-bar-center {
-    width: 100%;
-    display: block;
-    clear: both;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600; }
-    .top-bar-center ul {
-      display: inline-block;
-      margin: 0 auto; }
-    .top-bar-center .menu > li > a {
-      padding: 0.7rem 1.8rem;
-      color: #4A4A4A; }
-    .top-bar-center .logo {
-      display: inline-block;
-      width: 177px;
-      padding-top: 22px; } }
+.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 999; }
+
+.title-bar {
+  text-align: center; }
+  .title-bar .title-bar-center img {
+    display: inline-block;
+    width: 66px;
+    margin: 0 auto; }
+
+.top-bar-center {
+  width: 100%;
+  display: block;
+  clear: both;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600; }
+  .top-bar-center ul {
+    display: inline-block;
+    margin: 0 auto; }
+  .top-bar-center .menu > li > a {
+    padding: 0.7rem 1.8rem;
+    color: #4A4A4A; }
+  .top-bar-center .logo {
+    display: inline-block;
+    width: 177px;
+    padding-top: 22px; }
+
+@media screen and (max-width: 39.9375em) {
+  main {
+    padding-top: 120px; } }
 
 .off-canvas-content, .off-canvas-content {
   box-shadow: none; }
