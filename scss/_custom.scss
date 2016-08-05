@@ -13,6 +13,17 @@
 	background-position: center;
 	background-size: cover;
 	background-color: $primary-color;
+
+	@media #{$medium-up} {
+		width: 100%;
+		margin: 0;
+		left: initial;
+		right: initial;
+	}
+	&.thumbnail {
+		border: none;
+		box-shadow: none;
+	}
 }
 
 // Typography
@@ -39,10 +50,6 @@ h1 {
 	@media #{$small-only} {
 		font-size: rem-calc(36);
 	}
-}
-
-p {
-	font-size: 105%;
 }
 
 .lead {
@@ -186,6 +193,58 @@ p {
 		margin: 7px 0 2px 0;
 		font-size: rem-calc(16);
 		letter-spacing: 3px;
+	}
+}
+
+// PROJECTS LISTING
+
+.project-listing {
+	.project-thumb {
+		@include project-thumb();
+	}
+	.project-name {
+		font-weight: $global-weight-bold;
+		margin-bottom: 0;
+		font-size: rem-calc(32);
+
+		@media #{$medium-up} {
+			display: inline-block;
+		}
+	}
+	.project-location {
+		display: inline-block;
+		margin-top: -12px;
+		font-size: rem-calc(28);
+		font-weight: $global-weight-light;
+
+		@media #{$medium-up} {
+			text-align: right;
+			float: right;
+			margin-top: 0;
+		}
+	}
+	.project-label {
+		display: inline-block;
+		text-transform: uppercase;
+		color: $medium-gray;
+		margin: 7px 0 2px 0;
+		font-size: rem-calc(16);
+		letter-spacing: 3px;
+	}
+
+	a {
+		color: $body-font-color;
+	}
+
+	&:hover {
+		.project-thumb {
+			opacity: .75;
+			filter: blur(1px);
+		}
+		.project-name,
+		.project-location {
+			color: $primary-color;
+		}
 	}
 }
 
