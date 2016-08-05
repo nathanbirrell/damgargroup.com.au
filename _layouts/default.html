@@ -9,11 +9,11 @@
     <meta name="keywords" content="{{ page.keywords }}, {{ site.keywords }}" />
     <!-- Google fonts https://www.google.com/fonts
     ================================================== -->
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,800" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700" rel="stylesheet" type="text/css">
     <!-- Fount Awesome -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="/css/app.css">
 
     <!-- favicon
     ================================================== -->
@@ -36,57 +36,53 @@
   </head>
   <body>
 
-    <div class="off-canvas-wrapper">
+    <div id="off-canvas-menu" class="off-canvas-wrapper" data-force-top="false">
       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-        <!-- off-canvas title bar for 'small' screen -->
-        <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
-          <div class="title-bar-left">
-            <span class="title-bar-title"><a href="{{ site.url }}">{{ site.brand }}</a></span>
+        <!-- "wider" top-bar menu for 'medium' and up -->
+        <div id="widemenu" class="top-bar">
+          <div class="top-bar-center">
+            <ul class="menu">
+              {% include nav.html %}
+            </ul>
+            <p><a class="logo" href="{{ site.url }}"><img src="/img/logo.png" alt="Damgar Group Logo"></a></p>
           </div>
-          <div class="title-bar-right">
-            <button class="menu-icon" type="button" data-open="offCanvasRight"></button>
+        </div>
+
+        <!-- off-canvas title bar for 'small' screen -->
+        <div class="sticky">
+          <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
+            <div class="title-bar-center">
+              <span class="title-bar-title"><img src="img/logo_d.png" alt="Damgar Group Symbol"></a></span>
+              <button class="menu-icon float-right" type="button" data-open="offCanvasRight"><i class="fa fa-bars"></i></button>
+            </div>
           </div>
         </div>
 
         <!-- off-canvas right menu -->
-        <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+        <nav class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right" role="navigation">
           <ul class="vertical dropdown menu" data-dropdown-menu>
+            <li>&nbsp;</li>
             {% include nav.html %}
           </ul>
-        </div>
-
-        <!-- "wider" top-bar menu for 'medium' and up -->
-        <div id="widemenu" class="top-bar">
-          <div class="top-bar-left">
-            <ul class="dropdown menu" data-dropdown-menu>
-              <li class="menu-text"><a href="{{ site.url }}">{{ site.brand }}</a></li>
-            </ul>
-          </div>
-          <div class="top-bar-right">
-            <ul class="menu">
-              {% include nav.html %}
-            </ul>
-          </div>
-        </div>
+        </nav>
 
         <!-- original content goes in this container -->
         <div class="off-canvas-content" data-off-canvas-content>
-          <div class="row column">
-
+          <main class="row column">
+            <img class="mobile-logo show-for-small-only" src="/img/logo.png" alt="Damgar Group Logo">
             {{ content }}
-          </div>
+          </main>
 
-          <footer class="site-footer row column mtl" role="contentinfo">
-          <hr/>
-            <ul class="menu quiet copyright align-right">
-              <li><a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i>@{{ site.twitter }}</a></li>
-              <li><a href="https://github.com/{{ site.github }}/"><i class="fa fa-github"></i>@{{ site.github }}</a></li>
-              <li>{{ site.year }}</li>
+          <a class="large button cta" href="#">LATEST DEVELOPMENT SELLING NOW</a>
+
+          <footer class="site-footer row column" role="contentinfo">
+            <i class="logo-spacer large"></i>
+            <ul class="menu text-center">
+              <li><a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
+              <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             </ul>
-            <ul class="menu quiet">
-              {% include nav.html %}
-            </ul>
+            <p class="text-center"><small><i class="fa fa-copyright"></i> {{ site.year }} {{ site.brand }} &nbsp;&nbsp; | &nbsp;&nbsp; <i class="fa fa-code"></i> Built by <a href="http://nathanbirrell.me" target="_blank">Nathan Birrell</a></small></p>
           </footer>
         </div><!-- end .off-canvas-content -->
 
@@ -96,11 +92,11 @@
     <!-- Loading JavaScripts
     ================================================== -->
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="bower_components/jquery/dist/jquery.js"><\/script>')</script>
-    <script src="bower_components/what-input/what-input.js"></script>
-    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
-    <script src="js/app.js"></script>
+    <script src="///ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/bower_components/jquery/dist/jquery.js"><\/script>')</script>
+    <script src="/bower_components/what-input/what-input.js"></script>
+    <script src="/bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="/js/app.js"></script>
 
     <!-- Google Analytics CHANGE THIS TO YOUR UA CODE-->
     <script>

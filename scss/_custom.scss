@@ -1,26 +1,279 @@
-h1, h2, h3, h4, h5, h6 {
-	font-weight: 200;
+// Mixins
+
+@mixin project-thumb {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+
+	height: 270px;
+	overflow: hidden;
+	background-position: center;
+	background-size: cover;
+	background-color: $primary-color;
+
 	@media #{$medium-up} {
+		width: 100%;
+		margin: 0;
+		left: initial;
+		right: initial;
 	}
-	@media #{$large-up} {
+	&.thumbnail {
+		border: none;
+		box-shadow: none;
 	}
 }
 
-//helper for font weight
-//400,700,800
-.font-light {
-	font-weight: 200;
+// Typography
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('fonts/AvenirNext-Bold.eot');
+	src: url('fonts/AvenirNext-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/AvenirNext-Bold.woff') format('woff'),
+		url('fonts/AvenirNext-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
 }
-.font-weight-normal {
-	font-weight: 400;
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: $global-weight-normal;
 }
-.font-bold {
-	font-weight: 700;
+h1 {
+	font-family: 'Avenir Next';
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 32px;
+
+	@media #{$small-only} {
+		font-size: rem-calc(36);
+	}
 }
-.font-heavy {
-	font-weight: 800;
+
+.lead {
+    font-weight: 200;
+		margin-bottom: 32px;
+
+		@media #{$medium-up} {
+			font-size: 160%;
+		}
 }
 
 .quiet {
 	font-size: 80%;
+}
+
+// Custom icons
+
+.logo-spacer {
+	display: block;
+	clear: both;
+	background-image: url('/img/logo_d.png');
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+	margin: 32px auto;
+}
+
+// HEADER
+
+// mobile header
+.mobile-logo {
+	width: 120px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.sticky {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
+.title-bar {
+	text-align: center;
+	padding: 0;
+
+	.title-bar-center img {
+		display: inline-block;
+		width: 58px;
+		margin: 0 auto;
+	}
+
+	.menu-icon {
+		position: absolute;
+		right: 18px;
+		top: 22px;
+	}
+}
+
+// mobile menu
+.dropdown.menu {
+	background-color: $primary-color;
+	font-size: 28px;
+	font-weight: $global-weight-bold;
+	text-transform: uppercase;
+	text-align: right;
+
+	&,
+	a {
+		color: $white;
+	}
+
+	& > li > a {
+    display: block;
+    padding: 1.1rem 1rem;
+    line-height: 1;
+    font-size: 34px;
+	}
+}
+.off-canvas,
+.dropdown.menu {
+	height: 100%;
+}
+
+// desktop up
+.top-bar-center {
+	width: 100%;
+	display: block;
+	clear: both;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: $global-weight-semibold;
+
+	ul {
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	.menu > li > a {
+	    padding: 0.7rem 1.8rem;
+			color: $dark-gray;
+	}
+
+	.logo {
+		display: inline-block;
+		width: 177px;
+		padding-top: 22px;
+	}
+}
+
+// BODY
+@media #{$small-only} {
+	main {
+		padding-top: 92px;
+	}
+}
+
+.off-canvas-content, .off-canvas-content {
+    box-shadow: none;
+}
+
+// HOME
+
+.latest-project {
+	.project-thumb {
+		@include project-thumb();
+	}
+	.project-name {
+		font-weight: $global-weight-bold;
+		margin-bottom: 0;
+	}
+	.project-location {
+		display: inline-block;
+		margin-top: -12px;
+		font-size: rem-calc(28);
+		font-weight: $global-weight-light;
+	}
+	.project-label {
+		display: inline-block;
+		text-transform: uppercase;
+		color: $medium-gray;
+		margin: 7px 0 2px 0;
+		font-size: rem-calc(16);
+		letter-spacing: 3px;
+	}
+}
+
+// PROJECTS LISTING
+
+.project-listing {
+	.project-thumb {
+		@include project-thumb();
+	}
+	.project-name {
+		font-weight: $global-weight-bold;
+		margin-bottom: 0;
+		font-size: rem-calc(32);
+
+		@media #{$medium-up} {
+			display: inline-block;
+		}
+	}
+	.project-location {
+		display: inline-block;
+		margin-top: -12px;
+		font-size: rem-calc(28);
+		font-weight: $global-weight-light;
+
+		@media #{$medium-up} {
+			text-align: right;
+			float: right;
+			margin-top: 0;
+		}
+	}
+	.project-label {
+		display: inline-block;
+		text-transform: uppercase;
+		color: $medium-gray;
+		margin: 7px 0 2px 0;
+		font-size: rem-calc(16);
+		letter-spacing: 3px;
+	}
+
+	a {
+		color: $body-font-color;
+	}
+
+	&:hover {
+		.project-thumb {
+			opacity: .75;
+			filter: blur(1px);
+		}
+		.project-name,
+		.project-location {
+			color: $primary-color;
+		}
+	}
+}
+
+// FOOTER
+
+.cta {
+	margin: 32px auto;
+	display: block;
+	width: 276px;
+	border-radius: 6px;
+}
+
+footer {
+	background-color: $light-gray;
+
+	.logo-spacer {
+		width: 45px;
+		height: 45px;
+	}
+
+	.menu {
+		margin-bottom: 32px;
+		font-size: 120%;
+	}
+	a {
+		color: $secondary-color;
+	}
+
+	.menu > li {
+    display: block;
+	}
 }
