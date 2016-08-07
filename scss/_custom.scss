@@ -311,7 +311,13 @@ a:hover {
 	margin: 32px auto;
 	display: block;
 	width: 276px;
-	border-radius: 6px;
+	border-radius: 0 6px 6px 6px;
+	box-shadow: 1px 1px 1px $medium-gray;
+	text-shadow: 0.5px 0.5px 1px $medium-gray;
+
+	&:hover {
+		box-shadow: none;
+	}
 }
 
 .cta.main-cta {
