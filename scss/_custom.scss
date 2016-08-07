@@ -235,6 +235,12 @@ a:hover {
 			height: 512px;
 		}
 	}
+
+	a:hover .project-thumb {
+		filter: none;
+		opacity: 1;
+	}
+
 	.project-label {
 		display: block;
 	}

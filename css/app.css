@@ -4177,6 +4177,11 @@ a:hover {
   .latest-project.project-listing .project-thumb-wrapper {
     height: 512px; } }
 
+.latest-project.project-listing a:hover .project-thumb {
+  -webkit-filter: none;
+          filter: none;
+  opacity: 1; }
+
 .latest-project.project-listing .project-label {
   display: block; }
 
