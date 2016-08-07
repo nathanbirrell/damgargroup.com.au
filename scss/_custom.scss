@@ -26,6 +26,12 @@
 	}
 }
 
+@mixin menu-controls {
+	position: absolute;
+	right: 18px;
+	top: 18px;
+}
+
 // Typography
 
 @font-face {
@@ -50,6 +56,10 @@ h1 {
 	@media #{$small-only} {
 		font-size: rem-calc(36);
 	}
+}
+
+a:hover {
+	color: $primary-color;
 }
 
 .lead {
@@ -80,12 +90,6 @@ h1 {
 // HEADER
 
 // mobile header
-.mobile-logo {
-	width: 120px;
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 40px;
-}
 .sticky {
 	position: fixed;
 	width: 100%;
@@ -95,22 +99,33 @@ h1 {
 	text-align: center;
 	padding: 0;
 
-	.title-bar-center img {
+	.is-open-right & {
+		display: none;
+	}
+
+	.mobile-logo {
 		display: inline-block;
 		width: 58px;
 		margin: 0 auto;
+		transition: all 0.4s ease;
+
+		.expanded & {
+			display: block;
+			width: 120px;
+			margin: 28px auto 6px auto;
+			margin-bottom: 40px;
+		}
 	}
 
 	.menu-icon {
-		position: absolute;
-		right: 18px;
-		top: 22px;
+		font-size: 24px; // hamburger icon needs to be a touch bigger
+
+		@include menu-controls();
 	}
 }
 
 // mobile menu
 .dropdown.menu {
-	background-color: $primary-color;
 	font-size: 28px;
 	font-weight: $global-weight-bold;
 	text-transform: uppercase;
@@ -127,10 +142,40 @@ h1 {
     line-height: 1;
     font-size: 34px;
 	}
+
+	.menu-logo {
+		display: block;
+		width: 58px;
+		margin: 0 auto;
+	}
+
+	.close-icon {
+		@include menu-controls();
+	}
 }
-.off-canvas,
-.dropdown.menu {
-	height: 100%;
+
+.off-canvas {
+	background-color: $primary-color;
+	height: 100vh;
+	position: fixed;
+}
+.off-canvas.position-right {
+	width: 280px;
+	width: 85%;
+}
+
+// make menu overlay instead of push body to the side
+.off-canvas-wrapper {
+	.is-open-right {
+		transform: none;
+
+		.off-canvas {
+			background-color: rgba(201,44,57,0.95);
+			transition: right 500ms ease 0s;
+			right: 0;
+			z-index: 999;
+		}
+	}
 }
 
 // desktop up
@@ -144,12 +189,16 @@ h1 {
 
 	ul {
 		display: inline-block;
-		margin: 0 auto;
+		margin: 22px auto 0 auto;
 	}
 
 	.menu > li > a {
 	    padding: 0.7rem 1.8rem;
 			color: $dark-gray;
+
+			&:hover {
+				color: $primary-color;
+			}
 	}
 
 	.logo {
@@ -166,39 +215,56 @@ h1 {
 	}
 }
 
+@media #{$medium-up} {
+	main {
+		padding-top: 38px;
+    padding-bottom: 46px;
+	}
+}
+
 .off-canvas-content, .off-canvas-content {
     box-shadow: none;
 }
 
 // HOME
 
-.latest-project {
-	.project-thumb {
-		@include project-thumb();
-	}
-	.project-name {
-		font-weight: $global-weight-bold;
-		margin-bottom: 0;
-	}
-	.project-location {
-		display: inline-block;
-		margin-top: -12px;
-		font-size: rem-calc(28);
-		font-weight: $global-weight-light;
+.latest-project.project-listing {
+	.project-thumb,
+	.project-thumb-wrapper {
+		@media #{$large-up} {
+			height: 512px;
+		}
 	}
 	.project-label {
-		display: inline-block;
-		text-transform: uppercase;
-		color: $medium-gray;
-		margin: 7px 0 2px 0;
-		font-size: rem-calc(16);
-		letter-spacing: 3px;
+		display: block;
 	}
 }
 
 // PROJECTS LISTING
 
 .project-listing {
+	padding-bottom: 32px;
+
+	a {
+		color: $body-font-color;
+		display: block;
+	}
+
+	a:hover {
+		.project-thumb {
+			opacity: .95;
+			filter: blur(1px);
+		}
+		.project-name,
+		.project-location {
+			color: $primary-color;
+		}
+	}
+
+	.project-thumb-wrapper {
+		@include project-thumb();
+		background-color: transparent;
+	}
 	.project-thumb {
 		@include project-thumb();
 	}
@@ -231,21 +297,6 @@ h1 {
 		font-size: rem-calc(16);
 		letter-spacing: 3px;
 	}
-
-	a {
-		color: $body-font-color;
-	}
-
-	&:hover {
-		.project-thumb {
-			opacity: .75;
-			filter: blur(1px);
-		}
-		.project-name,
-		.project-location {
-			color: $primary-color;
-		}
-	}
 }
 
 // FOOTER
@@ -257,23 +308,43 @@ h1 {
 	border-radius: 6px;
 }
 
-footer {
+.cta.main-cta {
+	margin: 42px auto;
+}
+
+.site-footer {
 	background-color: $light-gray;
+	padding-bottom: 32px;
+	font-size: 110%;
+
+	&.row {
+		margin: 0;
+		max-width: 100%;
+	}
+
+	@media #{$medium-up} {
+		font-size: 120%;
+	}
 
 	.logo-spacer {
 		width: 45px;
 		height: 45px;
 	}
 
-	.menu {
-		margin-bottom: 32px;
-		font-size: 120%;
-	}
 	a {
 		color: $secondary-color;
 	}
 
-	.menu > li {
-    display: block;
+	ul {
+		margin: 0;
+		margin-bottom: 18px;
+	}
+
+	li {
+		display: block;
+    list-style: none;
+		padding: 8px;
+		max-width: 100%;
+		overflow-wrap: break-word;
 	}
 }

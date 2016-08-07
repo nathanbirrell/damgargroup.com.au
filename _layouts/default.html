@@ -50,10 +50,12 @@
         </div>
 
         <!-- off-canvas title bar for 'small' screen -->
-        <div class="sticky">
+        <div class="sticky expanded">
           <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
             <div class="title-bar-center">
-              <span class="title-bar-title"><img src="img/logo_d.png" alt="Damgar Group Symbol"></a></span>
+              <img id="sticky-logo-swap" class="hide" src="{{site.url}}/img/logo_d.png" alt="Damgar Group Symbol">
+              <img id="expanded-logo-swap" class="hide" src="{{site.url}}/img/logo.png" alt="Damgar Group Symbol">
+              <img class="mobile-logo mobile-logo-expanded" src="{{site.url}}/img/logo.png" alt="Damgar Group Logo">
               <button class="menu-icon float-right" type="button" data-open="offCanvasRight"><i class="fa fa-bars"></i></button>
             </div>
           </div>
@@ -62,27 +64,28 @@
         <!-- off-canvas right menu -->
         <nav class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right" role="navigation">
           <ul class="vertical dropdown menu" data-dropdown-menu>
-            <li>&nbsp;</li>
+            <img class="menu-logo" src="{{site.url}}/img/logo_d_white.png" alt="Damgar Group Symbol">
+            <button class="close-icon float-right" type="button" data-close="offCanvasRight"><i class="fa fa-times"></i></button>
             {% include nav.html %}
           </ul>
         </nav>
 
         <!-- original content goes in this container -->
         <div class="off-canvas-content" data-off-canvas-content>
-          <main class="row column">
-            <img class="mobile-logo show-for-small-only" src="/img/logo.png" alt="Damgar Group Logo">
+          <main class="row">
             {{ content }}
           </main>
 
-          <a class="large button cta" href="#">LATEST DEVELOPMENT SELLING NOW</a>
+          <a class="large button cta main-cta" href="#">LATEST DEVELOPMENT SELLING NOW</a>
 
-          <footer class="site-footer row column" role="contentinfo">
+          <footer class="site-footer row" role="contentinfo">
             <i class="logo-spacer large"></i>
-            <ul class="menu text-center">
+            <ul class="text-center">
               <li><a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
               <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             </ul>
-            <p class="text-center"><small><i class="fa fa-copyright"></i> {{ site.year }} {{ site.brand }} &nbsp;&nbsp; | &nbsp;&nbsp; <i class="fa fa-code"></i> Built by <a href="http://nathanbirrell.me" target="_blank">Nathan Birrell</a></small></p>
+            <p class="text-center"><small><i class="fa fa-copyright"></i> {{ site.year }} {{ site.brand }} <br>
+              <i class="fa fa-code"></i> Built by <a href="http://nathanbirrell.me" target="_blank">Nathan Birrell</a></small></p>
           </footer>
         </div><!-- end .off-canvas-content -->
 

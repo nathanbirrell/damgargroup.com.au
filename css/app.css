@@ -4052,6 +4052,9 @@ h1 {
     h1 {
       font-size: 2.25rem; } }
 
+a:hover {
+  color: #C92C39; }
+
 .lead {
   font-weight: 200;
   margin-bottom: 32px; }
@@ -4071,12 +4074,6 @@ h1 {
   height: 30px;
   margin: 32px auto; }
 
-.mobile-logo {
-  width: 120px;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 40px; }
-
 .sticky {
   position: fixed;
   width: 100%;
@@ -4085,17 +4082,25 @@ h1 {
 .title-bar {
   text-align: center;
   padding: 0; }
-  .title-bar .title-bar-center img {
+  .is-open-right .title-bar {
+    display: none; }
+  .title-bar .mobile-logo {
     display: inline-block;
     width: 58px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    transition: all 0.4s ease; }
+    .expanded .title-bar .mobile-logo {
+      display: block;
+      width: 120px;
+      margin: 28px auto 6px auto;
+      margin-bottom: 40px; }
   .title-bar .menu-icon {
+    font-size: 24px;
     position: absolute;
     right: 18px;
-    top: 22px; }
+    top: 18px; }
 
 .dropdown.menu {
-  background-color: #C92C39;
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
@@ -4108,10 +4113,32 @@ h1 {
     padding: 1.1rem 1rem;
     line-height: 1;
     font-size: 34px; }
+  .dropdown.menu .menu-logo {
+    display: block;
+    width: 58px;
+    margin: 0 auto; }
+  .dropdown.menu .close-icon {
+    position: absolute;
+    right: 18px;
+    top: 18px; }
 
-.off-canvas,
-.dropdown.menu {
-  height: 100%; }
+.off-canvas {
+  background-color: #C92C39;
+  height: 100vh;
+  position: fixed; }
+
+.off-canvas.position-right {
+  width: 280px;
+  width: 85%; }
+
+.off-canvas-wrapper .is-open-right {
+  -ms-transform: none;
+      transform: none; }
+  .off-canvas-wrapper .is-open-right .off-canvas {
+    background-color: rgba(201, 44, 57, 0.95);
+    transition: right 500ms ease 0s;
+    right: 0;
+    z-index: 999; }
 
 .top-bar-center {
   width: 100%;
@@ -4122,10 +4149,12 @@ h1 {
   font-weight: 600; }
   .top-bar-center ul {
     display: inline-block;
-    margin: 0 auto; }
+    margin: 22px auto 0 auto; }
   .top-bar-center .menu > li > a {
     padding: 0.7rem 1.8rem;
     color: #4A4A4A; }
+    .top-bar-center .menu > li > a:hover {
+      color: #C92C39; }
   .top-bar-center .logo {
     display: inline-block;
     width: 177px;
@@ -4135,109 +4164,101 @@ h1 {
   main {
     padding-top: 92px; } }
 
+@media screen and (min-width: 40em) {
+  main {
+    padding-top: 38px;
+    padding-bottom: 46px; } }
+
 .off-canvas-content, .off-canvas-content {
   box-shadow: none; }
 
-.latest-project .project-thumb {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  height: 270px;
-  overflow: hidden;
-  background-position: center;
-  background-size: cover;
-  background-color: #C92C39; }
-  @media screen and (min-width: 40em) {
-    .latest-project .project-thumb {
-      width: 100%;
-      margin: 0;
-      left: initial;
-      right: initial; } }
-  .latest-project .project-thumb.thumbnail {
-    border: none;
-    box-shadow: none; }
+@media screen and (min-width: 64em) {
+  .latest-project.project-listing .project-thumb,
+  .latest-project.project-listing .project-thumb-wrapper {
+    height: 512px; } }
 
-.latest-project .project-name {
-  font-weight: 700;
-  margin-bottom: 0; }
+.latest-project.project-listing .project-label {
+  display: block; }
 
-.latest-project .project-location {
-  display: inline-block;
-  margin-top: -12px;
-  font-size: 1.75rem;
-  font-weight: 200; }
-
-.latest-project .project-label {
-  display: inline-block;
-  text-transform: uppercase;
-  color: #9B9B9B;
-  margin: 7px 0 2px 0;
-  font-size: 1rem;
-  letter-spacing: 3px; }
-
-.project-listing .project-thumb {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  height: 270px;
-  overflow: hidden;
-  background-position: center;
-  background-size: cover;
-  background-color: #C92C39; }
-  @media screen and (min-width: 40em) {
-    .project-listing .project-thumb {
-      width: 100%;
-      margin: 0;
-      left: initial;
-      right: initial; } }
-  .project-listing .project-thumb.thumbnail {
-    border: none;
-    box-shadow: none; }
-
-.project-listing .project-name {
-  font-weight: 700;
-  margin-bottom: 0;
-  font-size: 2rem; }
-  @media screen and (min-width: 40em) {
-    .project-listing .project-name {
-      display: inline-block; } }
-
-.project-listing .project-location {
-  display: inline-block;
-  margin-top: -12px;
-  font-size: 1.75rem;
-  font-weight: 200; }
-  @media screen and (min-width: 40em) {
-    .project-listing .project-location {
-      text-align: right;
-      float: right;
-      margin-top: 0; } }
-
-.project-listing .project-label {
-  display: inline-block;
-  text-transform: uppercase;
-  color: #9B9B9B;
-  margin: 7px 0 2px 0;
-  font-size: 1rem;
-  letter-spacing: 3px; }
-
-.project-listing a {
-  color: #4A4A4A; }
-
-.project-listing:hover .project-thumb {
-  opacity: .75;
-  -webkit-filter: blur(1px);
-          filter: blur(1px); }
-
-.project-listing:hover .project-name,
-.project-listing:hover .project-location {
-  color: #C92C39; }
+.project-listing {
+  padding-bottom: 32px; }
+  .project-listing a {
+    color: #4A4A4A;
+    display: block; }
+  .project-listing a:hover .project-thumb {
+    opacity: .95;
+    -webkit-filter: blur(1px);
+            filter: blur(1px); }
+  .project-listing a:hover .project-name,
+  .project-listing a:hover .project-location {
+    color: #C92C39; }
+  .project-listing .project-thumb-wrapper {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 270px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-color: #C92C39;
+    background-color: transparent; }
+    @media screen and (min-width: 40em) {
+      .project-listing .project-thumb-wrapper {
+        width: 100%;
+        margin: 0;
+        left: initial;
+        right: initial; } }
+    .project-listing .project-thumb-wrapper.thumbnail {
+      border: none;
+      box-shadow: none; }
+  .project-listing .project-thumb {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 270px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-color: #C92C39; }
+    @media screen and (min-width: 40em) {
+      .project-listing .project-thumb {
+        width: 100%;
+        margin: 0;
+        left: initial;
+        right: initial; } }
+    .project-listing .project-thumb.thumbnail {
+      border: none;
+      box-shadow: none; }
+  .project-listing .project-name {
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 2rem; }
+    @media screen and (min-width: 40em) {
+      .project-listing .project-name {
+        display: inline-block; } }
+  .project-listing .project-location {
+    display: inline-block;
+    margin-top: -12px;
+    font-size: 1.75rem;
+    font-weight: 200; }
+    @media screen and (min-width: 40em) {
+      .project-listing .project-location {
+        text-align: right;
+        float: right;
+        margin-top: 0; } }
+  .project-listing .project-label {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #9B9B9B;
+    margin: 7px 0 2px 0;
+    font-size: 1rem;
+    letter-spacing: 3px; }
 
 .cta {
   margin: 32px auto;
@@ -4245,15 +4266,30 @@ h1 {
   width: 276px;
   border-radius: 6px; }
 
-footer {
-  background-color: #F7F3F3; }
-  footer .logo-spacer {
+.cta.main-cta {
+  margin: 42px auto; }
+
+.site-footer {
+  background-color: #F7F3F3;
+  padding-bottom: 32px;
+  font-size: 110%; }
+  .site-footer.row {
+    margin: 0;
+    max-width: 100%; }
+  @media screen and (min-width: 40em) {
+    .site-footer {
+      font-size: 120%; } }
+  .site-footer .logo-spacer {
     width: 45px;
     height: 45px; }
-  footer .menu {
-    margin-bottom: 32px;
-    font-size: 120%; }
-  footer a {
+  .site-footer a {
     color: #4A4A4A; }
-  footer .menu > li {
-    display: block; }
+  .site-footer ul {
+    margin: 0;
+    margin-bottom: 18px; }
+  .site-footer li {
+    display: block;
+    list-style: none;
+    padding: 8px;
+    max-width: 100%;
+    overflow-wrap: break-word; }

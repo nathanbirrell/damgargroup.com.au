@@ -4,10 +4,6 @@ title: Our Developments
 description: Damgar Property Group leads the market for small to medium residential and commercial property development
 ---
 
-<div class="page-projects">
-
-</div>
-
 <div class="row">
   <div class="medium-10 columns small-centered">
     <div class="medium-8 columns">
@@ -22,18 +18,15 @@ description: Damgar Property Group leads the market for small to medium resident
 
 <div class="row">
   <br><br>
+{% for test in (1..4) %}
   <div class="large-6 columns project-listing">
     <a href="#" class="column">
-      <div class="thumbnail project-thumb" style="background-image: url('http://placehold.it/550x220');"></div>
+      <div class="project-thumb-wrapper">
+        <div class="thumbnail project-thumb" style="background-image: url('{{site.url}}/img/demo_project_thumb.png');"></div>
+      </div>
       <h2 class="project-name">Project Name</h2>
       <span class="project-location">Location</span>
     </a>
   </div>
-  <div class="large-6 columns project-listing">
-    <a href="#" class="column">
-      <div class="thumbnail project-thumb" style="background-image: url('http://placehold.it/550x220');"></div>
-      <h2 class="project-name">Project Name</h2>
-      <span class="project-location">Location</span>
-    </a>
-  </div>
+{% endfor %}
 </div>
