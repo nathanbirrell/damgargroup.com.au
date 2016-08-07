@@ -285,6 +285,7 @@ a:hover {
 
 		@media #{$medium-up} {
 			display: inline-block;
+			max-width: 70%;
 		}
 	}
 	.project-location {
