@@ -4068,7 +4068,7 @@ a:hover {
 .logo-spacer {
   display: block;
   clear: both;
-  background-image: url("/img/logo_d.png");
+  background-image: url("../img/logo_d.png");
   background-size: cover;
   width: 30px;
   height: 30px;
