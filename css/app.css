@@ -4052,6 +4052,9 @@ h1 {
     h1 {
       font-size: 2.25rem; } }
 
+a:hover {
+  color: #C92C39; }
+
 .lead {
   font-weight: 200;
   margin-bottom: 32px; }
@@ -4150,6 +4153,8 @@ h1 {
   .top-bar-center .menu > li > a {
     padding: 0.7rem 1.8rem;
     color: #4A4A4A; }
+    .top-bar-center .menu > li > a:hover {
+      color: #C92C39; }
   .top-bar-center .logo {
     display: inline-block;
     width: 177px;
@@ -4158,6 +4163,11 @@ h1 {
 @media screen and (max-width: 39.9375em) {
   main {
     padding-top: 92px; } }
+
+@media screen and (min-width: 40em) {
+  main {
+    padding-top: 38px;
+    padding-bottom: 46px; } }
 
 .off-canvas-content, .off-canvas-content {
   box-shadow: none; }
@@ -4202,72 +4212,93 @@ h1 {
   font-size: 1rem;
   letter-spacing: 3px; }
 
-.project-listing .project-thumb {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  height: 270px;
-  overflow: hidden;
-  background-position: center;
-  background-size: cover;
-  background-color: #C92C39; }
-  @media screen and (min-width: 40em) {
-    .project-listing .project-thumb {
-      width: 100%;
-      margin: 0;
-      left: initial;
-      right: initial; } }
-  .project-listing .project-thumb.thumbnail {
-    border: none;
-    box-shadow: none; }
-
-.project-listing .project-name {
-  font-weight: 700;
-  margin-bottom: 0;
-  font-size: 2rem; }
-  @media screen and (min-width: 40em) {
-    .project-listing .project-name {
-      display: inline-block; } }
-
-.project-listing .project-location {
-  display: inline-block;
-  margin-top: -12px;
-  font-size: 1.75rem;
-  font-weight: 200; }
-  @media screen and (min-width: 40em) {
-    .project-listing .project-location {
-      text-align: right;
-      float: right;
-      margin-top: 0; } }
-
-.project-listing .project-label {
-  display: inline-block;
-  text-transform: uppercase;
-  color: #9B9B9B;
-  margin: 7px 0 2px 0;
-  font-size: 1rem;
-  letter-spacing: 3px; }
-
-.project-listing a {
-  color: #4A4A4A; }
-
-.project-listing:hover .project-thumb {
-  opacity: .75;
-  -webkit-filter: blur(1px);
-          filter: blur(1px); }
-
-.project-listing:hover .project-name,
-.project-listing:hover .project-location {
-  color: #C92C39; }
+.project-listing {
+  padding-bottom: 32px; }
+  .project-listing .project-thumb-wrapper {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 270px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-color: #C92C39;
+    background-color: transparent; }
+    @media screen and (min-width: 40em) {
+      .project-listing .project-thumb-wrapper {
+        width: 100%;
+        margin: 0;
+        left: initial;
+        right: initial; } }
+    .project-listing .project-thumb-wrapper.thumbnail {
+      border: none;
+      box-shadow: none; }
+  .project-listing .project-thumb {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 270px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-color: #C92C39; }
+    @media screen and (min-width: 40em) {
+      .project-listing .project-thumb {
+        width: 100%;
+        margin: 0;
+        left: initial;
+        right: initial; } }
+    .project-listing .project-thumb.thumbnail {
+      border: none;
+      box-shadow: none; }
+  .project-listing .project-name {
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 2rem; }
+    @media screen and (min-width: 40em) {
+      .project-listing .project-name {
+        display: inline-block; } }
+  .project-listing .project-location {
+    display: inline-block;
+    margin-top: -12px;
+    font-size: 1.75rem;
+    font-weight: 200; }
+    @media screen and (min-width: 40em) {
+      .project-listing .project-location {
+        text-align: right;
+        float: right;
+        margin-top: 0; } }
+  .project-listing .project-label {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #9B9B9B;
+    margin: 7px 0 2px 0;
+    font-size: 1rem;
+    letter-spacing: 3px; }
+  .project-listing a {
+    color: #4A4A4A; }
+  .project-listing:hover .project-thumb {
+    opacity: .95;
+    -webkit-filter: blur(1px);
+            filter: blur(1px); }
+  .project-listing:hover .project-name,
+  .project-listing:hover .project-location {
+    color: #C92C39; }
 
 .cta {
   margin: 32px auto;
   display: block;
   width: 276px;
   border-radius: 6px; }
+
+.cta.main-cta {
+  margin: 42px auto; }
 
 .site-footer {
   background-color: #F7F3F3;
