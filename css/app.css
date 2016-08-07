@@ -4172,48 +4172,26 @@ a:hover {
 .off-canvas-content, .off-canvas-content {
   box-shadow: none; }
 
-.latest-project .project-thumb {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  height: 270px;
-  overflow: hidden;
-  background-position: center;
-  background-size: cover;
-  background-color: #C92C39; }
-  @media screen and (min-width: 40em) {
-    .latest-project .project-thumb {
-      width: 100%;
-      margin: 0;
-      left: initial;
-      right: initial; } }
-  .latest-project .project-thumb.thumbnail {
-    border: none;
-    box-shadow: none; }
+@media screen and (min-width: 64em) {
+  .latest-project.project-listing .project-thumb,
+  .latest-project.project-listing .project-thumb-wrapper {
+    height: 512px; } }
 
-.latest-project .project-name {
-  font-weight: 700;
-  margin-bottom: 0; }
-
-.latest-project .project-location {
-  display: inline-block;
-  margin-top: -12px;
-  font-size: 1.75rem;
-  font-weight: 200; }
-
-.latest-project .project-label {
-  display: inline-block;
-  text-transform: uppercase;
-  color: #9B9B9B;
-  margin: 7px 0 2px 0;
-  font-size: 1rem;
-  letter-spacing: 3px; }
+.latest-project.project-listing .project-label {
+  display: block; }
 
 .project-listing {
   padding-bottom: 32px; }
+  .project-listing a {
+    color: #4A4A4A;
+    display: block; }
+  .project-listing a:hover .project-thumb {
+    opacity: .95;
+    -webkit-filter: blur(1px);
+            filter: blur(1px); }
+  .project-listing a:hover .project-name,
+  .project-listing a:hover .project-location {
+    color: #C92C39; }
   .project-listing .project-thumb-wrapper {
     width: 100vw;
     position: relative;
@@ -4281,15 +4259,6 @@ a:hover {
     margin: 7px 0 2px 0;
     font-size: 1rem;
     letter-spacing: 3px; }
-  .project-listing a {
-    color: #4A4A4A; }
-  .project-listing:hover .project-thumb {
-    opacity: .95;
-    -webkit-filter: blur(1px);
-            filter: blur(1px); }
-  .project-listing:hover .project-name,
-  .project-listing:hover .project-location {
-    color: #C92C39; }
 
 .cta {
   margin: 32px auto;

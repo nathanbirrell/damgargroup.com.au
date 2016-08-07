@@ -228,27 +228,15 @@ a:hover {
 
 // HOME
 
-.latest-project {
-	.project-thumb {
-		@include project-thumb();
-	}
-	.project-name {
-		font-weight: $global-weight-bold;
-		margin-bottom: 0;
-	}
-	.project-location {
-		display: inline-block;
-		margin-top: -12px;
-		font-size: rem-calc(28);
-		font-weight: $global-weight-light;
+.latest-project.project-listing {
+	.project-thumb,
+	.project-thumb-wrapper {
+		@media #{$large-up} {
+			height: 512px;
+		}
 	}
 	.project-label {
-		display: inline-block;
-		text-transform: uppercase;
-		color: $medium-gray;
-		margin: 7px 0 2px 0;
-		font-size: rem-calc(16);
-		letter-spacing: 3px;
+		display: block;
 	}
 }
 
@@ -256,6 +244,22 @@ a:hover {
 
 .project-listing {
 	padding-bottom: 32px;
+
+	a {
+		color: $body-font-color;
+		display: block;
+	}
+
+	a:hover {
+		.project-thumb {
+			opacity: .95;
+			filter: blur(1px);
+		}
+		.project-name,
+		.project-location {
+			color: $primary-color;
+		}
+	}
 
 	.project-thumb-wrapper {
 		@include project-thumb();
@@ -292,21 +296,6 @@ a:hover {
 		margin: 7px 0 2px 0;
 		font-size: rem-calc(16);
 		letter-spacing: 3px;
-	}
-
-	a {
-		color: $body-font-color;
-	}
-
-	&:hover {
-		.project-thumb {
-			opacity: .95;
-			filter: blur(1px);
-		}
-		.project-name,
-		.project-location {
-			color: $primary-color;
-		}
 	}
 }
 
