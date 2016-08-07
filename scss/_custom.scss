@@ -298,10 +298,15 @@ h1 {
 	border-radius: 6px;
 }
 
-footer {
+.site-footer {
 	background-color: $light-gray;
 	padding-bottom: 32px;
 	font-size: 110%;
+
+	&.row {
+		margin: 0;
+		max-width: 100%;
+	}
 
 	@media #{$medium-up} {
 		font-size: 120%;

@@ -4269,22 +4269,25 @@ h1 {
   width: 276px;
   border-radius: 6px; }
 
-footer {
+.site-footer {
   background-color: #F7F3F3;
   padding-bottom: 32px;
   font-size: 110%; }
+  .site-footer.row {
+    margin: 0;
+    max-width: 100%; }
   @media screen and (min-width: 40em) {
-    footer {
+    .site-footer {
       font-size: 120%; } }
-  footer .logo-spacer {
+  .site-footer .logo-spacer {
     width: 45px;
     height: 45px; }
-  footer a {
+  .site-footer a {
     color: #4A4A4A; }
-  footer ul {
+  .site-footer ul {
     margin: 0;
     margin-bottom: 18px; }
-  footer li {
+  .site-footer li {
     display: block;
     list-style: none;
     padding: 8px;
