@@ -190,6 +190,10 @@ a:hover {
 	ul {
 		display: inline-block;
 		margin: 22px auto 0 auto;
+
+		@media #{$medium-up} {
+			margin-top: 42px;
+		}
 	}
 
 	.menu > li > a {

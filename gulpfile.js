@@ -11,9 +11,10 @@ var sassPaths = [
 gulp.task('build', shell.task(['bundle exec jekyll build --watch']));
 
 gulp.task('serve', function () {
-    browserSync.init({server: {baseDir: '_site/'}});
-    // Reloads page when some of the already built files changed:
-    gulp.watch('_site/**/*.*').on('change', browserSync.reload);
+  browserSync.init({server: {baseDir: '_site/'}});
+  // browserSync.init({proxy: 'http://damgargroup.dev'});
+  // Reloads page when some of the already built files changed:
+  gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 });
 
 gulp.task('sass', function() {

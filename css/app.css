@@ -4150,6 +4150,9 @@ a:hover {
   .top-bar-center ul {
     display: inline-block;
     margin: 22px auto 0 auto; }
+    @media screen and (min-width: 40em) {
+      .top-bar-center ul {
+        margin-top: 42px; } }
   .top-bar-center .menu > li > a {
     padding: 0.7rem 1.8rem;
     color: #4A4A4A; }
