@@ -4150,6 +4150,9 @@ a:hover {
   .top-bar-center ul {
     display: inline-block;
     margin: 22px auto 0 auto; }
+    @media screen and (min-width: 40em) {
+      .top-bar-center ul {
+        margin-top: 42px; } }
   .top-bar-center .menu > li > a {
     padding: 0.7rem 1.8rem;
     color: #4A4A4A; }
@@ -4176,6 +4179,11 @@ a:hover {
   .latest-project.project-listing .project-thumb,
   .latest-project.project-listing .project-thumb-wrapper {
     height: 512px; } }
+
+.latest-project.project-listing a:hover .project-thumb {
+  -webkit-filter: none;
+          filter: none;
+  opacity: 1; }
 
 .latest-project.project-listing .project-label {
   display: block; }
@@ -4241,7 +4249,8 @@ a:hover {
     font-size: 2rem; }
     @media screen and (min-width: 40em) {
       .project-listing .project-name {
-        display: inline-block; } }
+        display: inline-block;
+        max-width: 70%; } }
   .project-listing .project-location {
     display: inline-block;
     margin-top: -12px;
@@ -4264,7 +4273,13 @@ a:hover {
   margin: 32px auto;
   display: block;
   width: 276px;
-  border-radius: 6px; }
+  border-radius: 0 6px 6px 6px;
+  box-shadow: 1px 1px 1px #4A4A4A;
+  text-shadow: 0.5px 0.5px 1px #9B9B9B;
+  transition: all 300ms ease-out; }
+  .cta:hover {
+    box-shadow: none;
+    text-shadow: none; }
 
 .cta.main-cta {
   margin: 42px auto; }

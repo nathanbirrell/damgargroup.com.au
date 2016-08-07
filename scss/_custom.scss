@@ -190,6 +190,10 @@ a:hover {
 	ul {
 		display: inline-block;
 		margin: 22px auto 0 auto;
+
+		@media #{$medium-up} {
+			margin-top: 42px;
+		}
 	}
 
 	.menu > li > a {
@@ -235,6 +239,12 @@ a:hover {
 			height: 512px;
 		}
 	}
+
+	a:hover .project-thumb {
+		filter: none;
+		opacity: 1;
+	}
+
 	.project-label {
 		display: block;
 	}
@@ -275,6 +285,7 @@ a:hover {
 
 		@media #{$medium-up} {
 			display: inline-block;
+			max-width: 70%;
 		}
 	}
 	.project-location {
@@ -305,7 +316,15 @@ a:hover {
 	margin: 32px auto;
 	display: block;
 	width: 276px;
-	border-radius: 6px;
+	border-radius: 0 6px 6px 6px;
+	box-shadow: 1px 1px 1px $dark-gray;
+	text-shadow: 0.5px 0.5px 1px $medium-gray;
+	transition: all 300ms ease-out;
+
+	&:hover {
+		box-shadow: none;
+		text-shadow: none;
+	}
 }
 
 .cta.main-cta {
