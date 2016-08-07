@@ -4270,14 +4270,23 @@ h1 {
   border-radius: 6px; }
 
 footer {
-  background-color: #F7F3F3; }
+  background-color: #F7F3F3;
+  padding-bottom: 32px;
+  font-size: 110%; }
+  @media screen and (min-width: 40em) {
+    footer {
+      font-size: 120%; } }
   footer .logo-spacer {
     width: 45px;
     height: 45px; }
-  footer .menu {
-    margin-bottom: 32px;
-    font-size: 120%; }
   footer a {
     color: #4A4A4A; }
-  footer .menu > li {
-    display: block; }
+  footer ul {
+    margin: 0;
+    margin-bottom: 18px; }
+  footer li {
+    display: block;
+    list-style: none;
+    padding: 8px;
+    max-width: 100%;
+    overflow-wrap: break-word; }

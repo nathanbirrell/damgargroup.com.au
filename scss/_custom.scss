@@ -300,21 +300,32 @@ h1 {
 
 footer {
 	background-color: $light-gray;
+	padding-bottom: 32px;
+	font-size: 110%;
+
+	@media #{$medium-up} {
+		font-size: 120%;
+	}
 
 	.logo-spacer {
 		width: 45px;
 		height: 45px;
 	}
 
-	.menu {
-		margin-bottom: 32px;
-		font-size: 120%;
-	}
 	a {
 		color: $secondary-color;
 	}
 
-	.menu > li {
-    display: block;
+	ul {
+		margin: 0;
+		margin-bottom: 18px;
+	}
+
+	li {
+		display: block;
+    list-style: none;
+		padding: 8px;
+		max-width: 100%;
+		overflow-wrap: break-word;
 	}
 }
