@@ -312,11 +312,13 @@ a:hover {
 	display: block;
 	width: 276px;
 	border-radius: 0 6px 6px 6px;
-	box-shadow: 1px 1px 1px $medium-gray;
+	box-shadow: 1px 1px 1px $dark-gray;
 	text-shadow: 0.5px 0.5px 1px $medium-gray;
+	transition: all 300ms ease-out;
 
 	&:hover {
 		box-shadow: none;
+		text-shadow: none;
 	}
 }
 
