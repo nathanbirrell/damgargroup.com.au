@@ -4085,17 +4085,19 @@ h1 {
 .title-bar {
   text-align: center;
   padding: 0; }
+  .is-open-right .title-bar {
+    display: none; }
   .title-bar .title-bar-center img {
     display: inline-block;
     width: 58px;
     margin: 0 auto; }
   .title-bar .menu-icon {
+    font-size: 24px;
     position: absolute;
     right: 18px;
-    top: 22px; }
+    top: 18px; }
 
 .dropdown.menu {
-  background-color: #C92C39;
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
@@ -4108,10 +4110,32 @@ h1 {
     padding: 1.1rem 1rem;
     line-height: 1;
     font-size: 34px; }
+  .dropdown.menu .menu-logo {
+    display: block;
+    width: 58px;
+    margin: 0 auto; }
+  .dropdown.menu .close-icon {
+    position: absolute;
+    right: 18px;
+    top: 18px; }
 
-.off-canvas,
-.dropdown.menu {
-  height: 100%; }
+.off-canvas {
+  background-color: #C92C39;
+  height: 100vh;
+  position: fixed; }
+
+.off-canvas.position-right {
+  width: 280px;
+  width: 85%; }
+
+.off-canvas-wrapper .is-open-right {
+  -ms-transform: none;
+      transform: none; }
+  .off-canvas-wrapper .is-open-right .off-canvas {
+    background-color: rgba(201, 44, 57, 0.95);
+    transition: right 500ms ease 0s;
+    right: 0;
+    z-index: 999; }
 
 .top-bar-center {
   width: 100%;
@@ -4122,7 +4146,7 @@ h1 {
   font-weight: 600; }
   .top-bar-center ul {
     display: inline-block;
-    margin: 0 auto; }
+    margin: 22px auto 0 auto; }
   .top-bar-center .menu > li > a {
     padding: 0.7rem 1.8rem;
     color: #4A4A4A; }

@@ -26,6 +26,12 @@
 	}
 }
 
+@mixin menu-controls {
+	position: absolute;
+	right: 18px;
+	top: 18px;
+}
+
 // Typography
 
 @font-face {
@@ -95,6 +101,10 @@ h1 {
 	text-align: center;
 	padding: 0;
 
+	.is-open-right & {
+		display: none;
+	}
+
 	.title-bar-center img {
 		display: inline-block;
 		width: 58px;
@@ -102,15 +112,14 @@ h1 {
 	}
 
 	.menu-icon {
-		position: absolute;
-		right: 18px;
-		top: 22px;
+		font-size: 24px; // hamburger icon needs to be a touch bigger
+
+		@include menu-controls();
 	}
 }
 
 // mobile menu
 .dropdown.menu {
-	background-color: $primary-color;
 	font-size: 28px;
 	font-weight: $global-weight-bold;
 	text-transform: uppercase;
@@ -127,10 +136,40 @@ h1 {
     line-height: 1;
     font-size: 34px;
 	}
+
+	.menu-logo {
+		display: block;
+		width: 58px;
+		margin: 0 auto;
+	}
+
+	.close-icon {
+		@include menu-controls();
+	}
 }
-.off-canvas,
-.dropdown.menu {
-	height: 100%;
+
+.off-canvas {
+	background-color: $primary-color;
+	height: 100vh;
+	position: fixed;
+}
+.off-canvas.position-right {
+	width: 280px;
+	width: 85%;
+}
+
+// make menu overlay instead of push body to the side
+.off-canvas-wrapper {
+	.is-open-right {
+		transform: none;
+
+		.off-canvas {
+			background-color: rgba(201,44,57,0.95);
+			transition: right 500ms ease 0s;
+			right: 0;
+			z-index: 999;
+		}
+	}
 }
 
 // desktop up
@@ -144,7 +183,7 @@ h1 {
 
 	ul {
 		display: inline-block;
-		margin: 0 auto;
+		margin: 22px auto 0 auto;
 	}
 
 	.menu > li > a {
