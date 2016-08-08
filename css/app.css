@@ -4662,10 +4662,12 @@ table.hover tr:nth-of-type(even):hover {
   font-style: normal; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Avenir Next';
   font-weight: 400; }
+  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+    color: #4A4A4A; }
 
 h1 {
-  font-family: 'Avenir Next';
   font-weight: bold;
   text-align: center;
   margin-bottom: 32px; }
@@ -4678,6 +4680,9 @@ a {
 
 a:hover {
   color: #C92C39; }
+
+small {
+  font-size: 70%; }
 
 .lead {
   font-weight: 200;
