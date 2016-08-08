@@ -4299,7 +4299,8 @@ a:hover {
 .project-detail-content .project-detail-key-points {
   font-size: 1.375rem;
   font-weight: 200;
-  padding-left: 12px; }
+  padding-left: 12px;
+  margin-bottom: 32px; }
 
 .cta {
   margin: 32px auto;
