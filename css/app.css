@@ -4068,6 +4068,12 @@ a:hover {
 .quiet {
   font-size: 80%; }
 
+.thumbnail {
+  border: none;
+  box-shadow: none; }
+  .thumbnail:hover {
+    box-shadow: none; }
+
 .logo-spacer {
   display: block;
   clear: both;
@@ -4217,9 +4223,6 @@ a:hover {
       margin: 0;
       left: initial;
       right: initial; } }
-  .project-thumb-wrapper.thumbnail {
-    border: none;
-    box-shadow: none; }
 
 .project-thumb {
   width: 100vw;
@@ -4239,9 +4242,6 @@ a:hover {
       margin: 0;
       left: initial;
       right: initial; } }
-  .project-thumb.thumbnail {
-    border: none;
-    box-shadow: none; }
 
 .project-name {
   font-weight: 700;
@@ -4295,6 +4295,10 @@ a:hover {
 .project-detail .project-name {
   display: block;
   text-align: left; }
+
+@media screen and (min-width: 64em) {
+  .project-detail .project-name {
+    display: inline-block; } }
 
 .project-detail-content .project-detail-key-points {
   font-size: 1.375rem;

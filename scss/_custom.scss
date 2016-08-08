@@ -20,10 +20,6 @@
 		left: initial;
 		right: initial;
 	}
-	&.thumbnail {
-		border: none;
-		box-shadow: none;
-	}
 }
 
 @mixin menu-controls {
@@ -76,6 +72,15 @@ a:hover {
 
 .quiet {
 	font-size: 80%;
+}
+
+// Foundation thumbnail overrides
+.thumbnail {
+	border: none;
+	box-shadow: none;
+	&:hover {
+		box-shadow: none;
+	}
 }
 
 // Custom icons
@@ -328,11 +333,13 @@ a:hover {
 		text-align: left;
 	}
 
-	//
-	// .project-name {
-	// 	display: inline-block;
-	// }
-	//
+	@media #{$large-up} {
+		.project-name {
+			display: inline-block;
+		}
+	}
+
+
 	// .project-location {
 	// 	float: right;
 	// 	text-align: right;
