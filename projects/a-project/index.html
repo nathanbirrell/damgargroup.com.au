@@ -1,32 +1,67 @@
 ---
 layout: default
-title: Our Developments
-description: Damgar Property Group leads the market for small to medium residential and commercial property development
+title: A Project template
+description: A Damgar project template.
 ---
 
-<div class="row">
-  <div class="medium-10 columns small-centered">
-    <div class="medium-8 columns">
-        <h1 class="text-left">Our Developments</h1>
-        <p>Damgar Property Group is at the forefront of small to medium residential and commercial property development in inner Melbourne. We are a boutique developer which means that all of our developments have our complete focus from beginning to end.</p>
-        <p>During our 30 years in the Property Development business we have carefully fostered strong relationships with key industry partners including Architects, Engineers and Planning Consultants.</p>
-        <p>In addition our relationship with our Bankers-NAB and St George is first class which means our projects have always and will continue to be fully supported.
-        As builders in our own right, with a keen eye to quality and liveability, we know what it takes to get the job done and done properly</p>
+<div class="row project-detail">
+  <div class="small-11 medium-10 columns small-centered">
+    <div class="project-thumb-wrapper">
+      <div class="thumbnail project-thumb" style="background-image: url('{{site.url}}/img/demo_project_thumb.jpg');"></div>
+    </div>
+    <div class="column">
+      <h1 class="project-name">Verdis</h1>
+      <h2 class="project-location">Apartments, Brighton</h2>
     </div>
   </div>
 </div>
 
-<div class="row">
-  <br><br>
-{% for test in (1..4) %}
-  <div class="large-6 columns project-listing">
-    <a href="/projects/a-project" class="column">
-      <div class="project-thumb-wrapper">
-        <div class="thumbnail project-thumb" style="background-image: url('{{site.url}}/img/demo_project_thumb.png');"></div>
+<div class="row project-detail-content">
+  <div class="small-11 medium-10 medium-offset-1 columns">
+    <div class="row">
+      <div class="medium-5 columns">
+        <div class="column">
+          <ul class="project-detail-key-points">
+            <li>asdfasdf</li>
+            <li>asdfasdf</li>
+            <li>asdfasdf</li>
+          </ul>
+          <p>Damgar Property Group is at the forefront of small to medium residential and commercial property development in inner Melbourne. We are a boutique developer which means that all of our developments have our complete focus from beginning to end.</p>
+          <p>During our 30 years in the Property Development business we have carefully fostered strong relationships with key industry partners including Architects, Engineers and Planning Consultants.</p>
+          <p>In addition our relationship with our Bankers-NAB and St George is first class which means our projects have always and will continue to be fully supported.
+          As builders in our own right, with a keen eye to quality and liveability, we know what it takes to get the job done and done properly</p>
+        </div>
       </div>
-      <h2 class="project-name">Project Name</h2>
-      <span class="project-location">Location</span>
-    </a>
+      <div class="medium-7 columns">
+        <img class="thumbnail" src="{{site.url}}/img/demo_project_thumb.jpg" alt="Image Description">
+        <img class="thumbnail" src="{{site.url}}/img/demo_project_thumb.jpg" alt="Image Description">
+      </div>
+    </div>
   </div>
-{% endfor %}
+</div>
+
+<br><br>
+
+<div class="row expanded">
+  <div class="project-thumb-wrapper">
+    <div class="thumbnail project-thumb" style="background-image: url('{{site.url}}/img/demo_project_thumb.jpg');"></div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns">
+      <caption>Detail panoramic of the project</caption>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<div class="row">
+  <div class="medium-6 columns">
+    <img class="thumbnail" src="{{site.url}}/img/demo_project_thumb.jpg" alt="Image Description">
+    <caption>Detail on this image</caption>
+  </div>
+  <div class="medium-6 columns">
+    <img class="thumbnail" src="{{site.url}}/img/demo_project_thumb.jpg" alt="Image Description">
+    <caption>Detail on this image</caption>
+  </div>
 </div>
