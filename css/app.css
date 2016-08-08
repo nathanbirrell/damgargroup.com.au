@@ -4052,6 +4052,9 @@ h1 {
     h1 {
       font-size: 2.25rem; } }
 
+a {
+  color: #4A4A4A; }
+
 a:hover {
   color: #C92C39; }
 
@@ -4154,10 +4157,7 @@ a:hover {
       .top-bar-center ul {
         margin-top: 42px; } }
   .top-bar-center .menu > li > a {
-    padding: 0.7rem 1.8rem;
-    color: #4A4A4A; }
-    .top-bar-center .menu > li > a:hover {
-      color: #C92C39; }
+    padding: 0.7rem 1.8rem; }
   .top-bar-center .logo {
     display: inline-block;
     width: 177px;
@@ -4175,99 +4175,131 @@ a:hover {
 .off-canvas-content, .off-canvas-content {
   box-shadow: none; }
 
-@media screen and (min-width: 64em) {
-  .latest-project.project-listing .project-thumb,
-  .latest-project.project-listing .project-thumb-wrapper {
-    height: 512px; } }
-
-.latest-project.project-listing a:hover .project-thumb {
-  -webkit-filter: none;
-          filter: none;
-  opacity: 1; }
-
-.latest-project.project-listing .project-label {
-  display: block; }
-
-.project-listing {
+.project-listing,
+.project-latest,
+.project-detail {
   padding-bottom: 32px; }
-  .project-listing a {
+  .project-listing a,
+  .project-latest a,
+  .project-detail a {
     color: #4A4A4A;
     display: block; }
-  .project-listing a:hover .project-thumb {
+  .project-listing a:hover .project-thumb,
+  .project-latest a:hover .project-thumb,
+  .project-detail a:hover .project-thumb {
     opacity: .95;
     -webkit-filter: blur(1px);
             filter: blur(1px); }
   .project-listing a:hover .project-name,
-  .project-listing a:hover .project-location {
+  .project-listing a:hover .project-location,
+  .project-latest a:hover .project-name,
+  .project-latest a:hover .project-location,
+  .project-detail a:hover .project-name,
+  .project-detail a:hover .project-location {
     color: #C92C39; }
-  .project-listing .project-thumb-wrapper {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    height: 270px;
-    overflow: hidden;
-    background-position: center;
-    background-size: cover;
-    background-color: #C92C39;
-    background-color: transparent; }
-    @media screen and (min-width: 40em) {
-      .project-listing .project-thumb-wrapper {
-        width: 100%;
-        margin: 0;
-        left: initial;
-        right: initial; } }
-    .project-listing .project-thumb-wrapper.thumbnail {
-      border: none;
-      box-shadow: none; }
-  .project-listing .project-thumb {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    height: 270px;
-    overflow: hidden;
-    background-position: center;
-    background-size: cover;
-    background-color: #C92C39; }
-    @media screen and (min-width: 40em) {
-      .project-listing .project-thumb {
-        width: 100%;
-        margin: 0;
-        left: initial;
-        right: initial; } }
-    .project-listing .project-thumb.thumbnail {
-      border: none;
-      box-shadow: none; }
-  .project-listing .project-name {
-    font-weight: 700;
-    margin-bottom: 0;
-    font-size: 2rem; }
-    @media screen and (min-width: 40em) {
-      .project-listing .project-name {
-        display: inline-block;
-        max-width: 70%; } }
-  .project-listing .project-location {
-    display: inline-block;
-    margin-top: -12px;
-    font-size: 1.75rem;
-    font-weight: 200; }
-    @media screen and (min-width: 40em) {
-      .project-listing .project-location {
-        text-align: right;
-        float: right;
-        margin-top: 0; } }
-  .project-listing .project-label {
-    display: inline-block;
-    text-transform: uppercase;
-    color: #9B9B9B;
-    margin: 7px 0 2px 0;
-    font-size: 1rem;
-    letter-spacing: 3px; }
+
+.project-thumb-wrapper {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 270px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-color: #C92C39;
+  background-color: transparent; }
+  @media screen and (min-width: 40em) {
+    .project-thumb-wrapper {
+      width: 100%;
+      margin: 0;
+      left: initial;
+      right: initial; } }
+  .project-thumb-wrapper.thumbnail {
+    border: none;
+    box-shadow: none; }
+
+.project-thumb {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 270px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-color: #C92C39; }
+  @media screen and (min-width: 40em) {
+    .project-thumb {
+      width: 100%;
+      margin: 0;
+      left: initial;
+      right: initial; } }
+  .project-thumb.thumbnail {
+    border: none;
+    box-shadow: none; }
+
+.project-name {
+  font-weight: 700;
+  margin-bottom: 0;
+  font-size: 2rem; }
+  @media screen and (min-width: 40em) {
+    .project-name {
+      display: inline-block;
+      max-width: 70%; } }
+
+.project-location {
+  display: inline-block;
+  margin-top: -12px;
+  font-size: 1.75rem;
+  font-weight: 200; }
+  @media screen and (min-width: 40em) {
+    .project-location {
+      text-align: right;
+      float: right;
+      margin-top: 0; } }
+
+.project-label {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #9B9B9B;
+  margin: 7px 0 2px 0;
+  font-size: 1rem;
+  letter-spacing: 3px; }
+
+@media screen and (min-width: 64em) {
+  .project-latest .project-thumb,
+  .project-latest .project-thumb-wrapper {
+    height: 512px; } }
+
+.project-latest a:hover .project-thumb {
+  -webkit-filter: none;
+          filter: none;
+  opacity: 1; }
+
+.project-latest .project-label {
+  display: block; }
+
+@media screen and (min-width: 64em) {
+  .project-detail .project-thumb,
+  .project-detail .project-thumb-wrapper {
+    height: 512px; } }
+
+.project-detail .project-thumb-wrapper {
+  margin-bottom: 44px; }
+
+.project-detail .project-name {
+  display: block;
+  text-align: left; }
+
+.project-detail-content .project-detail-key-points {
+  font-size: 1.375rem;
+  font-weight: 200;
+  padding-left: 12px; }
 
 .cta {
   margin: 32px auto;
@@ -4297,8 +4329,6 @@ a:hover {
   .site-footer .logo-spacer {
     width: 45px;
     height: 45px; }
-  .site-footer a {
-    color: #4A4A4A; }
   .site-footer ul {
     margin: 0;
     margin-bottom: 18px; }
