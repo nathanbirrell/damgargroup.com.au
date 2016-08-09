@@ -4719,6 +4719,8 @@ small {
   padding: 0; }
   .is-open-right .title-bar {
     display: none; }
+  .title-bar .logo {
+    display: inline-block; }
   .title-bar .mobile-logo {
     display: inline-block;
     width: 58px;
@@ -4727,8 +4729,8 @@ small {
     .expanded .title-bar .mobile-logo {
       display: block;
       width: 120px;
-      margin: 28px auto 6px auto;
-      margin-bottom: 40px; }
+      margin: 28px auto;
+      margin-bottom: 32px; }
   .title-bar .menu-icon {
     font-size: 24px;
     position: absolute;
