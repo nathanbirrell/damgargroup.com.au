@@ -9,6 +9,7 @@
 	margin-right: -50vw;
 
 	height: 270px;
+	max-height: 70vh;
 	overflow: hidden;
 	background-position: center;
 	background-size: cover;
@@ -19,6 +20,11 @@
 		margin: 0;
 		left: initial;
 		right: initial;
+		max-height: none;
+	}
+
+	.project-thumb {
+		height: 100%;
 	}
 }
 

@@ -4843,6 +4843,7 @@ small {
   margin-left: -50vw;
   margin-right: -50vw;
   height: 270px;
+  max-height: 70vh;
   overflow: hidden;
   background-position: center;
   background-size: cover;
@@ -4853,7 +4854,10 @@ small {
       width: 100%;
       margin: 0;
       left: initial;
-      right: initial; } }
+      right: initial;
+      max-height: none; } }
+  .project-thumb-wrapper .project-thumb {
+    height: 100%; }
 
 .project-thumb {
   width: 100vw;
@@ -4863,6 +4867,7 @@ small {
   margin-left: -50vw;
   margin-right: -50vw;
   height: 270px;
+  max-height: 70vh;
   overflow: hidden;
   background-position: center;
   background-size: cover;
@@ -4872,7 +4877,10 @@ small {
       width: 100%;
       margin: 0;
       left: initial;
-      right: initial; } }
+      right: initial;
+      max-height: none; } }
+  .project-thumb .project-thumb {
+    height: 100%; }
 
 .project-name {
   font-weight: 700;
