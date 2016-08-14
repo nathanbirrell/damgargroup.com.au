@@ -8,24 +8,22 @@ keywords: property, developer, melbourne, apartments
 <div class="project-latest">
   <div class="row">
     <div class="medium-10 columns small-centered">
-      <div class="column">
-        {% assign project = site.posts.first %}
-        <a href="{{project.url}}" title="Latest Project: {{project.title}}">
-          <div class="project-thumb-wrapper">
-            <div class="thumbnail project-thumb" style="background-image: url('{{project.feature_img}}');" alt="Damgar's latest property development in Melbourne"></div>
-          </div>
-          <h2 class="project-name">{{project.title}}</h2>
-          <span class="project-location">{{project.location}}</span>
-        </a>
-        <span class="project-label">Latest Development</span>
-      </div>
+      {% assign project = site.posts.first %}
+      <a href="{{project.url}}" title="Latest Project: {{project.title}}">
+        <div class="project-thumb-wrapper">
+          <div class="thumbnail project-thumb" style="background-image: url('{{project.feature_img}}');" alt="Damgar's latest property development in Melbourne"></div>
+        </div>
+        <h2 class="project-name">{{project.title}}</h2>
+        <span class="project-location">{{project.location}}</span>
+      </a>
+      <span class="project-label">Latest Development</span>
     </div>
   </div>
 </div>
 
 <div class="row">
   <div class="small-12 columns">
-    <i class="logo-spacer"></i>
+    <i id="about" class="logo-spacer"></i>
 
     <h1>About Damgar</h1>
 
