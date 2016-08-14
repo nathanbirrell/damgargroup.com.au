@@ -18,15 +18,15 @@ description: Damgar Property Group leads the market for small to medium resident
 
 <div class="row expanded">
   <br><br>
-{% for index in (1..3) %}
-  <div class="large-6 xxlarge-4 columns project-listing">
-    <a href="{{site.url}}/projects/a-project" class="column">
-      <div class="project-thumb-wrapper">
-        <div class="thumbnail project-thumb" style="background-image: url('{{site.url}}/img/demo_project_thumb.jpg');"></div>
-      </div>
-      <h2 class="project-name">Project Name</h2>
-      <span class="project-location">Location</span>
-    </a>
-  </div>
-{% endfor %}
+  {% for project in site.posts %}
+    <div class="large-6 xxlarge-4 columns project-listing">
+      <a href="{{project.url}}" class="column">
+        <div class="project-thumb-wrapper">
+          <div class="thumbnail project-thumb" style="background-image: url('{{site.url}}/img/demo_project_thumb.jpg');"></div>
+        </div>
+        <h2 class="project-name">{{project.title}}</h2>
+        <span class="project-location">{{project.location}}</span>
+      </a>
+    </div>
+  {% endfor %}
 </div>

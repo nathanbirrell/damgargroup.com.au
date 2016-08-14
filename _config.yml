@@ -14,3 +14,12 @@ year : 2016
 markdown : kramdown
 exclude :
   - node_modules
+
+permalink: pretty
+
+# defaults:
+#   -
+#     scope:
+#       path: "" # empty string = all files
+#     values:
+#       layout: "default"
