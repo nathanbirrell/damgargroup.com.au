@@ -4719,16 +4719,17 @@ small {
   padding: 0; }
   .is-open-right .title-bar {
     display: none; }
+  .title-bar .logo {
+    display: inline-block; }
   .title-bar .mobile-logo {
     display: inline-block;
     width: 58px;
     margin: 0 auto;
-    transition: all 0.4s ease; }
+    transition: width 300ms ease-in; }
     .expanded .title-bar .mobile-logo {
-      display: block;
       width: 120px;
-      margin: 28px auto 6px auto;
-      margin-bottom: 40px; }
+      margin: 28px auto;
+      margin-bottom: 32px; }
   .title-bar .menu-icon {
     font-size: 24px;
     position: absolute;
@@ -4842,6 +4843,7 @@ small {
   margin-left: -50vw;
   margin-right: -50vw;
   height: 270px;
+  max-height: 70vh;
   overflow: hidden;
   background-position: center;
   background-size: cover;
@@ -4852,7 +4854,10 @@ small {
       width: 100%;
       margin: 0;
       left: initial;
-      right: initial; } }
+      right: initial;
+      max-height: none; } }
+  .project-thumb-wrapper .project-thumb {
+    height: 100%; }
 
 .project-thumb {
   width: 100vw;
@@ -4862,6 +4867,7 @@ small {
   margin-left: -50vw;
   margin-right: -50vw;
   height: 270px;
+  max-height: 70vh;
   overflow: hidden;
   background-position: center;
   background-size: cover;
@@ -4871,7 +4877,10 @@ small {
       width: 100%;
       margin: 0;
       left: initial;
-      right: initial; } }
+      right: initial;
+      max-height: none; } }
+  .project-thumb .project-thumb {
+    height: 100%; }
 
 .project-name {
   font-weight: 700;
@@ -4883,6 +4892,7 @@ small {
       max-width: 70%; } }
 
 .project-location {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   display: inline-block;
   margin-top: -12px;
   font-size: 1.75rem;
@@ -4936,6 +4946,46 @@ small {
   padding-left: 12px;
   margin-bottom: 32px; }
 
+.testimonial-wrap .quote {
+  background: #F7F3F3;
+  padding: 15px 20px 5px 15px;
+  border-radius: 5px;
+  margin-bottom: 30px; }
+  .testimonial-wrap .quote p {
+    margin-bottom: 0; }
+  .testimonial-wrap .quote:after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 20px 18px 0 18px;
+    border-color: #F7F3F3 transparent transparent transparent;
+    position: relative;
+    top: 37px;
+    left: 20px; }
+
+.testimonial-wrap .testimonial-person {
+  margin-left: 25px;
+  margin-bottom: 80px; }
+  .testimonial-wrap .testimonial-person .photo {
+    background-color: #C92C39;
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 10px; }
+  .testimonial-wrap .testimonial-person p {
+    position: relative;
+    top: 5px;
+    text-transform: uppercase; }
+    .testimonial-wrap .testimonial-person p:nth-child(2) {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 0; }
+    .testimonial-wrap .testimonial-person p:nth-child(3) {
+      font-size: 14px;
+      color: #4A4A4A; }
+
 .cta {
   margin: 32px auto;
   display: block;
@@ -4943,7 +4993,7 @@ small {
   border-radius: 0 6px 6px 6px;
   box-shadow: 1px 1px 1px #4A4A4A;
   text-shadow: 0.5px 0.5px 1px #9B9B9B;
-  transition: all 300ms ease-out; }
+  transition: background-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out; }
   .cta:hover {
     box-shadow: none;
     text-shadow: none; }

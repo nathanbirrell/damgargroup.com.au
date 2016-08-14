@@ -4,6 +4,8 @@ description : Damgar Property Group is at the forefront of small to medium resid
 keyword : property developer, builder, construction
 url : http://nathanbirrell.me/damgargroup.com.au/
 # url : http://localhost:3000
+# url : http://10.0.1.3:3000
+# url : http://damgargroup.dev
 email : admin@damgargroup.com.au
 phone : 03 9596 8543 
 author : Nathan Birrell
@@ -12,3 +14,18 @@ year : 2016
 markdown : kramdown
 exclude :
   - node_modules
+
+permalink: pretty
+
+# defaults:
+#   -
+#     scope:
+#       path: "" # empty string = all files
+#     values:
+#       layout: "default"
+#   -
+#     scope:
+#       path: "" # empty string = all files
+#       type: "posts"
+#     values:
+#       permalink: /projects/:title/
