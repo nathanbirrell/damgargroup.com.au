@@ -9,13 +9,13 @@ keywords: property, developer, melbourne, apartments
   <div class="row">
     <div class="medium-10 columns small-centered">
       <div class="column">
-        <a href="/projects/a-project" title="Latest Project: Verdis">
-          <!-- TODO: make this take the latest project from a *projects* or *posts* list -->
+        {% assign project = site.posts.first %}
+        <a href="{{project.url}}" title="Latest Project: {{project.title}}">
           <div class="project-thumb-wrapper">
-            <div class="thumbnail project-thumb" style="background-image: url('{{site.url}}/img/demo_project_thumb.jpg');" alt="Damgar's Latest Development, Melbourne"></div>
+            <div class="thumbnail project-thumb" style="background-image: url('{{project.feature_img}}');" alt="Damgar's latest property development in Melbourne"></div>
           </div>
-          <h2 class="project-name">Verdis</h2>
-          <span class="project-location">Apartments, Brighton</span>
+          <h2 class="project-name">{{project.title}}</h2>
+          <span class="project-location">{{project.location}}</span>
         </a>
         <span class="project-label">Latest Development</span>
       </div>
