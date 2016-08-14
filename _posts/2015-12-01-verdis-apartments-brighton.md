@@ -7,6 +7,8 @@ location: Apartments, Brighton
 feature_img: /img/projects/verdis/damgar-verdis-apartments-external-render-asling-st.jpg
 ---
 
+{% assign img_dir = {{site.url}} | append: "/img/projects/verdis/" %}
+
 <div class="row project-detail-content">
   <div class="small-11 medium-10 medium-offset-1 columns">
     <div class="row">
@@ -38,11 +40,11 @@ feature_img: /img/projects/verdis/damgar-verdis-apartments-external-render-aslin
 
 <div class="row">
   <div class="medium-6 columns">
-    <img class="thumbnail" src="{{site.url}}/img/projects/verdis/damgar-verdis-apartments-internal-render-kitchen.jpg" alt="Verdis Internal Rendering">
+    <img class="thumbnail" src="{{img_dir}}damgar-verdis-apartments-internal-render-kitchen.jpg" alt="Verdis Internal Rendering">
     <caption>Detail on this image</caption>
   </div>
   <div class="medium-6 columns">
-    <img class="thumbnail" src="{{site.url}}/img/projects/verdis/damgar-verdis-apartments-internal-render-living.jpg" alt="Verdis Internal Rendering 2">
+    <img class="thumbnail" src="{{img_dir}}damgar-verdis-apartments-internal-render-living.jpg" alt="Verdis Internal Rendering 2">
     <caption>Detail on this image</caption>
   </div>
 </div>
@@ -51,7 +53,7 @@ feature_img: /img/projects/verdis/damgar-verdis-apartments-external-render-aslin
 
 <div class="row expanded">
   <div class="project-thumb-wrapper" style="height: 620px">
-    <div class="thumbnail project-thumb" style="background-image: url('{{site.url}}/img/projects/verdis/damgar-verdis-00.jpg');"></div>
+    <div class="thumbnail project-thumb" style="background-image: url('{{img_dir}}damgar-verdis-00.jpg');"></div>
   </div>
   <div class="row">
     <div class="small-12 columns">
@@ -64,15 +66,15 @@ feature_img: /img/projects/verdis/damgar-verdis-apartments-external-render-aslin
 
 <div class="row">
   <div class="medium-4 columns">
-    <img class="thumbnail" src="{{site.url}}/img/projects/verdis/damgar-verdis-internal-01.jpg" alt="Image Description">
+    <img class="thumbnail" src="{{img_dir}}damgar-verdis-internal-01.jpg" alt="Image Description">
     <caption>Detail on this image</caption>
   </div>
   <div class="medium-4 columns">
-    <img class="thumbnail" src="{{site.url}}/img/projects/verdis/damgar-verdis-internal-02.jpg" alt="Image Description">
+    <img class="thumbnail" src="{{img_dir}}damgar-verdis-internal-02.jpg" alt="Image Description">
     <caption>Detail on this image</caption>
   </div>
   <div class="medium-4 columns">
-    <img class="thumbnail" src="{{site.url}}/img/projects/verdis/damgar-verdis-internal-03.jpg" alt="Image Description">
+    <img class="thumbnail" src="{{img_dir}}damgar-verdis-internal-03.jpg" alt="Image Description">
     <caption>Detail on this image</caption>
   </div>
 </div>

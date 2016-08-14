@@ -4,8 +4,10 @@ title: Otto
 permalink: /projects/otto-apartments-brunswick
 description: An award-winning boutique development in Brunswick, with a focus on sustainability.
 location: Apartments, Brunswick
-feature_img: /img/demo_project_thumb.jpg
+feature_img: /img/projects/otto/damgar-otto-apartments-brunswick-03.jpg
 ---
+
+{% assign img_dir = {{site.url}} | append: "/img/projects/otto/" %}
 
 <div class="row project-detail-content">
   <div class="small-11 medium-10 medium-offset-1 columns">
@@ -18,13 +20,11 @@ feature_img: /img/demo_project_thumb.jpg
             <li>7 offices and 1 restaurant space</li>
             <li>74 car spaces</li>
           </ul>
-          <p>Damgar Property Group is at the forefront of small to medium residential and commercial property development in inner Melbourne. We are a boutique developer which means that all of our developments have our complete focus from beginning to end.</p>
-          <p>During our 30 years in the Property Development business we have carefully fostered strong relationships with key industry partners including Architects, Engineers and Planning Consultants.</p>
         </div>
       </div>
       <div class="medium-5 columns float-left">
         <div class="column">
-          <p>Damgar Property Group is at the forefront of small to medium residential and commercial property development in inner Melbourne. We are a boutique developer which means that all of our developments have our complete focus from beginning to end.</p>
+          <p>TODO Damgar Property Group is at the forefront of small to medium residential and commercial property development in inner Melbourne. We are a boutique developer which means that all of our developments have our complete focus from beginning to end.</p>
           <p>During our 30 years in the Property Development business we have carefully fostered strong relationships with key industry partners including Architects, Engineers and Planning Consultants.</p>
         </div>
       </div>
@@ -40,25 +40,12 @@ feature_img: /img/demo_project_thumb.jpg
 
 <div class="row">
   <div class="medium-6 columns">
-    <img class="thumbnail" src="{{site.url}}/img/demo_project_thumb.jpg" alt="Image Description">
-    <caption>Detail on this image</caption>
+    <img class="thumbnail" src="{{img_dir}}damgar-otto-apartments-brunswick-internal-01.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
+    <caption>Internal photo of {{page.title}} {{page.location}}</caption>
   </div>
   <div class="medium-6 columns">
-    <img class="thumbnail" src="{{site.url}}/img/demo_project_thumb.jpg" alt="Image Description">
-    <caption>Detail on this image</caption>
-  </div>
-</div>
-
-<br><br>
-
-<div class="row expanded">
-  <div class="project-thumb-wrapper">
-    <div class="thumbnail project-thumb" style="background-image: url('{{site.url}}/img/demo_project_thumb.jpg');"></div>
-  </div>
-  <div class="row">
-    <div class="small-12 columns">
-      <caption>Detail panoramic of the project</caption>
-    </div>
+    <img class="thumbnail" src="{{img_dir}}damgar-otto-apartments-brunswick-internal-02.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
+    <caption>Internal photo of {{page.title}} {{page.location}}</caption>
   </div>
 </div>
 
@@ -66,11 +53,24 @@ feature_img: /img/demo_project_thumb.jpg
 
 <div class="row">
   <div class="medium-6 columns">
-    <img class="thumbnail" src="{{site.url}}/img/demo_project_thumb.jpg" alt="Image Description">
-    <caption>Detail on this image</caption>
+    <img class="thumbnail" src="{{img_dir}}damgar-otto-apartments-brunswick-00.jpg" alt="External photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
+    <caption>External photo of {{page.title}} {{page.location}}</caption>
   </div>
   <div class="medium-6 columns">
-    <img class="thumbnail" src="{{site.url}}/img/demo_project_thumb.jpg" alt="Image Description">
-    <caption>Detail on this image</caption>
+    <img class="thumbnail" src="{{img_dir}}damgar-otto-apartments-brunswick-01.jpg" alt="External photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
+    <caption>External photo of {{page.title}} {{page.location}}</caption>
+  </div>
+</div>
+
+<br><br>
+
+<div class="row expanded">
+  <div class="project-thumb-wrapper" style="height: 660px;">
+    <div class="thumbnail project-thumb" style="background-image: url('{{img_dir}}damgar-otto-apartments-brunswick-04.jpg');"></div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns">
+      <caption>Hero shot of the project</caption>
+    </div>
   </div>
 </div>
