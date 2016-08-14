@@ -1,8 +1,9 @@
 ---
 layout: project
-title: Verdis
-description: A superb boutique development in Brighton, featuring 47 one and two bedroom apartments, 7 offices and 1 restaurant space.
-location: Apartments, Brighton
+title: Otto
+permalink: /projects/otto-apartments-brunswick
+description: An award-winning boutique development in Brunswick, with a focus on sustainability.
+location: Apartments, Brunswick
 feature_img: /img/demo_project_thumb.jpg
 ---
 

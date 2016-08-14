@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Verdis
+permalink: /projects/verdis-apartments-brighton
 description: A superb boutique development in Brighton, featuring 47 one and two bedroom apartments, 7 offices and 1 restaurant space.
 location: Apartments, Brighton
 feature_img: /img/demo_project_thumb.jpg
