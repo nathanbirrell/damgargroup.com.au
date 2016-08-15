@@ -92,6 +92,7 @@ small {
 .thumbnail {
 	border: none;
 	box-shadow: none;
+	min-width: 100%;
 	&:hover {
 		box-shadow: none;
 	}
@@ -218,7 +219,7 @@ small {
 		margin: 22px auto 0 auto;
 
 		@media #{$medium-up} {
-			margin-top: 42px;
+			margin-top: 22px;
 		}
 	}
 
@@ -242,7 +243,7 @@ small {
 
 @media #{$medium-up} {
 	main {
-		padding-top: 38px;
+		padding-top: 22px;
     padding-bottom: 46px;
 	}
 }
@@ -261,12 +262,15 @@ small {
 	a {
 		color: $body-font-color;
 		display: block;
+
+		.project-thumb {
+			opacity: .9;
+		}
 	}
 
 	a:hover {
 		.project-thumb {
-			opacity: .95;
-			filter: blur(1px);
+			opacity: 1;
 		}
 		.project-name,
 		.project-location {
@@ -320,6 +324,8 @@ small {
 // HOME
 
 .project-latest {
+	padding-bottom: 0;
+
 	.project-thumb,
 	.project-thumb-wrapper {
 		@media #{$large-up} {
@@ -327,8 +333,7 @@ small {
 		}
 	}
 
-	a:hover .project-thumb {
-		filter: none;
+	a .project-thumb {
 		opacity: 1;
 	}
 
