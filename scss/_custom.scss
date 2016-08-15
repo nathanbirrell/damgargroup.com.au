@@ -218,7 +218,7 @@ small {
 		margin: 22px auto 0 auto;
 
 		@media #{$medium-up} {
-			margin-top: 42px;
+			margin-top: 22px;
 		}
 	}
 
@@ -242,7 +242,7 @@ small {
 
 @media #{$medium-up} {
 	main {
-		padding-top: 38px;
+		padding-top: 22px;
     padding-bottom: 46px;
 	}
 }
@@ -320,6 +320,8 @@ small {
 // HOME
 
 .project-latest {
+	padding-bottom: 0;
+
 	.project-thumb,
 	.project-thumb-wrapper {
 		@media #{$large-up} {
