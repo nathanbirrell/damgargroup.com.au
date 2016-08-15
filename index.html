@@ -9,7 +9,7 @@ keywords: property, developer, melbourne, apartments
   <div class="row">
     <div class="medium-10 columns small-centered">
       {% assign project = site.posts.first %}
-      <a href="{{project.url}}" title="Latest Project: {{project.title}}">
+      <a href="{{project.url}}" title="{{site.brand}} - Latest Projects">
         <div class="project-thumb-wrapper">
           <div class="thumbnail project-thumb" style="background-image: url('{{project.feature_img}}');" alt="Damgar's latest property development in Melbourne"></div>
         </div>
@@ -19,6 +19,10 @@ keywords: property, developer, melbourne, apartments
       <span class="project-label">Latest Development</span>
     </div>
   </div>
+</div>
+
+<div class="row column">
+  <a class="large button cta main-cta" href="{{site.url}}/projects">SEE OUR <br> DEVELOPMENTS</a>
 </div>
 
 <div class="row">
