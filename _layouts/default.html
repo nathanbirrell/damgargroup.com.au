@@ -94,8 +94,8 @@
           </main>
 
           <div class="row column">
-            {% if page.url != "/" %}
-              <a class="large button cta main-cta" href="#">LATEST DEVELOPMENT SELLING NOW</a>
+            {% if page.url != "/" and site.latest_development_url != "" %}
+              <a class="large button cta main-cta" href="{{site.latest_development_url}}">LATEST DEVELOPMENT SELLING NOW</a>
             {% endif %}
           </div>
 
