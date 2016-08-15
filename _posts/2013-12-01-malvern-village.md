@@ -4,10 +4,10 @@ title: Malvern Village
 permalink: projects/malvern-village
 description: Another successful development by Damgar Property Group in Glen Iris.
 location: Apartments, Glen iris
-feature_img: /img/projects/malvern-village/damgar-malvern-village-1.jpg
+feature_img: /img/projects/malvern-village/damgar-malvern-village-7.jpg
 ---
 
-{% assign img_dir = {{site.url}} | append: "/img/projects/malvern-village/" %}
+{% assign img_dir = {{site.url}} | append: "/img/projects/malvern-village/damgar-malvern-village-" %}
 
 <div class="row project-detail-content">
   <div class="small-11 medium-10 medium-offset-1 columns">
@@ -15,10 +15,9 @@ feature_img: /img/projects/malvern-village/damgar-malvern-village-1.jpg
       <div class="medium-5 columns">
         <div class="column">
           <ul class="project-detail-key-points">
-            <li>Superb boutique development</li>
-            <li>47 one and two bedroom apartments</li>
-            <li>7 offices and 1 restaurant space</li>
-            <li>74 car spaces</li>
+            <li>72 apartments</li>
+            <li>3 office suites</li>
+            <li>On time and on budget</li>
           </ul>
         </div>
       </div>
@@ -38,39 +37,39 @@ feature_img: /img/projects/malvern-village/damgar-malvern-village-1.jpg
 
 <br><br>
 
-<div class="row">
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}damgar-otto-apartments-brunswick-internal-01.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
-    <caption>Internal photo of {{page.title}} {{page.location}}</caption>
-  </div>
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}damgar-otto-apartments-brunswick-internal-02.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
-    <caption>Internal photo of {{page.title}} {{page.location}}</caption>
-  </div>
-</div>
-
-<br><br>
-
-<div class="row">
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}damgar-otto-apartments-brunswick-00.jpg" alt="External photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
-    <caption>External photo of {{page.title}} {{page.location}}</caption>
-  </div>
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}damgar-otto-apartments-brunswick-01.jpg" alt="External photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
-    <caption>External photo of {{page.title}} {{page.location}}</caption>
-  </div>
-</div>
-
-<br><br>
-
 <div class="row expanded">
-  <div class="project-thumb-wrapper" style="height: 660px;">
-    <div class="thumbnail project-thumb" style="background-image: url('{{img_dir}}damgar-otto-apartments-brunswick-04.jpg');"></div>
+  <div class="medium-6 columns">
+    <img class="thumbnail" src="{{img_dir}}4.jpg" alt="External photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
+    <caption>External photo of {{page.title}} {{page.location}}</caption>
   </div>
-  <div class="row">
-    <div class="small-12 columns">
-      <caption>Hero shot of the project</caption>
-    </div>
+  <div class="medium-6 columns">
+    <img class="thumbnail" src="{{img_dir}}1.jpg" alt="External photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
+    <caption>External photo of {{page.title}} {{page.location}}</caption>
+  </div>
+</div>
+
+<br><br>
+
+<div class="row">
+  <div class="medium-6 columns">
+    <img class="thumbnail" src="{{img_dir}}2.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
+    <caption>Internal photo of {{page.title}} {{page.location}}</caption>
+  </div>
+  <div class="medium-6 columns">
+    <img class="thumbnail" src="{{img_dir}}3.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
+    <caption>Internal photo of {{page.title}} {{page.location}}</caption>
+  </div>
+</div>
+
+<br><br>
+
+<div class="row">
+  <div class="medium-6 columns">
+    <img class="thumbnail" src="{{img_dir}}5.jpg" alt="External photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
+    <caption>External photo of {{page.title}} {{page.location}}</caption>
+  </div>
+  <div class="medium-6 columns">
+    <img class="thumbnail" src="{{img_dir}}6.jpg" alt="External photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
+    <caption>External photo of {{page.title}} {{page.location}}</caption>
   </div>
 </div>

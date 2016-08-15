@@ -15,10 +15,11 @@ feature_img: /img/projects/otto/damgar-otto-apartments-brunswick-03.jpg
       <div class="medium-5 columns">
         <div class="column">
           <ul class="project-detail-key-points">
-            <li>Superb boutique development</li>
-            <li>47 one and two bedroom apartments</li>
-            <li>7 offices and 1 restaurant space</li>
-            <li>74 car spaces</li>
+            <li>Our latest development</li>
+            <li>64 exciting one and two bedroom apartments</li>
+            <li>3 retail and two commercial suites</li>
+            <li>Fully pre-sold</li>
+            <li>On time and on budget</li>
           </ul>
         </div>
       </div>
