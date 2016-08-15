@@ -4919,9 +4919,7 @@ small {
     .project-latest .project-thumb,
     .project-latest .project-thumb-wrapper {
       height: 512px; } }
-  .project-latest a:hover .project-thumb {
-    -webkit-filter: none;
-            filter: none;
+  .project-latest a .project-thumb {
     opacity: 1; }
   .project-latest .project-label {
     display: block; }
