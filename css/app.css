@@ -4817,12 +4817,14 @@ small {
   .project-detail a {
     color: #4A4A4A;
     display: block; }
+    .project-listing a .project-thumb,
+    .project-latest a .project-thumb,
+    .project-detail a .project-thumb {
+      opacity: .9; }
   .project-listing a:hover .project-thumb,
   .project-latest a:hover .project-thumb,
   .project-detail a:hover .project-thumb {
-    opacity: .95;
-    -webkit-filter: blur(1px);
-            filter: blur(1px); }
+    opacity: 1; }
   .project-listing a:hover .project-name,
   .project-listing a:hover .project-location,
   .project-latest a:hover .project-name,

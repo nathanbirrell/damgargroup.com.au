@@ -94,7 +94,9 @@
           </main>
 
           <div class="row column">
-            <a class="large button cta main-cta" href="#">LATEST DEVELOPMENT SELLING NOW</a>
+            {% if page.url != "/" %}
+              <a class="large button cta main-cta" href="#">LATEST DEVELOPMENT SELLING NOW</a>
+            {% endif %}
           </div>
 
           <footer id="contact" class="site-footer row" role="contentinfo">

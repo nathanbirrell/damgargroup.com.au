@@ -261,12 +261,15 @@ small {
 	a {
 		color: $body-font-color;
 		display: block;
+
+		.project-thumb {
+			opacity: .9;
+		}
 	}
 
 	a:hover {
 		.project-thumb {
-			opacity: .95;
-			filter: blur(1px);
+			opacity: 1;
 		}
 		.project-name,
 		.project-location {
