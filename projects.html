@@ -8,25 +8,26 @@ description: Damgar Property Group leads the market for small to medium resident
   <div class="medium-10 columns small-centered">
     <div class="medium-8 columns">
         <h1 class="text-left">Our Developments</h1>
-        <p>Damgar Property Group is at the forefront of small to medium residential and commercial property development in inner Melbourne. We are a boutique developer which means that all of our developments have our complete focus from beginning to end.</p>
-        <p>During our 30 years in the Property Development business we have carefully fostered strong relationships with key industry partners including Architects, Engineers and Planning Consultants.</p>
-        <p>In addition our relationship with our Bankers-NAB and St George is first class which means our projects have always and will continue to be fully supported.
-        As builders in our own right, with a keen eye to quality and liveability, we know what it takes to get the job done and done properly</p>
+        <!-- <p>Damgar Property Group is at the forefront of small to medium residential and commercial property development in inner Melbourne. We are a boutique developer which means that all of our developments have our complete focus from beginning to end.</p> -->
     </div>
   </div>
 </div>
 
 <div class="row expanded">
   <br><br>
-  {% for project in site.posts %}
-    <div class="large-6 columns project-listing">
-      <a href="{{project.url}}" class="column">
-        <div class="project-thumb-wrapper">
-          <div class="thumbnail project-thumb" style="background-image: url('{{project.feature_img}}');"></div>
+
+    <div class="xlarge-11 small-centered">
+      {% for project in site.posts %}
+        <div class="large-6 columns project-listing">
+          <a href="{{project.url}}" class="column">
+            <div class="project-thumb-wrapper">
+              <div class="thumbnail project-thumb" style="background-image: url('{{project.feature_img}}');"></div>
+            </div>
+            <h2 class="project-name">{{project.title}}</h2>
+            <span class="project-location">{{project.location}}</span>
+          </a>
         </div>
-        <h2 class="project-name">{{project.title}}</h2>
-        <span class="project-location">{{project.location}}</span>
-      </a>
+      {% endfor %}
     </div>
-  {% endfor %}
+
 </div>

@@ -40,12 +40,12 @@ feature_img: /img/projects/verdis/damgar-verdis-apartments-external-render-aslin
 
 <div class="row">
   <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}damgar-verdis-apartments-internal-render-kitchen.jpg" alt="Verdis Internal Rendering">
-    <caption>Detail on this image</caption>
+    <img class="thumbnail" src="{{img_dir}}damgar-verdis-apartments-internal-render-kitchen.jpg" alt="Interior rendering of the Brighton apartments">
+    <caption>Interior rendering of the Brighton apartments</caption>
   </div>
   <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}damgar-verdis-apartments-internal-render-living.jpg" alt="Verdis Internal Rendering 2">
-    <caption>Detail on this image</caption>
+    <img class="thumbnail" src="{{img_dir}}damgar-verdis-apartments-internal-render-living.jpg" alt="Interior rendering of the Brighton apartments">
+    <caption>Interior rendering of the Brighton apartments</caption>
   </div>
 </div>
 
@@ -57,7 +57,7 @@ feature_img: /img/projects/verdis/damgar-verdis-apartments-external-render-aslin
   </div>
   <div class="row">
     <div class="small-12 columns">
-      <caption>Detail panoramic of the project</caption>
+      <caption>The finished project on Asling Street</caption>
     </div>
   </div>
 </div>
@@ -66,15 +66,12 @@ feature_img: /img/projects/verdis/damgar-verdis-apartments-external-render-aslin
 
 <div class="row">
   <div class="medium-4 columns">
-    <img class="thumbnail" src="{{img_dir}}damgar-verdis-internal-01.jpg" alt="Image Description">
-    <caption>Detail on this image</caption>
+    <img class="thumbnail" src="{{img_dir}}damgar-verdis-internal-01.jpg" alt="Interior shots of the Apartments">
   </div>
   <div class="medium-4 columns">
-    <img class="thumbnail" src="{{img_dir}}damgar-verdis-internal-02.jpg" alt="Image Description">
-    <caption>Detail on this image</caption>
+    <img class="thumbnail" src="{{img_dir}}damgar-verdis-internal-02.jpg" alt="Interior shots of the Apartments">
   </div>
   <div class="medium-4 columns">
-    <img class="thumbnail" src="{{img_dir}}damgar-verdis-internal-03.jpg" alt="Image Description">
-    <caption>Detail on this image</caption>
+    <img class="thumbnail" src="{{img_dir}}damgar-verdis-internal-03.jpg" alt="Interior shots of the Apartments">
   </div>
 </div>

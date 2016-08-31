@@ -4812,7 +4812,7 @@ small {
 .project-listing,
 .project-latest,
 .project-detail {
-  padding-bottom: 32px; }
+  padding: 0 0px 32px 0px; }
   .project-listing a,
   .project-latest a,
   .project-detail a {
