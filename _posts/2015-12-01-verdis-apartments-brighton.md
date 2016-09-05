@@ -51,20 +51,16 @@ feature_img: /img/projects/verdis/damgar-verdis-apartments-external-render-aslin
 
 <br><br>
 
-<div class="row expanded">
-  <div class="project-thumb-wrapper" style="height: 620px">
-    <div class="thumbnail project-thumb" style="background-image: url('{{img_dir}}damgar-verdis-00.jpg');"></div>
-  </div>
-  <div class="row">
-    <div class="small-12 columns">
-      <caption>The finished project on Asling Street</caption>
-    </div>
+<div class="row">
+  <div class="medium-11 columns small-centered">
+    <img class="thumbnail" src="{{img_dir}}damgar-verdis-00.jpg" alt="The finished project on Asling Street">
+    <caption>The finished project on Asling Street</caption>
   </div>
 </div>
 
 <br><br>
 
-<div class="row">
+<!-- <div class="row">
   <div class="medium-4 columns">
     <img class="thumbnail" src="{{img_dir}}damgar-verdis-internal-01.jpg" alt="Interior shots of the Apartments">
   </div>
@@ -74,4 +70,4 @@ feature_img: /img/projects/verdis/damgar-verdis-apartments-external-render-aslin
   <div class="medium-4 columns">
     <img class="thumbnail" src="{{img_dir}}damgar-verdis-internal-03.jpg" alt="Interior shots of the Apartments">
   </div>
-</div>
+</div> -->
