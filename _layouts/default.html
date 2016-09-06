@@ -93,13 +93,9 @@
             {{ content }}
           </main>
 
-          <div class="row column">
-            {% if page.url != "/" and site.latest_development_url != "" %}
-              <a class="large button cta main-cta" href="{{site.latest_development_url}}">LATEST DEVELOPMENT SELLING NOW</a>
-            {% endif %}
-          </div>
+          {% include cta.html %}
 
-          <footer id="contact" class="site-footer row" role="contentinfo">
+          <footer id="contact" class="site-footer row light-grey-block" role="contentinfo">
             <i class="logo-spacer large"></i>
             <h2 class="text-center"><small>Contact</small></h2>
             <ul class="text-center">
