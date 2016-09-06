@@ -135,6 +135,11 @@ small {
 	width: 30px;
 	height: 30px;
 	margin: 32px auto;
+
+	&.large {
+		width: 45px;
+		height: 45px;
+	}
 }
 
 // HEADER
@@ -504,11 +509,6 @@ small {
 
 	@media #{$medium-up} {
 		font-size: 120%;
-	}
-
-	.logo-spacer {
-		width: 45px;
-		height: 45px;
 	}
 
 	ul {

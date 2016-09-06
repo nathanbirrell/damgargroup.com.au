@@ -4709,6 +4709,9 @@ small {
   width: 30px;
   height: 30px;
   margin: 32px auto; }
+  .logo-spacer.large {
+    width: 45px;
+    height: 45px; }
 
 .sticky {
   position: fixed;
@@ -5056,9 +5059,6 @@ small {
   @media screen and (min-width: 40em) {
     .site-footer {
       font-size: 120%; } }
-  .site-footer .logo-spacer {
-    width: 45px;
-    height: 45px; }
   .site-footer ul {
     margin: 0;
     margin-bottom: 18px; }
