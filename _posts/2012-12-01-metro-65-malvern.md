@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Metro 65
-permalink: projects/metro-65-st-malvern
+permalink: /projects/metro-65-st-malvern
 description: Another successful development by Damgar Property Group, Melbourne.
 location: Apartments, Malvern
 feature_img: /img/projects/metro-65/damgar-station-st-1.jpg

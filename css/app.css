@@ -5044,8 +5044,10 @@ small {
 .cta.main-cta {
   margin: 42px auto; }
 
+.light-grey-block {
+  background-color: #F7F3F3; }
+
 .site-footer {
-  background-color: #F7F3F3;
   padding-bottom: 32px;
   font-size: 110%; }
   .site-footer.row {

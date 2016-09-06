@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Netanya
-permalink: projects/netanya-apartments-caulfield
+permalink: /projects/netanya-apartments-caulfield
 description: Another successful development in Caulfield by Damgar Property Group, Melbourne.
 location: Apartments, Caulfield North
 feature_img: /img/projects/netanya/netanya-orrong-01.jpg
