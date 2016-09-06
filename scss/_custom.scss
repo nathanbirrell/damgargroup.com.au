@@ -26,6 +26,33 @@
 	.project-thumb {
 		height: 100%;
 	}
+
+	.project-hover-logo {
+		display: none; // not required for mobile
+	}
+
+	@media #{$medium-up} {
+		.project-hover-logo {
+			display: block;
+			opacity: 0;
+			position: absolute;
+			z-index: 1;
+			width: 78px;
+			height: 78px;
+			left: 50%;
+			top: 50%;
+			margin-left: -39px;
+			margin-top: -39px;
+
+			transform: scale(0);
+			transition: transform 250ms, opacity 200ms;
+
+			a:hover & {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+	}
 }
 
 @mixin menu-controls {
