@@ -4824,11 +4824,13 @@ small {
     .project-listing a .project-thumb,
     .project-latest a .project-thumb,
     .project-detail a .project-thumb {
-      opacity: .9; }
+      -webkit-filter: grayscale(50%);
+              filter: grayscale(50%); }
   .project-listing a:hover .project-thumb,
   .project-latest a:hover .project-thumb,
   .project-detail a:hover .project-thumb {
-    opacity: 1; }
+    -webkit-filter: none;
+            filter: none; }
   .project-listing a:hover .project-name,
   .project-listing a:hover .project-location,
   .project-latest a:hover .project-name,
@@ -4991,6 +4993,12 @@ small {
   font-weight: 200;
   padding-left: 12px;
   margin-bottom: 32px; }
+
+.recent-projects:nth-child(odd) .column, .recent-projects:nth-child(odd) .columns {
+  padding-left: 0; }
+
+.recent-projects:nth-child(even) .column, .recent-projects:nth-child(even) .columns {
+  padding-right: 0; }
 
 .testimonial-wrap .quote {
   background: #F7F3F3;

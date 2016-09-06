@@ -296,13 +296,13 @@ small {
 		display: block;
 
 		.project-thumb {
-			opacity: .9;
+			filter: grayscale(50%);
 		}
 	}
 
 	a:hover {
 		.project-thumb {
-			opacity: 1;
+			filter: none;
 		}
 		.project-name,
 		.project-location {
@@ -413,6 +413,15 @@ small {
 		padding-left: 12px;
 		margin-bottom: 32px;
 	}
+}
+
+// Recent projects module
+
+.recent-projects:nth-child(odd) .column {
+    padding-left: 0;
+}
+.recent-projects:nth-child(even) .column {
+    padding-right: 0;
 }
 
 // TESTIMONIALS PAGE
