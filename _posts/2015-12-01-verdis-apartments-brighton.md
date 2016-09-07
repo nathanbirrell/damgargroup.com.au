@@ -52,22 +52,8 @@ feature_img: /img/projects/verdis/damgar-verdis-apartments-external-render-aslin
 <br><br>
 
 <div class="row">
-  <div class="medium-11 columns small-centered">
+  <div class="medium-12 columns small-centered">
     <img class="thumbnail" src="{{img_dir}}damgar-verdis-00.jpg" alt="The finished project on Asling Street">
     <caption>The finished project on Asling Street</caption>
   </div>
 </div>
-
-<br><br>
-
-<!-- <div class="row">
-  <div class="medium-4 columns">
-    <img class="thumbnail" src="{{img_dir}}damgar-verdis-internal-01.jpg" alt="Interior shots of the Apartments">
-  </div>
-  <div class="medium-4 columns">
-    <img class="thumbnail" src="{{img_dir}}damgar-verdis-internal-02.jpg" alt="Interior shots of the Apartments">
-  </div>
-  <div class="medium-4 columns">
-    <img class="thumbnail" src="{{img_dir}}damgar-verdis-internal-03.jpg" alt="Interior shots of the Apartments">
-  </div>
-</div> -->

@@ -4824,11 +4824,13 @@ small {
     .project-listing a .project-thumb,
     .project-latest a .project-thumb,
     .project-detail a .project-thumb {
-      opacity: .9; }
+      -webkit-filter: grayscale(50%);
+              filter: grayscale(50%); }
   .project-listing a:hover .project-thumb,
   .project-latest a:hover .project-thumb,
   .project-detail a:hover .project-thumb {
-    opacity: 1; }
+    -webkit-filter: none;
+            filter: none; }
   .project-listing a:hover .project-name,
   .project-listing a:hover .project-location,
   .project-latest a:hover .project-name,
@@ -4885,6 +4887,8 @@ small {
         opacity: 1;
         -ms-transform: scale(1);
             transform: scale(1); } }
+  .project-thumb-wrapper .circle {
+    background: #C92C39; }
 
 .project-thumb {
   width: 100vw;
@@ -4929,6 +4933,8 @@ small {
         opacity: 1;
         -ms-transform: scale(1);
             transform: scale(1); } }
+  .project-thumb .circle {
+    background: #C92C39; }
 
 .project-name {
   font-weight: 700;
@@ -4992,6 +4998,12 @@ small {
   padding-left: 12px;
   margin-bottom: 32px; }
 
+.recent-projects:nth-child(odd) .column, .recent-projects:nth-child(odd) .columns {
+  padding-left: 0; }
+
+.recent-projects:nth-child(even) .column, .recent-projects:nth-child(even) .columns {
+  padding-right: 0; }
+
 .testimonial-wrap .quote {
   background: #F7F3F3;
   padding: 15px 20px 5px 15px;
@@ -5032,21 +5044,48 @@ small {
       font-size: 14px;
       color: #4A4A4A; }
 
-.cta {
-  margin: 32px auto;
+/**
+ * Call to actions (CTAs)
+ */
+.cta-wrap {
+  position: relative;
   display: block;
+  margin: 32px auto;
+  text-align: center; }
+
+.cta {
+  position: relative;
+  display: inline-block;
   width: 276px;
   border-radius: 0 6px 6px 6px;
   box-shadow: 1px 1px 1px #4A4A4A;
   text-shadow: 0.5px 0.5px 1px #9B9B9B;
-  transition: background-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out; }
+  transition: background-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out;
+  overflow: hidden; }
   .cta:hover {
     box-shadow: none;
     text-shadow: none; }
 
-.cta.main-cta {
-  margin: 42px auto; }
+/**
+ * Material design click
+ */
+.circle {
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.075);
+  border-radius: 50%;
+  -ms-transform: scale(0);
+      transform: scale(0); }
+  .circle.animate {
+    animation: effect 0.65s linear; }
 
+@keyframes effect {
+  100% {
+    transform: scale(2.5); } }
+
+/**
+ * FOOTER
+ */
 .light-grey-block {
   background-color: #F7F3F3; }
 
