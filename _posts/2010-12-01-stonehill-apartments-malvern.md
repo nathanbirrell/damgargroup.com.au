@@ -35,12 +35,8 @@ feature_img: /img/projects/stonehill/stonehill-apartments-malvern-01.jpg
 <br><br>
 
 <div class="row">
-  <div class="medium-6 columns">
+  <div class="medium-8 columns small-centered">
     <img class="thumbnail" src="{{img_dir}}02.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
-    <caption>Internal photo of {{page.title}} {{page.location}}</caption>
-  </div>
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}03.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
     <caption>Internal photo of {{page.title}} {{page.location}}</caption>
   </div>
 </div>
