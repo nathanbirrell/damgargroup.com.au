@@ -4887,6 +4887,8 @@ small {
         opacity: 1;
         -ms-transform: scale(1);
             transform: scale(1); } }
+  .project-thumb-wrapper .circle {
+    background: #C92C39; }
 
 .project-thumb {
   width: 100vw;
@@ -4931,6 +4933,8 @@ small {
         opacity: 1;
         -ms-transform: scale(1);
             transform: scale(1); } }
+  .project-thumb .circle {
+    background: #C92C39; }
 
 .project-name {
   font-weight: 700;
@@ -5077,7 +5081,6 @@ small {
 
 @keyframes effect {
   100% {
-    opacity: 0;
     transform: scale(2.5); } }
 
 /**

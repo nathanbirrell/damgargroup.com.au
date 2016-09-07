@@ -25,27 +25,31 @@ $(window).scroll(function() {
  * Material design click for CTA buttons
  */
 
- var element, circle, d, x, y;
- $(".cta-wrap .cta").click(function(e){
+var materialDesignObjects = ['.cta-wrap .cta','.project-thumb-wrapper .thumbnail'];
 
- 	element = $(this);
+$(materialDesignObjects).each(function(index, object) {
+  $(object).click(function(e){
+    var element, circle, d, x, y;
 
- 	if(element.find(".circle").length == 0)
- 		element.prepend("<span class='circle'></span>");
+    element = $(this);
 
- 	circle = element.find(".circle");
- 	circle.removeClass("animate");
+    if(element.find(".circle").length == 0)
+    	element.prepend("<span class='circle'></span>");
 
- 	if(!circle.height() && !circle.width())
-   {
- 		d = Math.max(element.outerWidth(), element.outerHeight());
- 		circle.css({height: d, width: d});
- 	}
+    circle = element.find(".circle");
+    circle.removeClass("animate");
 
- 	x = e.pageX - element.offset().left - circle.width()/2;
- 	y = e.pageY - element.offset().top - circle.height()/2;
+    if(!circle.height() && !circle.width())
+    {
+    	d = Math.max(element.outerWidth(), element.outerHeight());
+    	circle.css({height: d, width: d});
+    }
 
- 	circle.css({top: y+'px', left: x+'px'}).addClass("animate");
+    x = e.pageX - element.offset().left - circle.width()/2;
+    y = e.pageY - element.offset().top - circle.height()/2;
+
+    circle.css({top: y+'px', left: x+'px'}).addClass("animate");
+  });
 });
 
 /**
