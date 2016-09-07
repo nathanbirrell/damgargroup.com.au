@@ -37,7 +37,7 @@ feature_img: /img/projects/malvern-village/damgar-malvern-village-7.jpg
 
 <br><br>
 
-<div class="row expanded">
+<div class="row">
   <div class="medium-6 columns">
     <img class="thumbnail" src="{{img_dir}}4.jpg" alt="External photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
     <caption>External photo of {{page.title}} {{page.location}}</caption>
