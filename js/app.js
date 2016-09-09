@@ -5,6 +5,16 @@
 //   $(element).height(width);
 // });
 
+new Vivus('loader-logo-svg', {duration: 200}, function() {
+  $('#loader-logo-svg-fill').addClass('loader-complete');
+
+  $('#loader').fadeOut(500);
+});
+
+// $(window).load(function() {
+//
+// });
+
 /**
  * Mobile sticky menu
  */

@@ -1,3 +1,36 @@
+// page loader
+
+.loader {
+	z-index: 999999;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	background: $white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.loader-logo {
+		position: relative;
+		height: 90px;
+		width: 80px;
+	}
+
+	#loader-logo-svg,
+	#loader-logo-svg-fill {
+		position: absolute;
+	}
+
+	#loader-logo-svg-fill {
+		opacity: 0;
+  	transition: opacity 200ms;
+
+		&.loader-complete {
+			opacity: 1;
+		}
+	}
+}
+
 // Mixins
 
 @mixin project-thumb {
