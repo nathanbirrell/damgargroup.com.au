@@ -4991,9 +4991,6 @@ small {
 /**
  * Project listing module
  */
-.project-listing .circle {
-  background: #C92C39; }
-
 .recent-projects:nth-child(odd) .column, .recent-projects:nth-child(odd) .columns {
   padding-left: 0; }
 
