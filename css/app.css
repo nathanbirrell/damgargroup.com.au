@@ -5094,7 +5094,7 @@ small {
   -ms-transform: scale(0);
       transform: scale(0); }
   .circle.animate {
-    animation: effect 0.65s linear; }
+    animation: effect 550ms linear; }
 
 @keyframes effect {
   100% {

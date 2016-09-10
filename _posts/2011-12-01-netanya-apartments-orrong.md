@@ -35,11 +35,9 @@ feature_img: /img/projects/netanya/netanya-orrong-01.jpg
 
 <div class="row">
   <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}01.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
-    <caption>Internal photo of {{page.title}} {{page.location}}</caption>
+    <img class="thumbnail" src="{{img_dir}}01.jpg" alt="Photo of {{page.title}} {{page.location}}" title="Photo of {{page.title}} {{page.location}}">
   </div>
   <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}02.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
-    <caption>Internal photo of {{page.title}} {{page.location}}</caption>
+    <img class="thumbnail" src="{{img_dir}}02.jpg" alt="Photo of {{page.title}} {{page.location}}" title="Photo of {{page.title}} {{page.location}}">
   </div>
 </div>
