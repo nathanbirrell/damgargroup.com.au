@@ -4672,12 +4672,12 @@ table.hover tr:nth-of-type(even):hover {
     width: 80px; }
   .loader #loader-logo-svg,
   .loader #loader-logo-svg-fill {
-    position: absolute; }
-  .loader #loader-logo-svg-fill {
+    position: absolute;
     opacity: 0;
-    transition: opacity 200ms; }
-    .loader #loader-logo-svg-fill.loader-complete {
-      opacity: 1; }
+    transition: opacity 100ms; }
+  .loader #loader-logo-svg.loader-running,
+  .loader #loader-logo-svg-fill.loader-complete {
+    opacity: 1; }
 
 @font-face {
   font-family: 'Avenir Next';
@@ -4846,11 +4846,6 @@ small {
   .project-detail a {
     color: #4A4A4A;
     display: block; }
-    .project-listing a .project-thumb,
-    .project-latest a .project-thumb,
-    .project-detail a .project-thumb {
-      -webkit-filter: grayscale(50%);
-              filter: grayscale(50%); }
   .project-listing a:hover .project-thumb,
   .project-latest a:hover .project-thumb,
   .project-detail a:hover .project-thumb {
@@ -5016,6 +5011,10 @@ small {
 /**
  * Project listing module
  */
+.project-listing .project-thumb {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%); }
+
 .recent-projects:nth-child(odd) .column, .recent-projects:nth-child(odd) .columns {
   padding-left: 0; }
 

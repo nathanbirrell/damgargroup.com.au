@@ -19,15 +19,13 @@
 	#loader-logo-svg,
 	#loader-logo-svg-fill {
 		position: absolute;
+		opacity: 0;
+		transition: opacity 100ms;
 	}
 
-	#loader-logo-svg-fill {
-		opacity: 0;
-  	transition: opacity 200ms;
-
-		&.loader-complete {
-			opacity: 1;
-		}
+	#loader-logo-svg.loader-running,
+	#loader-logo-svg-fill.loader-complete {
+		opacity: 1;
 	}
 }
 
@@ -321,10 +319,6 @@ small {
 	a {
 		color: $body-font-color;
 		display: block;
-
-		.project-thumb {
-			filter: grayscale(50%);
-		}
 	}
 
 	a:hover {
@@ -441,7 +435,9 @@ small {
  */
 
 .project-listing {
-	// used for material design click
+	.project-thumb {
+		filter: grayscale(50%);
+	}
 	.circle {
 		// background: $primary-color;
 	}
