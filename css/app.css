@@ -4654,6 +4654,31 @@ table.hover tr:nth-of-type(even):hover {
 
 /***************** end padding and margin settings *************/
 /* custom */
+.loader {
+  z-index: 999999;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: #fefefe;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .loader .loader-logo {
+    position: relative;
+    height: 90px;
+    width: 80px; }
+  .loader #loader-logo-svg,
+  .loader #loader-logo-svg-fill {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 100ms; }
+  .loader #loader-logo-svg.loader-running,
+  .loader #loader-logo-svg-fill.loader-complete {
+    opacity: 1; }
+
 @font-face {
   font-family: 'Avenir Next';
   src: url("fonts/AvenirNext-Bold.eot");
@@ -4821,11 +4846,6 @@ small {
   .project-detail a {
     color: #4A4A4A;
     display: block; }
-    .project-listing a .project-thumb,
-    .project-latest a .project-thumb,
-    .project-detail a .project-thumb {
-      -webkit-filter: grayscale(50%);
-              filter: grayscale(50%); }
   .project-listing a:hover .project-thumb,
   .project-latest a:hover .project-thumb,
   .project-detail a:hover .project-thumb {
@@ -4991,8 +5011,9 @@ small {
 /**
  * Project listing module
  */
-.project-listing .circle {
-  background: #C92C39; }
+.project-listing .project-thumb {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%); }
 
 .recent-projects:nth-child(odd) .column, .recent-projects:nth-child(odd) .columns {
   padding-left: 0; }
@@ -5073,7 +5094,7 @@ small {
   -ms-transform: scale(0);
       transform: scale(0); }
   .circle.animate {
-    animation: effect 0.65s linear; }
+    animation: effect 550ms linear; }
 
 @keyframes effect {
   100% {

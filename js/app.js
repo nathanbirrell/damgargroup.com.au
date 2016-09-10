@@ -5,6 +5,37 @@
 //   $(element).height(width);
 // });
 
+var isHome = window.location.pathname === '/';
+
+var runLoaderAnimation = function() {
+  $('#loader-logo-svg').addClass('loader-running');
+
+  new Vivus('loader-logo-svg', {
+    duration: 100,
+    delay: 0,
+    animTimingFunction: Vivus.EASE_OUT
+  }, function() {
+    $('#loader-logo-svg-fill').addClass('loader-complete');
+
+    if (isHome) {
+      $('#loader').fadeOut(250);
+    }
+  });
+};
+
+var fadeOnLoad = function() {
+  $(window).load(function() {
+    $('#loader').fadeOut(250);
+  });
+};
+
+if (isHome) {
+  runLoaderAnimation();
+} else {
+  runLoaderAnimation();
+  fadeOnLoad();
+}
+
 /**
  * Mobile sticky menu
  */
@@ -12,7 +43,7 @@
 Foundation.OffCanvas.defaults.forceTop = false;
 
 $(window).scroll(function() {
-  if ($(this).scrollTop() > 62){
+  if ($(this).scrollTop() > 62) {
     $('.sticky').removeClass('expanded');
     $('.mobile-logo').attr('src', $('#sticky-logo-swap').attr('src'));
   } else {

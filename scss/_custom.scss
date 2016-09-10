@@ -1,3 +1,34 @@
+// page loader
+
+.loader {
+	z-index: 999999;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	background: $white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.loader-logo {
+		position: relative;
+		height: 90px;
+		width: 80px;
+	}
+
+	#loader-logo-svg,
+	#loader-logo-svg-fill {
+		position: absolute;
+		opacity: 0;
+		transition: opacity 100ms;
+	}
+
+	#loader-logo-svg.loader-running,
+	#loader-logo-svg-fill.loader-complete {
+		opacity: 1;
+	}
+}
+
 // Mixins
 
 @mixin project-thumb {
@@ -288,10 +319,6 @@ small {
 	a {
 		color: $body-font-color;
 		display: block;
-
-		.project-thumb {
-			filter: grayscale(50%);
-		}
 	}
 
 	a:hover {
@@ -408,9 +435,11 @@ small {
  */
 
 .project-listing {
-	// used for material design click
+	.project-thumb {
+		filter: grayscale(50%);
+	}
 	.circle {
-		background: $primary-color;
+		// background: $primary-color;
 	}
 }
 
@@ -520,7 +549,7 @@ small {
 	transform: scale(0);
 
 	&.animate {
-		animation: effect 0.65s linear;
+		animation: effect 550ms linear;
 	}
  }
 
