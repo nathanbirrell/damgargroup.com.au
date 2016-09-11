@@ -58,6 +58,7 @@
 		height: 100%;
 	}
 
+
 	.project-hover-logo {
 		display: block;
 		opacity: 0;
@@ -74,10 +75,13 @@
 		transition: transform 250ms, opacity 200ms;
 
 		a:hover & {
-			opacity: 1;
-			transform: scale(1);
+			[data-whatinput="mouse"] & {
+				opacity: 1;
+				transform: scale(1);
+			}
 		}
 	}
+
 }
 
 @mixin menu-controls {
@@ -120,7 +124,12 @@ a {
 	color: $dark-gray;
 }
 a:hover {
-	color: $primary-color;
+	[data-whatinput="mouse"] & {
+		color: $primary-color;
+	}
+	[data-whatinput="touch"] & {
+		color: $primary-color;
+	}
 }
 
 small {
@@ -321,13 +330,15 @@ small {
 		display: block;
 	}
 
-	a:hover {
-		.project-thumb {
-			filter: none;
-		}
-		.project-name,
-		.project-location {
-			color: $primary-color;
+	[data-whatinput="mouse"] {
+		a:hover {
+			.project-thumb {
+				filter: none;
+			}
+			.project-name,
+			.project-location {
+				color: $primary-color;
+			}
 		}
 	}
 
@@ -359,7 +370,7 @@ small {
 	font-size: rem-calc(28);
 	font-weight: $global-weight-light;
 
-	@media #{$medium-up} {
+	@media #{$large-up} {
 		text-align: right;
 		float: right;
 		margin-top: 0;
@@ -406,7 +417,7 @@ small {
 	}
 
 	.project-thumb-wrapper {
-		margin-bottom: 44px;
+		margin-bottom: 24px;
 	}
 
 	.project-name {
@@ -436,7 +447,9 @@ small {
 
 .project-listing {
 	.project-thumb {
-		filter: grayscale(50%);
+		[data-whatinput="mouse"] & {
+			filter: grayscale(50%);
+		}
 	}
 	.circle {
 		// background: $primary-color;
