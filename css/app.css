@@ -4703,7 +4703,10 @@ h1 {
 a {
   color: #4A4A4A; }
 
-a:hover {
+[data-whatinput="mouse"] a:hover {
+  color: #C92C39; }
+
+[data-whatinput="touch"] a:hover {
   color: #C92C39; }
 
 small {
@@ -4846,17 +4849,17 @@ small {
   .project-detail a {
     color: #4A4A4A;
     display: block; }
-  .project-listing a:hover .project-thumb,
-  .project-latest a:hover .project-thumb,
-  .project-detail a:hover .project-thumb {
+  .project-listing [data-whatinput="mouse"] a:hover .project-thumb,
+  .project-latest [data-whatinput="mouse"] a:hover .project-thumb,
+  .project-detail [data-whatinput="mouse"] a:hover .project-thumb {
     -webkit-filter: none;
             filter: none; }
-  .project-listing a:hover .project-name,
-  .project-listing a:hover .project-location,
-  .project-latest a:hover .project-name,
-  .project-latest a:hover .project-location,
-  .project-detail a:hover .project-name,
-  .project-detail a:hover .project-location {
+  .project-listing [data-whatinput="mouse"] a:hover .project-name,
+  .project-listing [data-whatinput="mouse"] a:hover .project-location,
+  .project-latest [data-whatinput="mouse"] a:hover .project-name,
+  .project-latest [data-whatinput="mouse"] a:hover .project-location,
+  .project-detail [data-whatinput="mouse"] a:hover .project-name,
+  .project-detail [data-whatinput="mouse"] a:hover .project-location {
     color: #C92C39; }
   .project-listing.columns:last-child:not(:first-child),
   .project-latest.columns:last-child:not(:first-child),
@@ -4900,7 +4903,7 @@ small {
     -ms-transform: scale(0);
         transform: scale(0);
     transition: transform 250ms, opacity 200ms; }
-    a:hover .project-thumb-wrapper .project-hover-logo {
+    [data-whatinput="mouse"] a:hover .project-thumb-wrapper .project-hover-logo {
       opacity: 1;
       -ms-transform: scale(1);
           transform: scale(1); }
@@ -4941,7 +4944,7 @@ small {
     -ms-transform: scale(0);
         transform: scale(0);
     transition: transform 250ms, opacity 200ms; }
-    a:hover .project-thumb .project-hover-logo {
+    [data-whatinput="mouse"] a:hover .project-thumb .project-hover-logo {
       opacity: 1;
       -ms-transform: scale(1);
           transform: scale(1); }
@@ -4992,7 +4995,7 @@ small {
     height: 512px; } }
 
 .project-detail .project-thumb-wrapper {
-  margin-bottom: 44px; }
+  margin-bottom: 24px; }
 
 .project-detail .project-name {
   display: block;
@@ -5011,7 +5014,7 @@ small {
 /**
  * Project listing module
  */
-.project-listing .project-thumb {
+[data-whatinput="mouse"] .project-listing .project-thumb {
   -webkit-filter: grayscale(50%);
           filter: grayscale(50%); }
 
