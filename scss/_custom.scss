@@ -550,6 +550,10 @@ small {
 	&:hover {
 		box-shadow: none;
 		text-shadow: none;
+
+		[data-whatinput="mouse"] & {
+			color: $white;
+		}
 	}
 }
 
