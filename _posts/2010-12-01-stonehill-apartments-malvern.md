@@ -17,7 +17,6 @@ feature_img: /img/projects/stonehill/stonehill-apartments-malvern-01.jpg
           <ul class="project-detail-key-points">
             <li>6 luxury apartments.</li>
             <li>1 penthouse.</li>
-            <li>All pre sold and settled.</li>
             <li>On time and on budget.</li>
           </ul>
         </div>
@@ -32,10 +31,10 @@ feature_img: /img/projects/stonehill/stonehill-apartments-malvern-01.jpg
   </div>
 </div>
 
-<br><br>
+<br>
 
-<div class="row">
+<!-- <div class="row">
   <div class="medium-8 columns small-centered">
-    <img class="thumbnail" src="{{img_dir}}02.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
+    <img class="thumbnail" src="{{img_dir}}03.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
   </div>
-</div>
+</div> -->

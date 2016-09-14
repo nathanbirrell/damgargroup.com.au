@@ -52,11 +52,11 @@ feature_img: /img/projects/malvern-village/damgar-malvern-village-7.jpg
 
 <br><br>
 
-<div class="row">
+<!-- <div class="row">
   <div class="medium-6 columns">
     <img class="thumbnail" src="{{img_dir}}5.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
   </div>
   <div class="medium-6 columns">
     <img class="thumbnail" src="{{img_dir}}6.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
   </div>
-</div>
+</div> -->
