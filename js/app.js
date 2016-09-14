@@ -58,7 +58,8 @@ $(window).scroll(function() {
 
 var materialDesignObjects = [
   '.cta-wrap .cta',
-  '.project-thumb-wrapper .thumbnail'
+  '.project-listing .project-thumb-wrapper .thumbnail',
+  '.project-latest .project-thumb-wrapper .thumbnail'
 ];
 
 $(materialDesignObjects).each(function(index, object) {
