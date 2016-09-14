@@ -15,7 +15,6 @@ feature_img: /img/projects/otto/damgar-otto-apartments-brunswick-thumb.jpg
       <div class="medium-5 columns">
         <div class="column">
           <ul class="project-detail-key-points">
-            <li>Our latest development</li>
             <li>64 one and two bedroom apartments</li>
             <li>3 retail and two commercial suites</li>
             <li>Fully pre-sold</li>
@@ -38,11 +37,9 @@ feature_img: /img/projects/otto/damgar-otto-apartments-brunswick-thumb.jpg
 <div class="row">
   <div class="medium-6 columns">
     <img class="thumbnail" src="{{img_dir}}damgar-otto-apartments-brunswick-internal-01.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
-    <caption>Internal photo of {{page.title}} {{page.location}}</caption>
   </div>
   <div class="medium-6 columns">
     <img class="thumbnail" src="{{img_dir}}damgar-otto-apartments-brunswick-internal-02.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
-    <caption>Internal photo of {{page.title}} {{page.location}}</caption>
   </div>
 </div>
 
@@ -51,23 +48,16 @@ feature_img: /img/projects/otto/damgar-otto-apartments-brunswick-thumb.jpg
 <div class="row">
   <div class="medium-6 columns">
     <img class="thumbnail" src="{{img_dir}}damgar-otto-apartments-brunswick-00.jpg" alt="External photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
-    <caption>External photo of {{page.title}} {{page.location}}</caption>
   </div>
   <div class="medium-6 columns">
     <img class="thumbnail" src="{{img_dir}}damgar-otto-apartments-brunswick-01.jpg" alt="External photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
-    <caption>External photo of {{page.title}} {{page.location}}</caption>
   </div>
 </div>
 
 <br><br>
 
-<div class="row expanded">
-  <div class="project-thumb-wrapper" style="height: 660px;">
+<div class="row">
+  <div class="column project-thumb-wrapper" style="height: 660px;">
     <div class="thumbnail project-thumb" style="background-image: url('{{img_dir}}damgar-otto-apartments-brunswick-04.jpg');"></div>
-  </div>
-  <div class="row">
-    <div class="small-12 columns">
-      <caption>Hero shot of the project</caption>
-    </div>
   </div>
 </div>
