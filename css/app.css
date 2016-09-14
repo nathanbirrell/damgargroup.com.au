@@ -5082,6 +5082,8 @@ small {
   .cta:hover {
     box-shadow: none;
     text-shadow: none; }
+    [data-whatinput="mouse"] .cta:hover {
+      color: #fefefe; }
 
 /**
  * Material design click
