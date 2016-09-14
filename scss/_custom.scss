@@ -330,14 +330,10 @@ small {
 		display: block;
 	}
 
-	[data-whatinput="mouse"] {
+	[data-whatinput="mouse"] & {
 		a:hover {
 			.project-thumb {
 				filter: none;
-			}
-			.project-name,
-			.project-location {
-				color: $primary-color;
 			}
 		}
 	}
@@ -403,6 +399,13 @@ small {
 
 	.project-label {
 		display: block;
+	}
+
+	.project-location {
+		@media #{$medium-up} {
+			float: right;
+			margin-top: 0;
+		}
 	}
 }
 

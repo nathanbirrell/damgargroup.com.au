@@ -4849,18 +4849,11 @@ small {
   .project-detail a {
     color: #4A4A4A;
     display: block; }
-  .project-listing [data-whatinput="mouse"] a:hover .project-thumb,
-  .project-latest [data-whatinput="mouse"] a:hover .project-thumb,
-  .project-detail [data-whatinput="mouse"] a:hover .project-thumb {
+  [data-whatinput="mouse"] .project-listing a:hover .project-thumb, [data-whatinput="mouse"]
+  .project-latest a:hover .project-thumb, [data-whatinput="mouse"]
+  .project-detail a:hover .project-thumb {
     -webkit-filter: none;
             filter: none; }
-  .project-listing [data-whatinput="mouse"] a:hover .project-name,
-  .project-listing [data-whatinput="mouse"] a:hover .project-location,
-  .project-latest [data-whatinput="mouse"] a:hover .project-name,
-  .project-latest [data-whatinput="mouse"] a:hover .project-location,
-  .project-detail [data-whatinput="mouse"] a:hover .project-name,
-  .project-detail [data-whatinput="mouse"] a:hover .project-location {
-    color: #C92C39; }
   .project-listing.columns:last-child:not(:first-child),
   .project-latest.columns:last-child:not(:first-child),
   .project-detail.columns:last-child:not(:first-child) {
@@ -4988,6 +4981,10 @@ small {
     opacity: 1; }
   .project-latest .project-label {
     display: block; }
+  @media screen and (min-width: 40em) {
+    .project-latest .project-location {
+      float: right;
+      margin-top: 0; } }
 
 @media screen and (min-width: 64em) {
   .project-detail .project-thumb,
