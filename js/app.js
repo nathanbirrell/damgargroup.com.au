@@ -15,7 +15,8 @@ var runLoaderAnimation = function() {
     delay: 0,
     animTimingFunction: Vivus.EASE_OUT
   }, function() {
-    $('#loader-logo-svg-fill').addClass('loader-complete');
+    // fill
+    // $('#loader-logo-svg-fill').addClass('loader-complete');
 
     if (isHome) {
       $('#loader').fadeOut(250);
