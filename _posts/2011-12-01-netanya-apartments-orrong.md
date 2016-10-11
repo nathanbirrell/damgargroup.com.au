@@ -21,12 +21,12 @@ feature_img: /img/projects/netanya/netanya-orrong-00.jpg
           </ul>
         </div>
       </div>
-      <!-- <div class="medium-5 columns float-left">
+      <div class="medium-5 columns float-left">
         <div class="column">
-          <p>TODO Damgar Property Group is at the forefront of small to medium residential and commercial property development in inner Melbourne. We are a boutique developer which means that all of our developments have our complete focus from beginning to end.</p>
-          <p>During our 30 years in the Property Development business we have carefully fostered strong relationships with key industry partners including Architects, Engineers and Planning Consultants.</p>
+          <p>Situated in vibrant Alma Village North Caulfield, 12 spacious two bedroom plus study apartments, spread over two levels. Secure underground car parking with lift access to all levels.</p>
+          <p>Netaya apartments were carefully constructed from low maintenance natural materials and were completed in 2002.</p>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </div>
@@ -34,22 +34,14 @@ feature_img: /img/projects/netanya/netanya-orrong-00.jpg
 <br><br>
 
 <div class="row">
-  <!-- <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}03.jpg" alt="Photo of {{page.title}} {{page.location}}" title="Photo of {{page.title}} {{page.location}}">
-  </div> -->
-  <div class="medium-7 columns small-centered">
-    <img class="thumbnail" src="{{img_dir}}02.jpg" alt="Photo of {{page.title}} {{page.location}}" title="Photo of {{page.title}} {{page.location}}">
-  </div>
-</div>
-
-<br><br>
-
-<div class="row">
-  <div class="medium-6 columns">
+  <div class="medium-4 columns">
     <img class="thumbnail" src="{{img_dir}}06.jpg" alt="Photo of {{page.title}} {{page.location}}" title="Photo of {{page.title}} {{page.location}}">
   </div>
-  <div class="medium-6 columns">
+  <div class="medium-4 columns">
     <img class="thumbnail" src="{{img_dir}}07.jpg" alt="Photo of {{page.title}} {{page.location}}" title="Photo of {{page.title}} {{page.location}}">
+  </div>
+  <div class="medium-4 columns">
+    <img class="thumbnail" src="{{img_dir}}02.jpg" alt="Photo of {{page.title}} {{page.location}}" title="Photo of {{page.title}} {{page.location}}">
   </div>
 </div>
 
