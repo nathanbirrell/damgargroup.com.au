@@ -22,12 +22,11 @@ feature_img: /img/projects/verdis/damgar-verdis-apartments-external-render-aslin
           </ul>
         </div>
       </div>
-      <!-- <div class="medium-5 columns float-left">
+      <div class="medium-5 columns float-left">
         <div class="column">
-          <p>TODO Damgar Property Group is at the forefront of small to medium residential and commercial property development in inner Melbourne. We are a boutique developer which means that all of our developments have our complete focus from beginning to end.</p>
-          <p>During our 30 years in the Property Development business we have carefully fostered strong relationships with key industry partners including Architects, Engineers and Planning Consultants.</p>
+          <p>Situated within Brighton’s Martin street precinct. This building has been carefully constructed from low maintenance and sustainable materials, with easy access to  public transport, cafes and restaurants. Completed in 2015.</p>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </div>
