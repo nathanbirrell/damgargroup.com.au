@@ -1,11 +1,12 @@
 "use strict";
 
-// $.each($('.project-thumb'), function(index, element) {
-//   var width = element.clientWidth;
-//   $(element).height(width);
-// });
+/**
+ * Loader animation
+ */
 
-var isHome = window.location.pathname === '/';
+$(window).load(function() {
+  $('#loader').fadeOut(180);
+});
 
 var runLoaderAnimation = function() {
   $('#loader-logo-svg').addClass('loader-running');
@@ -15,26 +16,14 @@ var runLoaderAnimation = function() {
     delay: 0,
     animTimingFunction: Vivus.EASE_OUT
   }, function() {
+    // fill
     $('#loader-logo-svg-fill').addClass('loader-complete');
 
-    if (isHome) {
-      $('#loader').fadeOut(250);
-    }
+    $('#loader').fadeOut(180);
   });
 };
 
-var fadeOnLoad = function() {
-  $(window).load(function() {
-    $('#loader').fadeOut(250);
-  });
-};
-
-if (isHome) {
-  runLoaderAnimation();
-} else {
-  runLoaderAnimation();
-  fadeOnLoad();
-}
+runLoaderAnimation();
 
 /**
  * Mobile sticky menu
