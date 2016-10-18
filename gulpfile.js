@@ -8,12 +8,16 @@ var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 
 // FILE PATH CONFIG
-var jsFiles = ['js/*.js','js/modules/*.js' ];
+var jsFiles = [
+  'js/*.js',
+  'js/modules/*.js'
+];
 var jsDest = 'js/dist';
 
 var sassPaths = [
   'bower_components/foundation-sites/scss',
-  'bower_components/motion-ui/src'
+  'bower_components/motion-ui/src',
+  'bower_components/photoswipe/dist'
 ];
 
 gulp.task('build', shell.task(['bundle exec jekyll build --watch']));

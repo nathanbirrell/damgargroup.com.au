@@ -121,6 +121,8 @@
         <div class="off-canvas-content" data-off-canvas-content>
           <main>
             {{ content }}
+
+            {% include photoswipe.html %}
           </main>
 
           {% include cta.html %}
@@ -148,6 +150,8 @@
     <script src="{{site.url}}/bower_components/what-input/what-input.js"></script>
     <script src="{{site.url}}/bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="{{site.url}}/bower_components/vivus/dist/vivus.js"></script>
+    <script src="{{site.url}}/bower_components/photoswipe/dist/photoswipe.js"></script>
+    <script src="{{site.url}}/bower_components/photoswipe/dist/photoswipe-ui-default.js"></script>
     <script src="{{site.url}}/js/dist/scripts.js"></script>
     <!-- <script src="{{site.url}}/js/dist/scripts.min.js"></script> -->
 

@@ -50,3 +50,21 @@ feature_img: /img/projects/verdis/damgar-verdis-apartments-external-render-aslin
   </div>
 </div>
 -->
+
+<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="http://placehold.it/300x300.jpg" itemprop="contentUrl" data-size="300x300">
+          <img src="http://placehold.it/300x200.jpg" itemprop="thumbnail" alt="Image description" />
+          <figcaption itemprop="caption description">Image caption</figcaption>
+        </a>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="http://placehold.it/300x300.jpg" itemprop="contentUrl" data-size="300x300">
+          <img src="http://placehold.it/300x200.jpg" itemprop="thumbnail" alt="Image description" />
+          <figcaption itemprop="caption description">Image caption</figcaption>
+        </a>
+    </figure>
+
+</div>
