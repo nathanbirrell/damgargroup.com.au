@@ -82,3 +82,4 @@ $(materialDesignObjects).each(function(index, object) {
 
 $(document).foundation();
 
+console.log('hello from photoswipe');

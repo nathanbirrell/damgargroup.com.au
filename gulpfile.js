@@ -8,7 +8,7 @@ var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 
 // FILE PATH CONFIG
-var jsFiles = 'js/**/*.js';
+var jsFiles = ['js/*.js','js/modules/*.js' ];
 var jsDest = 'js/dist';
 
 var sassPaths = [
@@ -50,7 +50,7 @@ gulp.task('build-js', function() {
 
 gulp.task('watch', function() {
   gulp.watch('scss/**/*.scss', ['sass']);
-  gulp.watch('js/**/*.js', ['build-js']);
+  gulp.watch(jsFiles, ['build-js']);
 });
 
 gulp.task('default', ['build','sass','build-js','watch','serve']);
