@@ -30,17 +30,15 @@ feature_img: /img/projects/verdis/damgar-verdis-apartments-external-render-aslin
     </div>
   </div>
 </div>
-
+<!--
 <br><br>
 
 <div class="row">
   <div class="medium-6 columns">
     <img class="thumbnail" src="{{img_dir}}damgar-verdis-apartments-internal-render-kitchen.jpg" alt="Interior rendering of the Brighton apartments">
-    <caption>Interior rendering of the Brighton apartments</caption>
   </div>
   <div class="medium-6 columns">
     <img class="thumbnail" src="{{img_dir}}damgar-verdis-apartments-internal-render-living.jpg" alt="Interior rendering of the Brighton apartments">
-    <caption>Interior rendering of the Brighton apartments</caption>
   </div>
 </div>
 
@@ -49,6 +47,6 @@ feature_img: /img/projects/verdis/damgar-verdis-apartments-external-render-aslin
 <div class="row">
   <div class="medium-12 columns small-centered">
     <img class="thumbnail" src="{{img_dir}}damgar-verdis-00.jpg" alt="The finished project on Asling Street">
-    <caption>The finished project on Asling Street</caption>
   </div>
 </div>
+-->

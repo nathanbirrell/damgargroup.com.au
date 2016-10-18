@@ -53,12 +53,3 @@ feature_img: /img/projects/metro-65/damgar-station-st-1.jpg
     <caption>{{page.title}} {{page.location}}</caption>
   </div>
 </div>
-
-<br> <br>
-
-<div class="row">
-  <div class="medium-6 columns small-centered">
-    <img class="thumbnail" src="{{img_dir}}5.jpg" alt="External photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
-    <caption>External photo of {{page.title}} {{page.location}}</caption>
-  </div>
-</div>
