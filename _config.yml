@@ -1,3 +1,6 @@
+gems:
+- jekyll-gallery-generator
+
 name : Damgar Property Group
 brand : Damgar Property Group
 description : Damgar Property Group is at the forefront of small to medium residential and commercial property development in inner Melbourne.
@@ -18,15 +21,10 @@ exclude :
 
 permalink: pretty
 
-# defaults:
-#   -
-#     scope:
-#       path: "" # empty string = all files
-#     values:
-#       layout: "default"
-#   -
-#     scope:
-#       path: "" # empty string = all files
-#       type: "posts"
-#     values:
-#       permalink: /projects/:title/
+gallery:
+  dir: project-photos       # Path to the gallery
+  title: "Project Photos"   # Title for gallery index page
+  sort_field: "title"   # How to sort galleries on the index page.
+  # thumbnail_size:
+  #   x: 400                  # max width of thumbnails (in pixels)
+  #   y: 400                  # max height of thumbnails (in pixels)
