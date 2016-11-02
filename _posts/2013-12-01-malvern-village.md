@@ -1,10 +1,11 @@
 ---
 layout: project
 title: Malvern Village
-permalink: /projects/malvern-village
+permalink: /projects/malvern-village/
 description: Another successful development by Damgar Property Group in Glen Iris.
 location: Apartments, Glen iris
 feature_img: /project-photos/malvern-village/damgar-malvern-village-7.jpg
+gallery_name: malvern-village
 ---
 
 {% assign img_dir = {{site.url}} | append: "/project-photos/malvern-village/damgar-malvern-village-" %}
