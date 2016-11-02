@@ -9,9 +9,14 @@ var uglify = require('gulp-uglify');
 
 // FILE PATH CONFIG
 var jsFiles = [
-    'node_modules/slick-carousel/slick/slick.js',
-    'js/*.js',
-    'js/modules/*.js'
+  'bower_components/what-input/what-input.js',
+  'bower_components/foundation-sites/dist/foundation.js',
+  'bower_components/vivus/dist/vivus.js',
+  'bower_components/photoswipe/dist/photoswipe.js',
+  'bower_components/photoswipe/dist/photoswipe-ui-default.js',
+  'node_modules/slick-carousel/slick/slick.js',
+  'js/modules/*.js',
+  'js/*.js'
 ];
 var jsDest = 'js/dist';
 
