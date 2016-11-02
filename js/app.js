@@ -77,6 +77,15 @@ $(materialDesignObjects).each(function(index, object) {
 });
 
 /**
+ * Slick carousel
+ */
+
+$('.slick-carousel').slick({
+  dots: true,
+  speed: 500
+});
+
+/**
  * Initialise Foundation
  */
 

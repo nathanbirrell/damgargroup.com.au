@@ -58,6 +58,20 @@
 		height: 100%;
 	}
 
+	.slick-dots {
+		bottom: 62px;
+
+		li button:before {
+			color: $white;
+			font-size: 28px;
+			opacity: .55;
+		}
+
+		li.slick-active button:before {
+			opacity: 1;
+		}
+	}
+
 
 	.project-hover-logo {
 		display: block;

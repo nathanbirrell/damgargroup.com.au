@@ -9,8 +9,9 @@ var uglify = require('gulp-uglify');
 
 // FILE PATH CONFIG
 var jsFiles = [
-  'js/*.js',
-  'js/modules/*.js'
+    'node_modules/slick-carousel/slick/slick.js',
+    'js/*.js',
+    'js/modules/*.js'
 ];
 var jsDest = 'js/dist';
 

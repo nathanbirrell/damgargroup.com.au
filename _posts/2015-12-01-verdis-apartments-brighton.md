@@ -52,7 +52,7 @@ gallery_name: verdis
 </div>
 -->
 
-<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="photoswipe-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
         <a href="http://placehold.it/300x300.jpg" itemprop="contentUrl" data-size="300x300">

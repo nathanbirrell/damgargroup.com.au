@@ -204,5 +204,5 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 };
 
 // $(document).ready(function() {
-  initPhotoSwipeFromDOM('.my-gallery');
+  initPhotoSwipeFromDOM('.photoswipe-gallery');
 // });

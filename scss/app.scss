@@ -55,9 +55,13 @@
 @import "padding-margin";
 
 
-// Photoswipe UI Styles, stupoidly named
+// Photoswipe UI Styles
 @import 'photoswipe';
 @import 'default-skin/default-skin';
+
+// Slick carousel
+@import '../node_modules/slick-carousel/slick/slick.scss';
+@import '../node_modules/slick-carousel/slick/slick-theme.scss';
 
 /* custom */
 @import "custom";
