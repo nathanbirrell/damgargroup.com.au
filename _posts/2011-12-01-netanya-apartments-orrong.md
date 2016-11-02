@@ -8,8 +8,6 @@ feature_img: /project-photos/netanya/netanya-orrong-00.jpg
 gallery_name: netanya
 ---
 
-{% assign img_dir = {{site.url}} | append: "/project-photos/netanya/netanya-orrong-" %}
-
 <div class="row project-detail-content">
   <div class="small-11 medium-10 medium-offset-1 columns">
     <div class="row">
@@ -31,27 +29,3 @@ gallery_name: netanya
     </div>
   </div>
 </div>
-
-<br><br>
-
-<div class="row">
-  <div class="medium-4 columns">
-    <img class="thumbnail" src="{{img_dir}}06.jpg" alt="Photo of {{page.title}} {{page.location}}" title="Photo of {{page.title}} {{page.location}}">
-  </div>
-  <div class="medium-4 columns">
-    <img class="thumbnail" src="{{img_dir}}07.jpg" alt="Photo of {{page.title}} {{page.location}}" title="Photo of {{page.title}} {{page.location}}">
-  </div>
-  <div class="medium-4 columns">
-    <img class="thumbnail" src="{{img_dir}}02.jpg" alt="Photo of {{page.title}} {{page.location}}" title="Photo of {{page.title}} {{page.location}}">
-  </div>
-</div>
-
-
-<!--<div class="row">
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}04.jpg" alt="Photo of {{page.title}} {{page.location}}" title="Photo of {{page.title}} {{page.location}}">
-  </div>
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}05.jpg" alt="Photo of {{page.title}} {{page.location}}" title="Photo of {{page.title}} {{page.location}}">
-  </div>
-</div>-->
