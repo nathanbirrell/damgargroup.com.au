@@ -4,10 +4,10 @@ title: Otto
 permalink: /projects/otto-apartments-brunswick
 description: An award-winning boutique development in Brunswick, with a focus on sustainability.
 location: Apartments, Brunswick
-feature_img: /img/projects/otto/damgar-otto-apartments-brunswick-thumb.jpg
+feature_img: /project-photos/otto/damgar-otto-apartments-brunswick-thumb.jpg
 ---
 
-{% assign img_dir = {{site.url}} | append: "/img/projects/otto/" %}
+{% assign img_dir = {{site.url}} | append: "/project-photos/otto/" %}
 
 <div class="row project-detail-content">
   <div class="small-11 medium-10 medium-offset-1 columns">

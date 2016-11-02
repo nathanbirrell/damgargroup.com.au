@@ -1,0 +1,9 @@
+{% for image in images %}
+    {{ image.exif.width }}
+    <div class="gallery-image-wrapper">
+        <a name="{{ image.name }}">{{ image.name }}</a> <br>
+        <a href="{{ image.src }}">
+            <img class="gallery-image" src="{{ image.thumb_src }}" />
+        </a>
+    </div>
+{% endfor %}

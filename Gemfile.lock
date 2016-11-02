@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/nathanbirrell/jekyll-gallery-generator
+  revision: f39153d5f19f2d9a19e2ad3660fd7ef8add4b23b
+  specs:
+    jekyll-gallery-generator (1.1)
+      exifr (~> 1.2)
+      rmagick (~> 2.12)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -75,9 +83,6 @@ GEM
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
     jekyll-feed (0.3.1)
-    jekyll-gallery-generator (1.0.4)
-      exifr (~> 1.2)
-      rmagick (~> 2.12)
     jekyll-gist (1.4.0)
       octokit (~> 4.2)
     jekyll-mentions (0.2.1)
@@ -146,7 +151,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-gallery-generator
+  jekyll-gallery-generator!
 
 BUNDLED WITH
-   1.11.2
+   1.13.6
