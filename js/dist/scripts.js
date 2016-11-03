@@ -17717,7 +17717,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
  * Loader animation
  */
 
-$(window).load(function() {
+$(document).load(function() {
   $('#loader').fadeOut(180);
 });
 

@@ -5359,7 +5359,7 @@ a.pswp__share--download:hover {
 
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat; }
+  background: #fff url("/img/ajax-loader.gif") center center no-repeat; }
 
 /* Icons */
 /* Arrows */

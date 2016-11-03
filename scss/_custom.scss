@@ -58,6 +58,10 @@
 		height: 100%;
 	}
 
+	.slick-list .slick-loading & {
+		//background: none;
+	}
+
 	.slick-dots {
 		bottom: 45px;
 
