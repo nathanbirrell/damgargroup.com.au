@@ -3,7 +3,7 @@
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
             <a href="{{image.src}}" itemprop="contentUrl" data-size="{{image.exif.width}}x{{image.exif.height}}">
                 <img src="{{image.thumb_src}}" class="thumbnail project-thumb" itemprop="thumbnail" alt="{{image.name}}" title="{{image.name}}" />
-                <figcaption itemprop="caption description">{{image.name}}</figcaption>
+                <!-- <figcaption itemprop="caption description">{{image.name}}</figcaption> -->
             </a>
         </figure>
     {% endfor %}

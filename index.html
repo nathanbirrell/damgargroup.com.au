@@ -11,7 +11,9 @@ keywords: property, developer, melbourne, apartments
       {% assign project = site.posts.first %}
       <a href="{{project.url}}" title="{{site.brand}} - Latest Projects">
         <div class="project-thumb-wrapper">
-          <div class="thumbnail project-thumb" style="background-image: url('{{project.feature_img}}');" alt="Damgar's latest property development in Melbourne"></div>
+          <div class="thumbnail project-thumb" alt="Damgar's latest property development in Melbourne">
+            <img src="{{project.feature_img}}" alt="{{project.title}}">
+          </div>
         </div>
         <h2 class="project-name">{{project.title}}</h2>
         <span class="project-location">{{project.location}}</span>
