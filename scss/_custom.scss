@@ -192,7 +192,7 @@ small {
 	font-size: 80%;
 }
 
-// Foundation thumbnail overrides
+// Foundation customisation
 .thumbnail {
 	border: none;
 	box-shadow: none;
@@ -200,6 +200,11 @@ small {
 	&:hover {
 		box-shadow: none;
 	}
+}
+
+.callout {
+	background: transparent;
+	border: none;
 }
 
 // Custom icons

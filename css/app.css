@@ -5558,6 +5558,10 @@ small {
   .thumbnail:hover {
     box-shadow: none; }
 
+.callout {
+  background: transparent;
+  border: none; }
+
 .logo-spacer {
   display: block;
   clear: both;
