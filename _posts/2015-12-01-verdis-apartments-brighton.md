@@ -4,7 +4,7 @@ title: Verdis
 permalink: /projects/verdis-apartments-brighton/
 description: A superb boutique development in Brighton, featuring 47 one and two bedroom apartments, 7 offices and 1 restaurant space.
 location: Apartments, Brighton
-feature_img: /project-photos/verdis/damgar-verdis-apartments-external-render-asling-st.jpg
+feature_img: /project-photos/verdis/thumbs/damgar-verdis-00.jpg
 gallery_name: verdis
 ---
 

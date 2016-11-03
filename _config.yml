@@ -24,7 +24,8 @@ permalink: pretty
 gallery:
   dir: project-photos       # Path to the gallery
   title: "Project Photos"   # Title for gallery index page
-  sort_field: "title"   # How to sort galleries on the index page.
-  # thumbnail_size:
-  #   x: 400                  # max width of thumbnails (in pixels)
-  #   y: 400                  # max height of thumbnails (in pixels)
+  sort_field: "title"       # How to sort galleries on the index page.
+  scale_method: fill
+  thumbnail_size:
+    x: 900                  # max width of thumbnails (in pixels)
+    y: 512                  # max height of thumbnails (in pixels)
