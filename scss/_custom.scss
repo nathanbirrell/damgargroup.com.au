@@ -59,7 +59,7 @@
 	}
 
 	.slick-dots {
-		bottom: 66px;
+		bottom: 45px;
 
 		li button:before {
 			color: $white;
@@ -74,7 +74,6 @@
 
 	.slick-prev,
 	.slick-next {
-		display: none;
 		z-index: 1;
 		margin-top: -16px;
 		&:before {
@@ -82,13 +81,13 @@
 		}
 	}
 	.slick-prev {
-		left: 55px;
+		left: 25px;
 		&:before {
 			content: '\f104'
 		}
 	}
 	.slick-next {
-		right: 55px;
+		right: 25px;
 		&:before {
 			content: '\f105'
 		}
@@ -124,6 +123,10 @@
 	position: absolute;
 	right: 18px;
 	top: 18px;
+}
+
+figure {
+	margin: 0;
 }
 
 // Typography

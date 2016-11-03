@@ -183,6 +183,14 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             options.showAnimationDuration = 0;
         }
 
+        // options.captionEl = false;
+        // options.counterEl = false;
+        // options.arrowEl = false;
+        options.fullscreenEl = false;
+        options.zoomEl = false;
+        options.shareEl = false;
+        options.preloaderEl = false;
+
         // Pass data to PhotoSwipe and initialize it
         gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
         gallery.init();

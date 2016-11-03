@@ -5505,6 +5505,9 @@ a.pswp__share--download:hover {
   .loader #loader-logo-svg-fill.loader-complete {
     opacity: 1; }
 
+figure {
+  margin: 0; }
+
 @font-face {
   font-family: 'Avenir Next';
   src: url("fonts/AvenirNext-Bold.eot");
@@ -5709,7 +5712,7 @@ small {
   .project-thumb-wrapper .project-thumb {
     height: 100%; }
   .project-thumb-wrapper .slick-dots {
-    bottom: 66px; }
+    bottom: 45px; }
     .project-thumb-wrapper .slick-dots li button:before {
       color: #fefefe;
       font-size: 28px;
@@ -5718,18 +5721,17 @@ small {
       opacity: 1; }
   .project-thumb-wrapper .slick-prev,
   .project-thumb-wrapper .slick-next {
-    display: none;
     z-index: 1;
     margin-top: -16px; }
     .project-thumb-wrapper .slick-prev:before,
     .project-thumb-wrapper .slick-next:before {
       font-size: 36px; }
   .project-thumb-wrapper .slick-prev {
-    left: 55px; }
+    left: 25px; }
     .project-thumb-wrapper .slick-prev:before {
       content: '\f104'; }
   .project-thumb-wrapper .slick-next {
-    right: 55px; }
+    right: 25px; }
     .project-thumb-wrapper .slick-next:before {
       content: '\f105'; }
   .project-thumb-wrapper .project-hover-logo {
@@ -5774,7 +5776,7 @@ small {
   .project-thumb .project-thumb {
     height: 100%; }
   .project-thumb .slick-dots {
-    bottom: 66px; }
+    bottom: 45px; }
     .project-thumb .slick-dots li button:before {
       color: #fefefe;
       font-size: 28px;
@@ -5783,18 +5785,17 @@ small {
       opacity: 1; }
   .project-thumb .slick-prev,
   .project-thumb .slick-next {
-    display: none;
     z-index: 1;
     margin-top: -16px; }
     .project-thumb .slick-prev:before,
     .project-thumb .slick-next:before {
       font-size: 36px; }
   .project-thumb .slick-prev {
-    left: 55px; }
+    left: 25px; }
     .project-thumb .slick-prev:before {
       content: '\f104'; }
   .project-thumb .slick-next {
-    right: 55px; }
+    right: 25px; }
     .project-thumb .slick-next:before {
       content: '\f105'; }
   .project-thumb .project-hover-logo {
