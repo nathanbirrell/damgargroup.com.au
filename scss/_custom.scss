@@ -72,6 +72,28 @@
 		}
 	}
 
+	.slick-prev,
+	.slick-next {
+		display: none;
+		z-index: 1;
+		margin-top: -16px;
+		&:before {
+			font-size: 36px;
+		}
+	}
+	.slick-prev {
+		left: 55px;
+		&:before {
+			content: '\f104'
+		}
+	}
+	.slick-next {
+		right: 55px;
+		&:before {
+			content: '\f105'
+		}
+	}
+
 
 	.project-hover-logo {
 		display: block;
