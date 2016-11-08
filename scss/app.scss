@@ -63,5 +63,11 @@
 @import '../node_modules/slick-carousel/slick/slick.scss';
 @import '../node_modules/slick-carousel/slick/slick-theme.scss';
 
-/* custom */
-@import "custom";
+/* Application Modules */
+@import "_modules/mixins";
+@import "_modules/typography";
+@import "_modules/base";
+@import "_modules/buttons";
+@import "_modules/header";
+@import "_modules/pages";
+@import "_modules/footer";
