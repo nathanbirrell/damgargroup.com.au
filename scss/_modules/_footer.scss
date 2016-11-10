@@ -4,10 +4,10 @@
 
 .light-grey-block {
 	background-color: $light-gray;
+	color: $medium-gray;
 }
 
 .site-footer {
-	padding-bottom: 32px;
 	font-size: 110%;
 
 	&.row {
@@ -30,5 +30,9 @@
 		padding: 8px;
 		max-width: 100%;
 		overflow-wrap: break-word;
+	}
+
+	.logo-spacer {
+		margin: 14px auto 0 auto;
 	}
 }

@@ -29,10 +29,15 @@ var sassPaths = [
 gulp.task('build', shell.task(['bundle exec jekyll build --watch']));
 
 gulp.task('serve', function () {
-  browserSync.init({server: {baseDir: '_site/'}});
-  // browserSync.init({proxy: 'http://damgargroup.dev'});
-  // Reloads page when some of the already built files changed:
-  gulp.watch('_site/**/*.*').on('change', browserSync.reload);
+  browserSync.init({
+    server: {
+      baseDir: '_site/'
+    },
+    injectChanges: true
+  });
+
+  gulp.watch('_site/**/*.html').on('change', browserSync.reload);
+  gulp.watch('_site/**/*.js').on('change', browserSync.reload);
 });
 
 gulp.task('sass', function() {
@@ -40,11 +45,12 @@ gulp.task('sass', function() {
     .pipe($.sass({
       includePaths: sassPaths
     })
-      .on('error', $.sass.logError))
+    .on('error', $.sass.logError))
     .pipe($.autoprefixer({
       browsers: ['last 2 versions', 'ie >= 9']
     }))
     .pipe(gulp.dest('css'))
+    .pipe(browserSync.stream({match: '**/*.css'}));
 });
 
 gulp.task('build-js', function() {

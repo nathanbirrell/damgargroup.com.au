@@ -12,7 +12,7 @@ url: http://localhost:3000
 email: admin@damgargroup.com.au
 phone: 03 9596 8543 
 author: Nathan Birrell
-latest_development_url: '#contact'
+latest_project_url: 'google.com.au'
 analytics: UA-81747047-1
 year: 2016
 markdown: kramdown
