@@ -28,7 +28,7 @@
 	.project-thumb {
 		height: 310px;
 
-		// center img
+		// center & fill img
 		display: flex;
     justify-content: center;
     align-items: center;
@@ -36,10 +36,9 @@
 	}
 
 	.project-thumb img {
-		height: 100%;
 		max-width: none;
 
-		// center img
+		// center & fill img
 		flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
