@@ -5758,7 +5758,6 @@ figure {
         align-items: center;
     overflow: hidden; }
   .project-thumb-wrapper .project-thumb img {
-    height: 100%;
     max-width: none;
     -ms-flex-negative: 0;
         flex-shrink: 0;
@@ -5837,7 +5836,6 @@ figure {
         align-items: center;
     overflow: hidden; }
   .project-thumb .project-thumb img {
-    height: 100%;
     max-width: none;
     -ms-flex-negative: 0;
         flex-shrink: 0;
