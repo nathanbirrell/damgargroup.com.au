@@ -5,15 +5,11 @@ $(document).ready(function() {
    * Loader animation
    */
 
-  $(document).load(function() {
-    $('#loader').fadeOut(180);
-  });
-
   var runLoaderAnimation = function() {
     $('#loader-logo-svg').addClass('loader-running');
 
     new Vivus('loader-logo-svg', {
-      duration: 100,
+      duration: 90,
       delay: 0,
       animTimingFunction: Vivus.EASE_OUT
     }, function() {
