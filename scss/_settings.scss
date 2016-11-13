@@ -96,7 +96,7 @@ $breakpoint-classes: (small medium large xlarge xxlarge);
 
 $grid-row-width: $global-width;
 $grid-column-count: 12;
-$grid-column-responsive-gutter: (
+$grid-column-gutter: (
   small: 20px,
   medium: 30px,
 );
@@ -264,9 +264,9 @@ $buttongroup-expand-max: 6;
 // 13. Callout
 // -----------
 
-$callout-background: $white;
+$callout-background: transparent;
 $callout-background-fade: 85%;
-$callout-border: 1px solid rgba($black, 0.25);
+$callout-border: none;
 $callout-margin: 0 0 1rem 0;
 $callout-padding: 1rem;
 $callout-font-color: $body-font-color;
@@ -518,10 +518,10 @@ $tab-content-padding: 1rem;
 // 32. Thumbnail
 // -------------
 
-$thumbnail-border: solid 4px $white;
+$thumbnail-border: none;
 $thumbnail-margin-bottom: $global-margin;
-$thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
-$thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
+$thumbnail-shadow: none;
+$thumbnail-shadow-hover: none;
 $thumbnail-transition: box-shadow 200ms ease-out;
 $thumbnail-radius: $global-radius;
 
@@ -557,3 +557,9 @@ $topbar-padding: 0.5rem;
 $topbar-background: $white;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;
+
+
+// ANY OTHER SETTINGS (NON FOUNDATION SETTINGS)
+
+$slick-font-family: 'FontAwesome';
+$slick-loader-path: '/img/'

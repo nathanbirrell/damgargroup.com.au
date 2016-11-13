@@ -1,13 +1,12 @@
 ---
 layout: project
 title: Metro 65
-permalink: /projects/metro-65-st-malvern
+permalink: /portfolio/metro-65-st-malvern/
 description: Another successful development by Damgar Property Group, Melbourne.
 location: Apartments, Malvern
-feature_img: /img/projects/metro-65/damgar-station-st-1.jpg
+feature_img: /project-photos/metro-65/thumbs/damgar-station-st-1.jpg
+gallery_name: metro-65
 ---
-
-{% assign img_dir = {{site.url}} | append: "/img/projects/metro-65/damgar-station-st-" %}
 
 <div class="row project-detail-content">
   <div class="small-11 medium-10 medium-offset-1 columns">
@@ -29,27 +28,5 @@ feature_img: /img/projects/metro-65/damgar-station-st-1.jpg
         </div>
       </div> -->
     </div>
-  </div>
-</div>
-
-<br><br>
-
-<div class="row">
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}2.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
-    <caption>Internal photo of {{page.title}} {{page.location}}</caption>
-  </div>
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}3.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
-    <caption>Internal photo of {{page.title}} {{page.location}}</caption>
-  </div>
-</div>
-
-<br><br>
-
-<div class="row">
-  <div class="medium-8 columns small-centered">
-    <img class="thumbnail" src="{{img_dir}}4.jpg" alt="External photo of {{page.title}} {{page.location}}" title="{{page.title}} {{page.location}}">
-    <caption>{{page.title}} {{page.location}}</caption>
   </div>
 </div>

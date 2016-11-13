@@ -8,21 +8,36 @@ var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 
 // FILE PATH CONFIG
-var jsFiles = 'js/**/*.js';
+var jsFiles = [
+  'bower_components/what-input/what-input.js',
+  'bower_components/foundation-sites/dist/foundation.js',
+  'bower_components/vivus/dist/vivus.js',
+  'bower_components/photoswipe/dist/photoswipe.js',
+  'bower_components/photoswipe/dist/photoswipe-ui-default.js',
+  'node_modules/slick-carousel/slick/slick.js',
+  'js/modules/*.js',
+  'js/*.js'
+];
 var jsDest = 'js/dist';
 
 var sassPaths = [
   'bower_components/foundation-sites/scss',
-  'bower_components/motion-ui/src'
+  'bower_components/motion-ui/src',
+  'bower_components/photoswipe/dist'
 ];
 
 gulp.task('build', shell.task(['bundle exec jekyll build --watch']));
 
 gulp.task('serve', function () {
-  browserSync.init({server: {baseDir: '_site/'}});
-  // browserSync.init({proxy: 'http://damgargroup.dev'});
-  // Reloads page when some of the already built files changed:
-  gulp.watch('_site/**/*.*').on('change', browserSync.reload);
+  browserSync.init({
+    server: {
+      baseDir: '_site/'
+    },
+    injectChanges: true
+  });
+
+  gulp.watch('_site/**/*.html').on('change', browserSync.reload);
+  gulp.watch('_site/**/*.js').on('change', browserSync.reload);
 });
 
 gulp.task('sass', function() {
@@ -30,11 +45,12 @@ gulp.task('sass', function() {
     .pipe($.sass({
       includePaths: sassPaths
     })
-      .on('error', $.sass.logError))
+    .on('error', $.sass.logError))
     .pipe($.autoprefixer({
       browsers: ['last 2 versions', 'ie >= 9']
     }))
     .pipe(gulp.dest('css'))
+    .pipe(browserSync.stream({match: '**/*.css'}));
 });
 
 gulp.task('build-js', function() {
@@ -50,7 +66,7 @@ gulp.task('build-js', function() {
 
 gulp.task('watch', function() {
   gulp.watch('scss/**/*.scss', ['sass']);
-  gulp.watch('js/**/*.js', ['build-js']);
+  gulp.watch(jsFiles, ['build-js']);
 });
 
 gulp.task('default', ['build','sass','build-js','watch','serve']);

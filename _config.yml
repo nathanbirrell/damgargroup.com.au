@@ -1,32 +1,31 @@
-name : Damgar Property Group
-brand : Damgar Property Group
-description : Damgar Property Group is at the forefront of small to medium residential and commercial property development in inner Melbourne.
-keyword : property developer, builder, construction
-url : http://damgar.nathanbirrell.me/
-# url : http://localhost:3000
-# url : http://10.0.1.3:3000
-# url : http://damgargroup.dev
-email : admin@damgargroup.com.au
-phone : 03 9596 8543 
-author : Nathan Birrell
-latest_development_url : '#contact'
-analytics : UA-81747047-1
-year : 2016
-markdown : kramdown
-exclude :
+gems:
+- jekyll-gallery-generator
+
+name: Damgar Property Group
+brand: Damgar Property Group
+description: Damgar Property Group is at the forefront of small to medium residential and commercial property development in inner Melbourne.
+keyword: property developer, builder, construction
+# url: http://nathanbirrell.me/damgargroup.com.au/
+url: http://localhost:3000
+# url: http://10.0.1.3:3000
+# url: http://damgargroup.dev
+email: admin@damgargroup.com.au
+phone: 03 9596 8543 
+author: Nathan Birrell
+latest_project_url: 'http://google.com.au'
+analytics: UA-81747047-1
+year: 2016
+markdown: kramdown
+exclude:
   - node_modules
 
 permalink: pretty
 
-# defaults:
-#   -
-#     scope:
-#       path: "" # empty string = all files
-#     values:
-#       layout: "default"
-#   -
-#     scope:
-#       path: "" # empty string = all files
-#       type: "posts"
-#     values:
-#       permalink: /projects/:title/
+gallery:
+  dir: project-photos       # Path to the gallery
+  title: "Project Photos"   # Title for gallery index page
+  sort_field: "title"       # How to sort galleries on the index page.
+  scale_method: fill
+  thumbnail_size:
+    x: 900                  # max width of thumbnails (in pixels)
+    y: 512                  # max height of thumbnails (in pixels)

@@ -1,13 +1,12 @@
 ---
 layout: project
 title: Verdis
-permalink: /projects/verdis-apartments-brighton
+permalink: /portfolio/verdis-apartments-brighton/
 description: A superb boutique development in Brighton, featuring 47 one and two bedroom apartments, 7 offices and 1 restaurant space.
 location: Apartments, Brighton
-feature_img: /img/projects/verdis/damgar-verdis-apartments-external-render-asling-st.jpg
+feature_img: /project-photos/verdis/thumbs/damgar-verdis-00.jpg
+gallery_name: verdis
 ---
-
-{% assign img_dir = {{site.url}} | append: "/img/projects/verdis/" %}
 
 <div class="row project-detail-content">
   <div class="small-11 medium-10 medium-offset-1 columns">
@@ -30,23 +29,3 @@ feature_img: /img/projects/verdis/damgar-verdis-apartments-external-render-aslin
     </div>
   </div>
 </div>
-<!--
-<br><br>
-
-<div class="row">
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}damgar-verdis-apartments-internal-render-kitchen.jpg" alt="Interior rendering of the Brighton apartments">
-  </div>
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}damgar-verdis-apartments-internal-render-living.jpg" alt="Interior rendering of the Brighton apartments">
-  </div>
-</div>
-
-<br><br>
-
-<div class="row">
-  <div class="medium-12 columns small-centered">
-    <img class="thumbnail" src="{{img_dir}}damgar-verdis-00.jpg" alt="The finished project on Asling Street">
-  </div>
-</div>
--->
