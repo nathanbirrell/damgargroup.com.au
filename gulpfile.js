@@ -26,7 +26,9 @@ var sassPaths = [
   'bower_components/photoswipe/dist'
 ];
 
-gulp.task('build', shell.task(['bundle exec jekyll build --watch']));
+gulp.task('build-and-serve-jekyll', shell.task(['bundle install; exec jekyll build --watch']));
+
+gulp.task('build-jekyll', shell.task(['bundle install; bundle exec jekyll build']));
 
 gulp.task('serve', function () {
   browserSync.init({
@@ -69,4 +71,5 @@ gulp.task('watch', function() {
   gulp.watch(jsFiles, ['build-js']);
 });
 
-gulp.task('default', ['build','sass','build-js','watch','serve']);
+gulp.task('default', ['build-and-serve-jekyll','sass','build-js','watch','serve']);
+gulp.task('build', ['build-jekyll','sass','build-js']);
