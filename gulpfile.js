@@ -28,7 +28,7 @@ var sassPaths = [
 
 gulp.task('build-and-serve-jekyll', shell.task(['bundle install; exec jekyll build --watch']));
 
-gulp.task('build-jekyll', shell.task(['bundle install; bundle exec jekyll build']));
+gulp.task('build-jekyll', shell.task(['bundle install; bundle exec jekyll build --config _config.yml,_config-prod.yml']));
 
 gulp.task('serve', function () {
   browserSync.init({
