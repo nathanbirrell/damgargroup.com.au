@@ -1,13 +1,12 @@
 ---
 layout: project
 title: Netanya
-permalink: /projects/netanya-apartments-caulfield
-description: Another successful development in Caulfield by Damgar Property Group, Melbourne.
+permalink: /portfolio/netanya-apartments-caulfield/
+description: Another successful project in Caulfield by Damgar Property Group, Melbourne.
 location: Apartments, Caulfield North
-feature_img: /img/projects/netanya/netanya-orrong-00.jpg
+feature_img: /project-photos/netanya/thumbs/netanya-orrong-00.jpg
+gallery_name: netanya
 ---
-
-{% assign img_dir = {{site.url}} | append: "/img/projects/netanya/netanya-orrong-" %}
 
 <div class="row project-detail-content">
   <div class="small-11 medium-10 medium-offset-1 columns">
@@ -30,27 +29,3 @@ feature_img: /img/projects/netanya/netanya-orrong-00.jpg
     </div>
   </div>
 </div>
-
-<br><br>
-
-<div class="row">
-  <div class="medium-4 columns">
-    <img class="thumbnail" src="{{img_dir}}06.jpg" alt="Photo of {{page.title}} {{page.location}}" title="Photo of {{page.title}} {{page.location}}">
-  </div>
-  <div class="medium-4 columns">
-    <img class="thumbnail" src="{{img_dir}}07.jpg" alt="Photo of {{page.title}} {{page.location}}" title="Photo of {{page.title}} {{page.location}}">
-  </div>
-  <div class="medium-4 columns">
-    <img class="thumbnail" src="{{img_dir}}02.jpg" alt="Photo of {{page.title}} {{page.location}}" title="Photo of {{page.title}} {{page.location}}">
-  </div>
-</div>
-
-
-<!--<div class="row">
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}04.jpg" alt="Photo of {{page.title}} {{page.location}}" title="Photo of {{page.title}} {{page.location}}">
-  </div>
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}05.jpg" alt="Photo of {{page.title}} {{page.location}}" title="Photo of {{page.title}} {{page.location}}">
-  </div>
-</div>-->

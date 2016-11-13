@@ -1,13 +1,12 @@
 ---
 layout: project
 title: Stonehill
-permalink: /projects/stonehill-apartments-malvern
+permalink: /portfolio/stonehill-apartments-malvern/
 description: Another successful development by Damgar Property Group, Melbourne.
 location: Apartments, Malvern
-feature_img: /img/projects/stonehill/stonehill-apartments-malvern-01.jpg
+feature_img: /project-photos/stonehill/thumbs/stonehill-apartments-malvern-01.jpg
+gallery_name: stonehill
 ---
-
-{% assign img_dir = {{site.url}} | append: "/img/projects/stonehill/stonehill-apartments-malvern-" %}
 
 <div class="row project-detail-content">
   <div class="small-11 medium-10 medium-offset-1 columns">
@@ -29,11 +28,3 @@ feature_img: /img/projects/stonehill/stonehill-apartments-malvern-01.jpg
     </div>
   </div>
 </div>
-
-<br>
-
-<!-- <div class="row">
-  <div class="medium-8 columns small-centered">
-    <img class="thumbnail" src="{{img_dir}}03.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
-  </div>
-</div> -->

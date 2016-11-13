@@ -1,13 +1,12 @@
 ---
 layout: project
 title: Malvern Village
-permalink: /projects/malvern-village
+permalink: /portfolio/malvern-village/
 description: Another successful development by Damgar Property Group in Glen Iris.
 location: Apartments, Glen iris
-feature_img: /img/projects/malvern-village/damgar-malvern-village-7.jpg
+feature_img: /project-photos/malvern-village/thumbs/damgar-malvern-village-1.jpg
+gallery_name: malvern-village
 ---
-
-{% assign img_dir = {{site.url}} | append: "/img/projects/malvern-village/damgar-malvern-village-" %}
 
 <div class="row project-detail-content">
   <div class="small-11 medium-10 medium-offset-1 columns">
@@ -30,33 +29,3 @@ feature_img: /img/projects/malvern-village/damgar-malvern-village-7.jpg
     </div>
   </div>
 </div>
-
-<br><br>
-
-<div class="row">
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}2.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
-  </div>
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}3.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
-  </div>
-</div>
-
-<br><br>
-
-<div class="row">
-  <div class="medium-8 columns small-centered">
-    <img class="thumbnail" src="{{img_dir}}1.jpg" alt="External photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
-  </div>
-</div>
-
-<br><br>
-
-<!-- <div class="row">
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}5.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
-  </div>
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}6.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
-  </div>
-</div> -->

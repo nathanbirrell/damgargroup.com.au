@@ -1,13 +1,12 @@
 ---
 layout: project
 title: Otto
-permalink: /projects/otto-apartments-brunswick
+permalink: /portfolio/otto-apartments-brunswick/
 description: An award-winning boutique development in Brunswick, with a focus on sustainability.
 location: Apartments, Brunswick
-feature_img: /img/projects/otto/damgar-otto-apartments-brunswick-thumb.jpg
+feature_img: /project-photos/otto/thumbs/damgar-otto-apartments-brunswick-00.jpg
+gallery_name: otto
 ---
-
-{% assign img_dir = {{site.url}} | append: "/img/projects/otto/" %}
 
 <div class="row project-detail-content">
   <div class="small-11 medium-10 medium-offset-1 columns">
@@ -29,35 +28,5 @@ feature_img: /img/projects/otto/damgar-otto-apartments-brunswick-thumb.jpg
         </div>
       </div> -->
     </div>
-  </div>
-</div>
-
-<br><br>
-
-<div class="row">
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}damgar-otto-apartments-brunswick-internal-01.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
-  </div>
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}damgar-otto-apartments-brunswick-internal-02.jpg" alt="Internal photo of {{page.title}} {{page.location}}" title="Internal photo of {{page.title}} {{page.location}}">
-  </div>
-</div>
-
-<br><br>
-
-<div class="row">
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}damgar-otto-apartments-brunswick-00.jpg" alt="External photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
-  </div>
-  <div class="medium-6 columns">
-    <img class="thumbnail" src="{{img_dir}}damgar-otto-apartments-brunswick-01.jpg" alt="External photo of {{page.title}} {{page.location}}" title="External photo of {{page.title}} {{page.location}}">
-  </div>
-</div>
-
-<br><br>
-
-<div class="row">
-  <div class="column project-thumb-wrapper" style="height: 660px;">
-    <div class="thumbnail project-thumb" style="background-image: url('{{img_dir}}damgar-otto-apartments-brunswick-04.jpg');"></div>
   </div>
 </div>

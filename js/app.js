@@ -4,7 +4,7 @@
  * Loader animation
  */
 
-$(window).load(function() {
+$(document).load(function() {
   $('#loader').fadeOut(180);
 });
 
@@ -74,6 +74,15 @@ $(materialDesignObjects).each(function(index, object) {
 
     circle.css({top: clickCoordingatesY+'px', left: clickCoordinatesX+'px'}).addClass('animate');
   });
+});
+
+/**
+ * Slick carousel
+ */
+
+$('.slick-carousel').slick({
+  dots: true,
+  speed: 500
 });
 
 /**
