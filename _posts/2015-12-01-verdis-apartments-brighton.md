@@ -14,10 +14,10 @@ gallery_name: verdis
       <div class="medium-5 columns">
         <div class="column">
           <ul class="project-detail-key-points">
+            <li>Completed TODO-DATE, 2015</li>
             <li>Superb boutique development</li>
             <li>47 one and two bedroom apartments</li>
             <li>7 offices and 1 restaurant space</li>
-            <li>74 car spaces</li>
           </ul>
         </div>
       </div>
