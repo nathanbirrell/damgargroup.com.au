@@ -1,0 +1,123 @@
+// HEADER
+
+// mobile header
+.sticky {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
+.title-bar {
+	text-align: center;
+	padding: 0;
+
+	.is-open-right & {
+		display: none;
+	}
+
+	.logo {
+		display: inline-block;
+	}
+
+	.mobile-logo {
+		display: inline-block;
+		width: 58px;
+		margin: 0 auto;
+		transition: width 300ms ease-in;
+
+		.expanded & {
+			// display: block;
+			width: 120px;
+			margin: 28px auto;
+			margin-bottom: 32px;
+		}
+	}
+
+	.menu-icon {
+		font-size: 24px; // hamburger icon needs to be a touch bigger
+
+		@include menu-controls();
+	}
+}
+
+// mobile menu
+.dropdown.menu {
+	font-size: 28px;
+	font-weight: $global-weight-bold;
+	text-transform: uppercase;
+	text-align: right;
+
+	&,
+	a {
+		color: $white;
+	}
+
+	& > li > a {
+    display: block;
+    padding: 1.1rem 1rem;
+    line-height: 1;
+    font-size: 34px;
+	}
+
+	.menu-logo {
+		display: block;
+		width: 58px;
+		margin: 0 auto;
+	}
+
+	.close-icon {
+		@include menu-controls();
+	}
+}
+
+.off-canvas.is-open {
+	background: $primary-color;
+	height: 100vh;
+	position: fixed;
+}
+.off-canvas.position-right {
+	width: 280px;
+	width: 85%;
+}
+
+// make menu overlay instead of push body to the side
+.off-canvas-wrapper {
+	.is-open-right {
+		transform: none;
+
+		.off-canvas {
+			background-color: rgba(201,44,57,0.95);
+			transition: right 500ms ease 0s;
+			right: 0;
+			z-index: 999;
+		}
+	}
+}
+
+// desktop up
+.top-bar-center {
+	width: 100%;
+	display: block;
+	clear: both;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: $global-weight-semibold;
+
+	ul {
+		display: inline-block;
+		margin: 22px auto 0 auto;
+
+		@media #{$medium-up} {
+			margin-top: 22px;
+		}
+	}
+
+	.menu > li > a {
+	    padding: 0.7rem 1.8rem;
+	}
+
+	.logo {
+		display: inline-block;
+		width: 155px;
+		padding-top: 22px;
+	}
+}

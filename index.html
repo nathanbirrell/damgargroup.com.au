@@ -1,56 +1,80 @@
 ---
 layout: default
-title: Whoa! Jekyll, Foundation 6, HTML5 boilerplate and github pages!
-description: This is my site. Welcome.
-keywords: github pages, Jekyll, foundation 6
+title: Damgar Property Group - Boutique Residential and Commerical Property Development Melbourne
+description: Damgar Property Group stands alone with a 100% completion rate since 1988.
+keywords: property, developer, melbourne, apartments
 ---
 
-<section role="main">
-  <div class="small-12 columns">
-
-    <h1 class="mvl">{{ page.title }}</h1>
-
-    <div class="row">
-      <div class="medium-9 large-7 small-centered column">
-
-        <p class="mbm">I've combined my locally installed <a href="http://foundation.zurb.com/docs/sass.html">libsass/gulp version of foundation 6</a>, <a href="http://html5boilerplate.com/">html5 boilder plate</a>, and Jekyll to be used for github pages! See <a href="http://jekyllrb.com/docs/home/">Jekyll's documentation</a>, <a href="http://foundation.zurb.com/sites/docs/">the foundation documentations</a>, and <a href="https://help.github.com/categories/20/articles">GitHub pages help pages</a>.</p>
-
-        <p class="mbl">You can see all <a href="https://github.com/daigofuji/jekyll-foundation-6-starter/tree/gh-pages"><i class="fa fa-github">
-        </i> my sources here</a>. I created this for my personal use, but if you'd like to use it, please feel free. Shout out to <a href="http://daigo.org">daigo.org</a> or <a href="http://twitter.com/DaigoFuji">@DaigoFuji</a> are appreciated, but not required.</p>
-
-        <div class="callout secondary radius mvl">
-          <p>You should probably update the <samp>_config.yml</samp> file, and edit <samp>scss/_setting.scss</samp> file. As well as <samp>scss/_custom.scss</samp>, where most the overrides are happening.</p>
+<div class="project-latest">
+  <div class="row">
+    <div class="medium-10 columns small-centered">
+      {% assign project = site.posts.first %}
+      <a href="{{project.url}}" title="{{site.brand}} - Latest Projects">
+        <div class="project-thumb-wrapper">
+          <div class="thumbnail project-thumb" alt="Damgar's latest property development in Melbourne">
+            <img src="{{project.feature_img}}" alt="{{project.title}}">
+          </div>
         </div>
-
-      </div>
+        <h2 class="project-name">{{project.title}}</h2>
+        <span class="project-location">{{project.location}}</span>
+      </a>
+      <span class="project-label">Latest Project</span>
     </div>
-
-    <div class="row">
-
-      <div class="large-4 columns">
-        <p>Explore example code listed here, shows how all the html tags are rendered. Foundation takes care of those out of the box.</p>
-
-      </div>
-
-      <div class="large-4 columns">
-        <p>Another example are shown in foundation-example.html. </p>
-      </div>
-
-      <div class="large-4 columns">
-        <p>And finally, foundation's grid system, <a href="page-template-example.html">page-template-example</a> You can also <a href="http://foundation.zurb.com/templates.html">get more templates</a> from foundations home.</p>
-      </div>
-
-    </div>
-
-    <div class="row">
-      <div class="medium-9 large-7 small-centered column">
-
-        <p class="mvl">And out of the box, this supports <a href="http://fortawesome.github.io/Font-Awesome/">
-        <i class="fa fa-flag fa-lg"></i>
-        font awesome</a>, so you can go crazy with <a href="http://fortawesome.github.io/Font-Awesome/icons/">the icons</a>: <i class="fa fa-bitcoin fa-lg"></i> <i class="fa fa-cog fa-spin fa-lg"></i>. </p>
-
-      </div>
-    </div>
-
   </div>
-</section>
+</div>
+
+<div class="row column">
+  <div class="cta-wrap">
+    <a class="large button cta main-cta" href="{{site.url}}/portfolio">SEE OUR <br> DEVELOPMENTS</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-11 medium-8 columns small-centered">
+    <i id="about" class="logo-spacer large"></i>
+
+    <h1>About Damgar</h1>
+
+    <p class="lead">Established in 1988, Damgar Property Group stands alone with a 100% completion rate since the beginning.</p>
+    <p class="lead">Our dedication to ensuring our developments are fully viable from the outset means that our clients can purchase with peace of mind, knowing that their investment is rock solid.</p>
+
+    <br>
+
+    <div class="row">
+      <div class="medium-4 columns">
+        <p>Damgar Property Group is at the forefront of small to medium residential and commercial property development in inner Melbourne. We are a boutique developer which means that all of our developments have our complete focus from beginning to end.</p>
+      </div>
+      <div class="medium-4 columns">
+        <p>During our 30 years in the Property Development business we have carefully fostered strong relationships with key industry partners including Architects, Engineers and Planning Consultants.</p>
+      </div>
+      <div class="medium-4 columns">
+        <p>As builders in our own right, with a keen eye to quality and liveability, we know what it takes to get the job done and done properly.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-11 medium-8 columns small-centered">
+    <i id="about" class="logo-spacer large"></i>
+
+    <h2 class="text-center">Directors</h2>
+
+    <div class="row expanded">
+      <div class="medium-6 columns callout">
+        <p>
+          <strong>Damian Fraser</strong><br>
+          <em>Director of Operations</em><br><br>
+          Damian is a certified Master Builder with over 30 years experience in the construction and development industry and has a strong background in all phases of the development process. Damian is responsible for the planning and project management of our developments with a keen focus on bringing all projects in on budget and on time.
+        </p>
+      </div>
+      <div class="medium-6 columns callout">
+        <p>
+          <strong>Gary Birrell</strong><br>
+          <em>Director of Sales and Marketing</em><br><br>
+          Gary&CloseCurlyQuote;s 30  year background in the trades and trade management has seen him effectively lead and inspire large teams of people to deliver superior results. Gary is responsible for ensuring that our developments meet not only our exacting standards of quality and sophistication but most importantly those of the ultimate buyer.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
