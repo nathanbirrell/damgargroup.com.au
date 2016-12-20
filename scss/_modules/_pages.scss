@@ -63,10 +63,11 @@
 }
 
 /**
- * Project listing module
+ * Project listing module + Recent Projects module
  */
 
-.project-listing {
+.project-listing,
+.recent-projects {
 	.project-thumb {
 		[data-whatinput="mouse"] & {
 			filter: grayscale(50%);
@@ -137,10 +138,9 @@
 }
 
 .project-detail-content {
-	.project-detail-key-points {
+	.project-detail-lead {
 		font-size: rem-calc(22);
 		font-weight: $global-weight-light;
-		padding-left: 12px;
 		margin-bottom: 32px;
 	}
 }
