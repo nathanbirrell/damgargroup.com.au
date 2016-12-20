@@ -58,6 +58,8 @@ gulp.task('jekyll', [], function (gulpCallBack){
 
 gulp.task('build-jekyll', shell.task(['bundle install; bundle exec jekyll build --config _config.yml,_config-prod.yml']));
 
+gulp.task('serve-jekyll', shell.task(['bundle exec jekyll serve --config _config.yml']));
+
 gulp.task('build-sass', function() {
   return gulp.src('scss/app.scss')
     .pipe($.sass({
@@ -107,6 +109,6 @@ gulp.task('serve', function() {
   gulp.watch(['**/*.+(html|md|markdown|MD)', '!_site/**/*.*'], ['html']);
 });
 
-gulp.task('default', ['html','build-sass','build-js','serve']);
+gulp.task('default', ['html','build-sass','build-js','serve', 'serve-jekyll']);
 
 gulp.task('build', ['build-jekyll','build-sass','build-js']);
