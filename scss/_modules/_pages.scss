@@ -71,6 +71,16 @@
 		[data-whatinput="mouse"] & {
 			filter: grayscale(50%);
 		}
+
+		@media #{$medium-up} {
+			height: 320px;
+		}
+		@media #{$large-up} {
+			height: 320px;
+		}
+		@media #{$xlarge-up} {
+			height: 420px;
+		}
 	}
 	.circle {
 		// background: $primary-color;
