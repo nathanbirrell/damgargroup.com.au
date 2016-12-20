@@ -13,17 +13,12 @@ gallery_name: malvern-village
     <div class="row">
       <div class="large-6 columns">
         <div class="column">
-          <ul class="project-detail-lead">
-            <li>72 apartments</li>
-            <li>3 office suites</li>
-            <li>On time and on budget</li>
-          </ul>
+          <p class="project-detail-lead">Malvern Village on Malvern Road, Glen Iris, offers a mixture of one and two bedroom apartments with ground floor office and retail.</p>
         </div>
       </div>
       <div class="large-6 columns float-left">
         <div class="column">
-          <p>TODO Damgar Property Group is at the forefront of small to medium residential and commercial property development in inner Melbourne. We are a boutique developer which means that all of our developments have our complete focus from beginning to end.</p>
-          <p>During our 30 years in the Property Development business we have carefully fostered strong relationships with key industry partners including Architects, Engineers and Planning Consultants.</p>
+          <p>Designed by Daryl Pelchen, architects, these spacious apartments are bathed in natural light and feature clean and crisp lines with modern fittings for the finishing touch. </p>
         </div>
       </div>
     </div>

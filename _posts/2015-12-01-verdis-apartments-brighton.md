@@ -13,9 +13,7 @@ gallery_name: verdis
     <div class="row">
       <div class="large-6 columns">
         <div class="column">
-          <div class="project-detail-lead">
-            <p>Located within Brighton’s Martin Street precinct is the superb development, Verdis. Designed by architects Daryl Pelchen, this exciting new development has a mixture of one and two bedroom apartments along with ground floor office and retail space. </p>
-          </div>
+          <p class="project-detail-lead">Located within Brighton’s Martin Street precinct is the superb development, Verdis. Designed by architects Daryl Pelchen, this exciting new development has a mixture of one and two bedroom apartments along with ground floor office and retail space. </p>
         </div>
       </div>
       <div class="large-6 columns float-left">

@@ -13,17 +13,12 @@ gallery_name: netanya
     <div class="row">
       <div class="large-6 columns">
         <div class="column">
-          <ul class="project-detail-lead">
-            <li>12 Luxury Apartments.</li>
-            <li>24 Car basement.</li>
-            <li>On time and on budget.</li>
-          </ul>
+          <p class="project-detail-lead">Situated in North Caulfield’s Alma Village precinct, this development designed by Architects SKS features 12 luxurious apartments.</p>
         </div>
       </div>
       <div class="large-6 columns float-left">
         <div class="column">
-          <p>Situated in vibrant Alma Village North Caulfield, 12 spacious two bedroom plus study apartments, spread over two levels. Secure underground car parking with lift access to all levels.</p>
-          <p>Netaya apartments were carefully constructed from low maintenance natural materials and were completed in 2002.</p>
+          <p></p>
         </div>
       </div>
     </div>

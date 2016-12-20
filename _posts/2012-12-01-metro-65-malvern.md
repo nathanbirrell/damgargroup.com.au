@@ -13,18 +13,13 @@ gallery_name: metro-65
     <div class="row">
       <div class="large-6 columns">
         <div class="column">
-          <ul class="project-detail-lead">
-            <li>40 Apartments</li>
-            <li>3 Commercial Suites</li>
-            <li>90 car basement</li>
-            <li>On time and on budget</li>
-          </ul>
+          <p class="project-detail-lead">Design by Daryl Pelchen architects ensures Metro 65 features a strong mix of one and two bedroom apartments and allows two penthouses to top out the development perfectly.</p>
         </div>
       </div>
       <div class="large-6 columns float-left">
         <div class="column">
-          <p>TODO Damgar Property Group is at the forefront of small to medium residential and commercial property development in inner Melbourne. We are a boutique developer which means that all of our developments have our complete focus from beginning to end.</p>
-          <p>During our 30 years in the Property Development business we have carefully fostered strong relationships with key industry partners including Architects, Engineers and Planning Consultants.</p>
+        <p>These spacious apartments were purposefully designed to maximise living spaces and feature plenty of natural light.</p>
+        <p>Located opposite Malvern Station, in a commercial strip featuring restaurants, a much-loved bakery and Glenferrie Road Shopping strip just a short stroll away, this development provides a prime location. </p>
         </div>
       </div>
     </div>
