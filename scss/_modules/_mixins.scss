@@ -26,13 +26,20 @@
 	}
 
 	.project-thumb {
-		height: 280px;
-
 		// center & fill img
 		display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+		margin-bottom: 0;
+
+		height: 320px;
+		@media #{$medium-up} {
+			height: 420px;
+		}
+		@media #{$large-up} {
+			height: 540px;
+		}
 	}
 
 	.project-thumb img {
@@ -42,14 +49,15 @@
 		flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
-
-		@media #{$medium-up} {
-			max-width: 100vw;
-		}
+		height: 100%;
 	}
 
 	.slick-list .slick-loading & {
 		//background: none;
+	}
+
+	.slick-dotted.slick-slider {
+	  margin-bottom: 0; // Need to force no margin
 	}
 
 	.slick-dots {

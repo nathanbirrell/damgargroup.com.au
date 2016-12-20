@@ -28,14 +28,14 @@
 	background-color: transparent;
 }
 .project-thumb {
-	@include project-thumb();
+	// @include project-thumb();
 }
 .project-name {
 	font-weight: $global-weight-bold;
 	margin-bottom: 0;
 	font-size: rem-calc(32);
 
-	@media #{$medium-up} {
+	@media #{$large-up} {
 		display: inline-block;
 		max-width: 70%;
 	}
@@ -47,7 +47,7 @@
 	font-size: rem-calc(26);
 	font-weight: $global-weight-light;
 
-	@media #{$medium-up} {
+	@media #{$large-up} {
 		text-align: right;
 		float: right;
 		margin-top: 0;
@@ -84,13 +84,6 @@
 .project-latest {
 	padding-bottom: 0;
 
-	.project-thumb,
-	.project-thumb-wrapper {
-		@media #{$large-up} {
-			height: 532px;
-		}
-	}
-
 	a .project-thumb {
 		opacity: 1;
 	}
@@ -111,15 +104,14 @@
  * PROJECT DETAIL PAGE
 **/
 .project-detail {
-	.project-thumb,
 	.project-thumb-wrapper {
-		@media #{$large-up} {
-			height: 512px;
-		}
+		margin-bottom: 24px;
 	}
 
 	.project-thumb-wrapper {
-		margin-bottom: 24px;
+		@media #{$medium-up} {
+			// height: initial;
+		}
 	}
 
 	.project-name {
