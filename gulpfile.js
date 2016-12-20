@@ -56,7 +56,7 @@ gulp.task('jekyll', [], function (gulpCallBack){
     });
 });
 
-gulp.task('build-jekyll', shell.task(['bundle install; bundle exec jekyll build --config _config.yml,_config-prod.yml']));
+gulp.task('build-jekyll', shell.task(['bundle exec jekyll build --config _config.yml,_config-prod.yml']));
 
 gulp.task('serve-jekyll', shell.task(['bundle exec jekyll serve --config _config.yml']));
 
