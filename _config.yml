@@ -1,8 +1,8 @@
 gems:
 - jekyll-gallery-generator
 
-url: https://damgar.nathanbirrell.me
-# url: http://localhost:3000
+# url: https://damgar.nathanbirrell.me
+url: http://localhost:3000
 
 name: Damgar Property Group
 brand: Damgar Property Group
