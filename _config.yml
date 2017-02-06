@@ -2,6 +2,7 @@ gems:
 - jekyll-gallery-generator
 
 url: https://damgar.nathanbirrell.me
+# baseurl: "/"
 # url: http://localhost:3000
 
 name: Damgar Property Group
