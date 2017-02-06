@@ -9,6 +9,8 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin');
+var ghPages = require('gulp-gh-pages');
+
 
 // FILE PATH CONFIG
 var jsFiles = [
@@ -109,6 +111,12 @@ gulp.task('serve', function() {
   gulp.watch(['**/*.+(html|md|markdown|MD)', '!_site/**/*.*'], ['html']);
 });
 
-gulp.task('default', ['html','build-sass','build-js','serve', 'serve-jekyll']);
+gulp.task('deploy-to-gh-pages', function() {
+  return gulp.src('./_site/**/*')
+    .pipe(ghPages());
+});
 
-gulp.task('build', ['build-jekyll','build-sass','build-js']);
+gulp.task('dev', ['html','build-sass','build-js','serve', 'serve-jekyll']);
+gulp.task('default', ['dev']);
+gulp.task('build', ['html','build-sass','build-js']);
+gulp.task('deploy', ['build','deploy-to-gh-pages']);
