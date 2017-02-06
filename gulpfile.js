@@ -112,7 +112,7 @@ gulp.task('serve', function() {
 });
 
 gulp.task('deploy-to-gh-pages', function() {
-  return gulp.src('./dist/**/*')
+  return gulp.src('./_site/**/*')
     .pipe(ghPages());
 });
 

@@ -13,7 +13,7 @@
     <!-- Fount Awesome -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{site.url}}/css/app.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/app.css">
 
     <!-- Open Graph: https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content/
     Twitter: https://dev.twitter.com/docs/cards/types/summary-card
@@ -31,23 +31,23 @@
 
     <!-- favicon
     ================================================== -->
-    <link rel="shortcut icon" href="{{site.url}}/favicon.ico">
+    <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="{{site.url}}/img/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{site.url}}/img/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{site.url}}/img/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{site.url}}/img/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{site.url}}/img/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{site.url}}/img/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{site.url}}/img/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{site.url}}/img/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{site.url}}/img/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="{{site.url}}/img/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{site.url}}/img/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{site.url}}/img/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{site.url}}/img/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{site.baseurl}}/img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{site.baseurl}}/img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{site.baseurl}}/img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{site.baseurl}}/img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{site.baseurl}}/img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{site.baseurl}}/img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{site.baseurl}}/img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{site.baseurl}}/img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{site.baseurl}}/img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{site.baseurl}}/img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{site.baseurl}}/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{site.baseurl}}/img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{site.baseurl}}/img/icons/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="{{site.url}}/img/icons/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="{{site.baseurl}}/img/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
@@ -92,7 +92,7 @@
             <ul class="menu">
               {% include nav.html %}
             </ul>
-            <p><a class="logo" href="{{ site.url }}"><img src="{{site.url}}/img/logo.png" alt="Damgar Group Logo"></a></p>
+            <p><a class="logo" href="{{ site.baseurl }}"><img src="{{site.baseurl}}/img/logo.png" alt="Damgar Group Logo"></a></p>
           </div>
         </div>
 
@@ -100,9 +100,9 @@
         <div class="sticky expanded">
           <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
             <div class="title-bar-center">
-              <img id="sticky-logo-swap" class="hide" src="{{site.url}}/img/logo_d.png" alt="Damgar Group Symbol">
-              <img id="expanded-logo-swap" class="hide" src="{{site.url}}/img/logo.png" alt="Damgar Group Symbol">
-              <a class="logo" href="{{ site.url }}"><img class="mobile-logo mobile-logo-expanded" src="{{site.url}}/img/logo.png" alt="Damgar Group Logo"></a>
+              <img id="sticky-logo-swap" class="hide" src="{{site.baseurl}}/img/logo_d.png" alt="Damgar Group Symbol">
+              <img id="expanded-logo-swap" class="hide" src="{{site.baseurl}}/img/logo.png" alt="Damgar Group Symbol">
+              <a class="logo" href="{{ site.baseurl }}"><img class="mobile-logo mobile-logo-expanded" src="{{site.baseurl}}/img/logo.png" alt="Damgar Group Logo"></a>
               <button class="menu-icon float-right" type="button" data-open="offCanvasRight"><i class="fa fa-bars"></i></button>
             </div>
           </div>
@@ -111,7 +111,7 @@
         <!-- off-canvas right menu -->
         <nav class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right" role="navigation">
           <ul class="vertical dropdown menu" data-dropdown-menu>
-            <img class="menu-logo" src="{{site.url}}/img/logo_d_white.png" alt="Damgar Group Symbol">
+            <img class="menu-logo" src="{{site.baseurl}}/img/logo_d_white.png" alt="Damgar Group Symbol">
             <button class="close-icon float-right" type="button" data-close="offCanvasRight"><i class="fa fa-times"></i></button>
             {% include nav.html %}
           </ul>
@@ -139,9 +139,9 @@
     ================================================== -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="{{site.url}}/bower_components/jquery/dist/jquery.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="{{site.baseurl}}/bower_components/jquery/dist/jquery.js"><\/script>')</script>
 
-    <script src="{{site.url}}/js/dist/scripts.min.js"></script>
+    <script src="{{site.baseurl}}/js/dist/scripts.min.js"></script>
 
     <!-- Google Analytics CHANGE THIS TO YOUR UA CODE-->
     <script>
