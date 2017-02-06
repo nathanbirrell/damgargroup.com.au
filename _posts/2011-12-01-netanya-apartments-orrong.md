@@ -13,7 +13,7 @@ gallery_name: netanya
     <div class="row">
       <div class="large-6 columns">
         <div class="column">
-          <p class="project-detail-lead">Situated in North Caulfield’s Alma Village precinct, this development designed by Architects SKS features 12 luxurious apartments.</p>
+          <p class="project-detail-lead">Situated in North Caulfield’s Alma Village precinct, this development designed by Architects CKS features 12 luxurious apartments.</p>
         </div>
       </div>
       <div class="large-6 columns float-left">
