@@ -35,8 +35,10 @@
 	margin-bottom: 0;
 	font-size: rem-calc(32);
 
-	@media #{$large-up} {
+	@media #{$medium-up} {
 		display: inline-block;
+	}
+	@media #{$large-up} {
 		max-width: 70%;
 	}
 }
