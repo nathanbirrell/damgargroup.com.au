@@ -5818,7 +5818,7 @@ figure {
   font-weight: 700;
   margin-bottom: 0;
   font-size: 2rem; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 40em) {
     .project-name {
       display: inline-block; } }
   @media screen and (min-width: 64em) {
