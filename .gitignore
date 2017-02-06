@@ -8,3 +8,4 @@ _site
 /css/app.css
 /js/dist/scripts.js
 /js/dist/scripts.min.js
+.publish
