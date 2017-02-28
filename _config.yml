@@ -32,7 +32,7 @@ gallery:
   sort_field: "title"       # How to sort galleries on the index page.
   scale_method: fill
   thumbnail_size:
-    x: 900                  # max width of thumbnails (in pixels)
-    y: 512                  # max height of thumbnails (in pixels)
+    x: 1080                 # max width of thumbnails (in pixels)
+    y: 600                  # max height of thumbnails (in pixels)
 
 latest_project_url: 'http://google.com.au'
