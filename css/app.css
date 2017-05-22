@@ -2055,10 +2055,6 @@ input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #9B9B9B; }
 
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  color: #9B9B9B; }
-
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #9B9B9B; }
@@ -5754,8 +5750,8 @@ figure {
     .project-thumb-wrapper {
       width: 100%;
       margin: 0;
-      left: initial;
-      right: initial;
+      left: 0;
+      right: 0;
       max-height: none; } }
   .project-thumb-wrapper .project-thumb {
     display: -ms-flexbox;
@@ -5775,6 +5771,8 @@ figure {
         height: 540px; } }
   .project-thumb-wrapper .project-thumb img {
     max-width: none;
+    -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     min-width: 100%;
