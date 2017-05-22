@@ -20,8 +20,8 @@
 	@media #{$medium-up} {
 		width: 100%;
 		margin: 0;
-		left: initial;
-		right: initial;
+		left: 0;
+		right: 0;
 		max-height: none;
 	}
 
@@ -46,6 +46,7 @@
 		max-width: none;
 
 		// center & fill img
+		flex: 0 1 auto;
 		flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
