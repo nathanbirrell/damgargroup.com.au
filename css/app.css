@@ -5825,11 +5825,9 @@ figure {
   font-weight: 700;
   margin-bottom: 0;
   font-size: 2rem; }
-  @media screen and (min-width: 40em) {
-    .project-name {
-      display: inline-block; } }
   @media screen and (min-width: 64em) {
     .project-name {
+      display: inline-block;
       max-width: 70%; } }
 
 .project-location {
@@ -5855,6 +5853,16 @@ figure {
 /**
  * Project listing module + Recent Projects module
  */
+@media screen and (min-width: 40em) {
+  .project-listing .project-thumb-wrapper,
+  .recent-projects .project-thumb-wrapper {
+    max-height: 220px; } }
+
+@media screen and (min-width: 64em) {
+  .project-listing .project-thumb-wrapper,
+  .recent-projects .project-thumb-wrapper {
+    max-height: 320px; } }
+
 [data-whatinput="mouse"] .project-listing .project-thumb, [data-whatinput="mouse"]
 .recent-projects .project-thumb {
   filter: grayscale(50%); }
@@ -5883,7 +5891,11 @@ figure {
     opacity: 1; }
   .project-latest .project-label {
     display: block; }
+  .project-latest .project-name {
+    display: block; }
   @media screen and (min-width: 40em) {
+    .project-latest .project-name {
+      display: inline-block; }
     .project-latest .project-location {
       float: right;
       margin-top: 0; } }
@@ -5901,6 +5913,9 @@ figure {
 @media screen and (min-width: 64em) {
   .project-detail .project-name {
     display: inline-block; } }
+
+.project-detail-content p {
+  font-size: 1.1em; }
 
 .project-detail-content .project-detail-lead {
   font-size: 1.375rem;
