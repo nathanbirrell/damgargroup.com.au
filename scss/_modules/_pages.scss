@@ -35,9 +35,6 @@
 	margin-bottom: 0;
 	font-size: rem-calc(32);
 
-	@media #{$medium-up} {
-
-	}
 	@media #{$large-up} {
 		display: inline-block;
 		max-width: 70%;
@@ -72,7 +69,9 @@
 .project-listing,
 .recent-projects {
 	.project-thumb-wrapper {
-      max-height: 220px;
+      @media #{$medium-up} {
+				max-height: 220px;
+			}
       @media #{$large-up} {
           max-height: 320px;
       }
@@ -113,8 +112,15 @@
 		display: block;
 	}
 
-	.project-location {
-		@media #{$medium-up} {
+	.project-name {
+		display: block;
+	}
+
+	@media #{$medium-up} {
+		.project-name {
+			display: inline-block;
+		}
+		.project-location {
 			float: right;
 			margin-top: 0;
 		}
