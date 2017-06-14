@@ -36,9 +36,10 @@
 	font-size: rem-calc(32);
 
 	@media #{$medium-up} {
-		display: inline-block;
+
 	}
 	@media #{$large-up} {
+		display: inline-block;
 		max-width: 70%;
 	}
 }
@@ -70,6 +71,13 @@
 
 .project-listing,
 .recent-projects {
+	.project-thumb-wrapper {
+      max-height: 220px;
+      @media #{$large-up} {
+          max-height: 320px;
+      }
+  }
+
 	.project-thumb {
 		[data-whatinput="mouse"] & {
 			filter: grayscale(50%);
