@@ -140,6 +140,10 @@
 }
 
 .project-detail-content {
+	p {
+    font-size: 1.1em;
+	}
+
 	.project-detail-lead {
 		font-size: rem-calc(22);
 		font-weight: $global-weight-light;
