@@ -3,7 +3,7 @@ layout: project
 title: C&aacute;scara
 permalink: /portfolio/cascara-apartments-brighton/
 description: Brighton's newest limited-release compendium from Damgar Property Group presents four individually-crafted residences, design by award-winning Jackson Clements Burrows Architects and masterful landscaping by celebrated landscape architect Jack Merlo.
-location: Apartments, Brighton
+location: Residences, Brighton
 feature_img: /project-photos/cascara/thumbs/cascara-brighton-render.jpg
 gallery_name: cascara
 ---
