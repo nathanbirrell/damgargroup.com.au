@@ -4,7 +4,7 @@ Site built for damgargroup.com.au. Hosted on [Github Pages](https://pages.github
 
 ## Usage
 
-Run locally for dev.
+Run locally for dev:
 
 1. `npm install`
 1. `bundle install`
