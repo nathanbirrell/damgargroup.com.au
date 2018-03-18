@@ -12,7 +12,7 @@ description: Damgar Property Group is at the forefront of small to medium reside
 keyword: property developer, builder, construction
 
 email: admin@damgargroup.com.au
-phone: 03 9596 8543 
+phone: 03 9596 8543
 # Keep address to one line if you want to use maps (for URL ecaping)
 address: 79B Asling St, Brighton VIC 3186
 
@@ -35,4 +35,4 @@ gallery:
     x: 1080                 # max width of thumbnails (in pixels)
     y: 600                  # max height of thumbnails (in pixels)
 
-latest_project_url: 'http://www.cascara.com.au/'
+latest_project_url: 'http://www.dendyresidences.com.au/'

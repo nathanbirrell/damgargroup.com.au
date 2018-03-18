@@ -1,11 +1,11 @@
 ---
 layout: project
-title: C&aacute;scara
-permalink: /portfolio/cascara-apartments-brighton/
+title: Dendy
+permalink: /portfolio/dendy-residences-brighton/
 description: Brighton's newest limited-release compendium from Damgar Property Group presents four individually-crafted residences, design by award-winning Jackson Clements Burrows Architects and masterful landscaping by celebrated landscape architect Jack Merlo.
 location: Residences, Brighton
-feature_img: /project-photos/cascara/thumbs/cascara-brighton-render.jpg
-gallery_name: cascara
+feature_img: /project-photos/dendy/dendy-brighton-render.jpg
+gallery_name: dendy
 ---
 
 <div class="row project-detail-content">
@@ -18,7 +18,7 @@ gallery_name: cascara
       </div>
       <div class="large-6 columns float-left">
         <div class="column">
-          <p>Each residence in C&agrave;scara delivers complete living, making superb use of open spaces, a seamless flow through the living areas, and a state-of-the-art kitchen with butler&rsquo;s amenity. Enjoy private lifts to the individual rooftop terraces for complete entertaining. Three bedrooms and a study, featuring spacious master suites and ensuited guest bedrooms.  Secure, triple side-by-side basement parking with large storage areas and bike racks to accommodate an active lifestyle. C&agrave;scara is premier living in Melbourne&apos;s premier beachside location.</p>
+          <p>Each residence in Dendy Residences delivers complete living, making superb use of open spaces, a seamless flow through the living areas, and a state-of-the-art kitchen with butler&rsquo;s amenity. Enjoy private lifts to the individual rooftop terraces for complete entertaining. Three bedrooms and a study, featuring spacious master suites and ensuited guest bedrooms.  Secure, triple side-by-side basement parking with large storage areas and bike racks to accommodate an active lifestyle. Dendy Residences is premier living in Melbourne&apos;s premier beachside location.</p>
         </div>
       </div>
     </div>
