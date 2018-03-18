@@ -2051,10 +2051,6 @@ textarea {
   textarea[rows] {
     height: auto; }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #9B9B9B; }
-
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #9B9B9B; }
@@ -5329,7 +5325,9 @@ a.pswp__share--download:hover {
   position: relative;
   left: 0;
   top: 0;
-  display: block; }
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
   .slick-track:before, .slick-track:after {
     content: "";
     display: table; }
