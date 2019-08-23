@@ -1,6 +1,6 @@
 Site built for damgargroup.com.au. Hosted on [Github Pages](https://pages.github.com/) and built with [gulpjs](https://gulpjs.com/).
 
-**NOTE:** Don't merge to master on this build, it is handled in the `deploy` task. 
+**NOTE:** Don't merge to master on this build, it is handled in the `deploy` task.
 
 ## Usage
 
@@ -14,3 +14,9 @@ Run locally for dev:
 ## Deploy
 
 `gulp deploy`
+
+## Troubleshooting
+
+* `brew reinstall imagemagick@6`
+* `brew unlink imagemagick@6 && brew link imagemagick@6 --force`
+* `gem pristine rmagick`

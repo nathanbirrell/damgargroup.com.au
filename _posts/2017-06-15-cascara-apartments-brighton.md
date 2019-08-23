@@ -1,10 +1,10 @@
 ---
 layout: project
-title: Dendy
+title: Dendy Residences
 permalink: /portfolio/dendy-residences-brighton/
 description: Brighton's newest limited-release compendium from Damgar Property Group presents four individually-crafted residences, design by award-winning Jackson Clements Burrows Architects and masterful landscaping by celebrated landscape architect Jack Merlo.
 location: Residences, Brighton
-feature_img: /project-photos/dendy/dendy-brighton-render.jpg
+feature_img: /project-photos/dendy/dendy-1.jpg
 gallery_name: dendy
 ---
 
@@ -22,5 +22,13 @@ gallery_name: dendy
         </div>
       </div>
     </div>
+    <div class="row testimonial-wrap">
+        <div class="large-8 columns small-centered">
+          <caption></caption>
+          <div class="flex-video widescreen">
+            <iframe src="https://player.vimeo.com/video/354803667" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
   </div>
 </div>

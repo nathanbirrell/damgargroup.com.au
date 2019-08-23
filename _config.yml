@@ -30,6 +30,7 @@ gallery:
   dir: project-photos       # Path to the gallery
   title: "Project Photos"   # Title for gallery index page
   sort_field: "title"       # How to sort galleries on the index page.
+  sort_reverse: false
   scale_method: fill
   thumbnail_size:
     x: 1080                 # max width of thumbnails (in pixels)
