@@ -26,7 +26,7 @@ gallery_name: dendy
         <div class="large-8 columns small-centered">
           <caption></caption>
           <div class="flex-video widescreen">
-            <iframe src="https://player.vimeo.com/video/354803667" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/453482620" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
           </div>
         </div>
       </div>
