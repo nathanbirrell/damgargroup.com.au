@@ -20,13 +20,16 @@ gallery_name: bianco
       </div>
       <div class="large-6 columns float-left">
         <div class="column">
+          <p>
+          Home to sophisticated village living, this collection of apartments is situated at the heart of Bay Street, where shops, cafés, healthcare, transport and every convenience come together at one of the world’s most liveable places.
+          </p>
           <p>Bianco reflects the purity of salt and sand, with natural surfaces designed as the perfect complement to affordable cosmopolitan living.</p>
           <p>
             Responding to its location on one of Melbourne’s most iconic streets, Bianco’s light-filled apartments and private terraces are designed to merge contemporary form with an awareness of Bay Street’s vibrant cultural milieu.
           </p>
-          <p>
+          <!-- <p>
             Bianco Brighton features a range of innovative and cutting-edge sustainability measures, to deliver a more energy efficient and environmentally friendly home to each resident. These include double glazing throughout, rainwater collection, solar panels and more.
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
