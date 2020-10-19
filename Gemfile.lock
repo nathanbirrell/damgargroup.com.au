@@ -262,6 +262,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  commonmarker (~> 0.17.13)
   github-pages
   jekyll-gallery-generator!
 
